@@ -104,11 +104,9 @@ def get_leaderboard(guild_id):
 # =========================
 
 class AvaGame:
-    def __init__(self, guild_id, channel, topic, rounds):
+    def __init__(self, guild_id, channel):
         self.guild_id = guild_id
         self.channel = channel
-        self.topic = topic
-        self.rounds = rounds
 
         self.players = set()
         self.scores = {}
@@ -117,6 +115,12 @@ class AvaGame:
         self.accepting = False
         self.current_answer = None
 
+        # NEW
+        self.state = "lobby"  # lobby → waiting_topic → active
+        self.topic = None
+        self.rounds = 6
+        self.lobby_task = None
+
     # ---------------------
     # JOIN
     # ---------------------
@@ -124,6 +128,21 @@ class AvaGame:
         self.players.add(user.id)
         self.scores.setdefault(user.id, 0)
         self.streaks.setdefault(user.id, 0)
+
+    async def start_lobby_timer(self):
+    await asyncio.sleep(300)  # 5 minutes
+
+    if len(self.players) >= 3 and self.state == "lobby":
+        self.state = "waiting_topic"
+
+        await self.channel.send(
+            "🎮 Which trivia subject are you wanting to play?\n\n"
+            f"Available: {list(QUESTIONS.keys())}\n"
+            "Use `/ava topic <name>`"
+        )
+    else:
+        await self.channel.send("❌ Not enough players joined in time.")
+        active_games.pop(self.guild_id, None)
 
     # ---------------------
     # TIMER
@@ -165,22 +184,7 @@ class AvaGame:
     # ---------------------
     # GAME LOOP
     # ---------------------
-    async def start(self):
-
-        await self.channel.send(
-            f"🤖 **{BOT_NAME} ONLINE**\n"
-            f"Topic: **{self.topic}**\n"
-            f"Rounds: **{self.rounds}**\n"
-            f"Minimum players: 3\n"
-            f"Use `/join` to enter!"
-        )
-
-        await asyncio.sleep(5)
-
-        if len(self.players) < 3:
-            await self.channel.send("❌ Not enough players (minimum 3).")
-            active_games.pop(self.guild_id, None)
-            return
+    async def run_game(self):
 
         questions = QUESTIONS[self.topic]
         random.shuffle(questions)
@@ -276,44 +280,101 @@ async def on_ready():
     except Exception as e:
         print(e)
 
-# -------------------------
-# /join
-# -------------------------
-@bot.tree.command(name="join", description="Join the Ava trivia game")
-async def join(interaction: discord.Interaction):
+@bot.tree.command(name="ava", description="Main Ava command")
+async def ava(interaction: discord.Interaction, action: str, arg: str = None):
 
-    game = active_games.get(interaction.guild.id)
+    guild_id = interaction.guild.id
+    game = active_games.get(guild_id)
 
-    if not game:
-        return await interaction.response.send_message("❌ No active game.", ephemeral=True)
+    # ------------------
+    # START LOBBY
+    # ------------------
+    if action == "start":
 
-    game.join(interaction.user)
+        if game:
+            return await interaction.response.send_message(
+                "⚠️ Game already running.", ephemeral=True
+            )
 
-    await interaction.response.send_message(
-        f"✅ {interaction.user.name} joined the game!"
-    )
+        game = AvaGame(guild_id, interaction.channel)
+        active_games[guild_id] = game
 
-# -------------------------
-# /start
-# -------------------------
-@bot.tree.command(name="start", description="Start a trivia game")
-async def start(interaction: discord.Interaction, topic: str, rounds: int = 6):
+        game.lobby_task = asyncio.create_task(game.start_lobby_timer())
 
-    if interaction.guild.id in active_games:
-        return await interaction.response.send_message("⚠️ Game already running.", ephemeral=True)
-
-    if topic not in QUESTIONS:
-        return await interaction.response.send_message(
-            f"❌ Topics: {list(QUESTIONS.keys())}",
-            ephemeral=True
+        await interaction.response.send_message(
+            "🎮 Lobby started!\nUse `/ava join` to enter.\n"
+            "Game will prompt for topic in 5 minutes."
         )
 
-    game = AvaGame(interaction.guild.id, interaction.channel, topic, rounds)
-    active_games[interaction.guild.id] = game
+    # ------------------
+    # JOIN
+    # ------------------
+    elif action == "join":
 
-    await interaction.response.send_message("🎮 Ava game starting!")
+        if not game:
+            return await interaction.response.send_message(
+                "❌ No lobby active.", ephemeral=True
+            )
 
-    await game.start()
+        if game.state != "lobby":
+            return await interaction.response.send_message(
+                "❌ You can't join right now.", ephemeral=True
+            )
+
+        game.join(interaction.user)
+
+        await interaction.response.send_message(
+            f"✅ {interaction.user.name} joined! ({len(game.players)}/3+)"
+        )
+
+    # ------------------
+    # TOPIC SELECT
+    # ------------------
+    elif action == "topic":
+
+        if not game or game.state != "waiting_topic":
+            return await interaction.response.send_message(
+                "❌ Not choosing a topic right now.", ephemeral=True
+            )
+
+        if not arg or arg not in QUESTIONS:
+            return await interaction.response.send_message(
+                f"❌ Available topics: {list(QUESTIONS.keys())}",
+                ephemeral=True
+            )
+
+        game.topic = arg
+        game.state = "active"
+
+        if game.lobby_task:
+            game.lobby_task.cancel()
+
+        await interaction.response.send_message(
+            f"🔥 Starting **{arg}** trivia!"
+        )
+
+        await game.run_game()
+
+    # ------------------
+    # STATUS
+    # ------------------
+    elif action == "status":
+
+        if not game:
+            return await interaction.response.send_message("No active game.")
+
+        await interaction.response.send_message(
+            f"State: {game.state}\nPlayers: {len(game.players)}"
+        )
+
+    else:
+        await interaction.response.send_message(
+            "❓ Commands:\n"
+            "`/ava start`\n"
+            "`/ava join`\n"
+            "`/ava topic <name>`\n"
+            "`/ava status`"
+        )
 
 # -------------------------
 # /leaderboard
@@ -349,8 +410,8 @@ async def on_message(message):
     if not game:
         return
 
-    if game.is_correct(message):
-        game.accepting = False
+    if game.state == "active" and game.is_correct(message):
+    game.accepting = False
 
 # =========================
 # RUN BOT
