@@ -1,3 +1,4 @@
+{
 "asoiaf": [
   {"question": "[SHOW] What is the name of Jon Snow’s direwolf?", "answer": "Ghost"},
   {"question": "[BOTH] What is the name of the Stark ancestral home?", "answer": "Winterfell"},
@@ -480,3 +481,4 @@
   {"question": "[BOOK] What house rules the Vale?", "answer": "Arryn"},
   {"question": "[BOTH] What house rules the Reach?", "answer": "Tyrell"}
   ]
+}
