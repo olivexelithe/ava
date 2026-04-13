@@ -3,7 +3,6 @@ from discord.ext import commands
 import asyncio
 import json
 import random
-import os
 import sqlite3
 from rapidfuzz import fuzz
 
@@ -19,7 +18,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 active_games = {}
 
 # =========================
-# LOAD QUESTIONS (CATEGORY SYSTEM)
+# LOAD QUESTIONS
 # =========================
 
 with open("questions.json", "r", encoding="utf-8") as f:
@@ -109,81 +108,54 @@ class AvaGame:
         self.state = "lobby"
         self.topic = None
         self.rounds = 6
-        self.lobby_task = None
+
+    # -------------------------
+    # PLAYER MANAGEMENT
+    # -------------------------
 
     def join(self, user):
         self.players.add(user.id)
         self.scores.setdefault(user.id, 0)
         self.streaks.setdefault(user.id, 0)
 
+    def leave(self, user):
+        self.players.discard(user.id)
+        self.scores.pop(user.id, None)
+        self.streaks.pop(user.id, None)
+
+    # -------------------------
+    # LOBBY UI
+    # -------------------------
+
     def build_lobby_embed(self):
-    players = "\n".join(
-        [f"<@{p}>" for p in self.players]
-    ) or "No players yet"
+        players = "\n".join([f"<@{p}>" for p in self.players]) or "No players yet"
 
-    embed = discord.Embed(
-        title="🎮 AVA TRIVIA LOBBY",
-        description=(
-            "Welcome to Ava Trivia!\n\n"
-            "📌 How to play:\n"
-            "• Use `/ava join` to enter\n"
-            "• Use `/ava leave` to exit\n"
-            "• Wait for host to start\n"
-            "• Answer questions in chat when game begins\n\n"
-            "⚡ First correct answer wins points\n"
-        ),
-        color=discord.Color.blurple()
-    )
+        embed = discord.Embed(
+            title="🎮 AVA TRIVIA LOBBY",
+            description=(
+                "Welcome!\n\n"
+                "• Use `/avaasoiaf` to start\n"
+                "• Answer questions quickly\n"
+            ),
+            color=discord.Color.blurple()
+        )
 
-    embed.add_field(
-        name="👥 Players",
-        value=players,
-        inline=False
-    )
+        embed.add_field(name="👥 Players", value=players, inline=False)
+        embed.add_field(name="📊 Status", value=self.state.upper(), inline=False)
 
-    embed.add_field(
-        name="📊 Status",
-        value=self.state.upper(),
-        inline=False
-    )
-
-    return embed
+        return embed
 
     async def update_lobby(self):
-    embed = self.build_lobby_embed()
+        embed = self.build_lobby_embed()
 
-    if self.lobby_message:
-        await self.lobby_message.edit(embed=embed)
-    else:
-        self.lobby_message = await self.channel.send(embed=embed)
+        if self.lobby_message:
+            await self.lobby_message.edit(embed=embed)
+        else:
+            self.lobby_message = await self.channel.send(embed=embed)
 
-    def join(self, user):
-    self.players.add(user.id)
-    self.scores.setdefault(user.id, 0)
-    self.streaks.setdefault(user.id, 0)
-
-    await self.update_lobby()
-
-    def leave(self, user):
-    self.players.discard(user.id)
-    self.scores.pop(user.id, None)
-    self.streaks.pop(user.id, None)
-
-    await self.update_lobby()
-
-    async def start_lobby_timer(self):
-        await asyncio.sleep(300)
-
-        if len(self.players) < 1:
-            await self.channel.send("❌ Not enough players.")
-            active_games.pop(self.guild_id, None)
-            return
-
-        self.state = "waiting_topic"
-
-        await self.channel.send(
-            f"🎮 Pick a topic:\n{list(QUESTIONS.keys())}\nUse `/ava topic <name>`"
-        )
+    # -------------------------
+    # GAME LOGIC
+    # -------------------------
 
     def get_timer(self, i):
         if i < self.rounds * 0.33:
@@ -212,7 +184,9 @@ class AvaGame:
             return 1
         return 0
 
-    await game.update_lobby()
+    # -------------------------
+    # GAME LOOP
+    # -------------------------
 
     async def run_game(self):
         questions = QUESTIONS[self.topic]
@@ -258,7 +232,6 @@ class AvaGame:
             self.scores[uid] = self.scores.get(uid, 0) + points
 
             await self.channel.send(f"✅ {winner.mention} +{points}")
-
             await asyncio.sleep(2)
 
         await self.end_game()
@@ -274,11 +247,10 @@ class AvaGame:
             update_stats(uid, self.guild_id, score, i == 0)
 
         await self.channel.send(msg)
-
         active_games.pop(self.guild_id, None)
 
 # =========================
-# SLASH COMMAND
+# SLASH COMMANDS
 # =========================
 
 @bot.tree.command(name="avaasoiaf", description="Start ASOIAF trivia")
@@ -296,16 +268,21 @@ async def avaasoiaf(interaction: discord.Interaction):
     game.state = "active"
 
     await interaction.response.send_message("🔥 ASOIAF Trivia starting!")
-
     await game.run_game()
 
-elif action == "leave":
+# -------------------------
+# LEAVE COMMAND (FIXED)
+# -------------------------
+
+@bot.tree.command(name="leave", description="Leave game")
+async def leave(interaction: discord.Interaction):
+
+    game = active_games.get(interaction.guild.id)
 
     if not game:
         return await interaction.response.send_message("No active lobby.", ephemeral=True)
 
     game.leave(interaction.user)
-
     await game.update_lobby()
 
     await interaction.response.send_message("👋 You left the lobby.", ephemeral=True)
