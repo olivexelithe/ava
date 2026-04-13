@@ -479,6 +479,6 @@
   {"question": "[BOOK] What house rules the Westerlands?", "answer": "Lannister"},
   {"question": "[BOTH] What house rules Dorne?", "answer": "Martell"},
   {"question": "[BOOK] What house rules the Vale?", "answer": "Arryn"},
-  {"question": "[BOTH] What house rules the Reach?", "answer": "Tyrell"},
+  {"question": "[BOTH] What house rules the Reach?", "answer": "Tyrell"}
   ]
 }
