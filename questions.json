@@ -1,4 +1,282 @@
 {
+  "asoiaf": [
+    {
+      "question": "[SHOW] What is Jon Snow\u2019s direwolf?",
+      "answer": "Ghost"
+    },
+    {
+      "question": "[BOTH] What is the Stark ancestral home?",
+      "answer": "Winterfell"
+    },
+    {
+      "question": "[BOOK] Who executes Ned Stark?",
+      "answer": "Ilyn Payne"
+    },
+    {
+      "question": "[BOTH] What is Arya Stark's sword?",
+      "answer": "Needle"
+    },
+    {
+      "question": "[SHOW] Who is Daenerys' first husband?",
+      "answer": "Khal Drogo"
+    },
+    {
+      "question": "[BOTH] What is House Lannister's sigil?",
+      "answer": "Lion"
+    },
+    {
+      "question": "[SHOW] Who pushes Bran Stark?",
+      "answer": "Jaime Lannister"
+    },
+    {
+      "question": "[BOTH] What is the capital of Westeros?",
+      "answer": "King's Landing"
+    },
+    {
+      "question": "[SHOW] Who poisons Joffrey?",
+      "answer": "Olenna Tyrell and Littlefinger"
+    },
+    {
+      "question": "[BOTH] Tyrion Lannister's nickname?",
+      "answer": "The Imp"
+    },
+    {
+      "question": "[SHOW] Who kills Tywin Lannister?",
+      "answer": "Tyrion Lannister"
+    },
+    {
+      "question": "[BOTH] Stark sigil animal?",
+      "answer": "Direwolf"
+    },
+    {
+      "question": "[SHOW] Who becomes King in the North after Robb Stark?",
+      "answer": "Jon Snow"
+    },
+    {
+      "question": "[SHOW] Who orchestrates the Red Wedding?",
+      "answer": "Roose Bolton and Walder Frey"
+    },
+    {
+      "question": "[BOTH] Daenerys largest dragon?",
+      "answer": "Drogon"
+    },
+    {
+      "question": "[SHOW] Dragon command word?",
+      "answer": "Dracarys"
+    },
+    {
+      "question": "[BOTH] Meaning of Dracarys?",
+      "answer": "Dragonfire"
+    },
+    {
+      "question": "[SHOW] Leader of the Unsullied?",
+      "answer": "Grey Worm"
+    },
+    {
+      "question": "[BOOK] Does the Night King exist?",
+      "answer": "No"
+    },
+    {
+      "question": "[SHOW] Lord Commander at start?",
+      "answer": "Jeor Mormont"
+    },
+    {
+      "question": "[BOTH] Jon Snow sword?",
+      "answer": "Longclaw"
+    },
+    {
+      "question": "[SHOW] Who kills Night King?",
+      "answer": "Arya Stark"
+    },
+    {
+      "question": "[BOTH] Targaryen sigil?",
+      "answer": "Three-headed dragon"
+    },
+    {
+      "question": "[SHOW] Sansa first husband?",
+      "answer": "Tyrion Lannister"
+    },
+    {
+      "question": "[BOTH] Stark motto?",
+      "answer": "Winter is Coming"
+    },
+    {
+      "question": "[BOOK] Stark sword?",
+      "answer": "Ice"
+    },
+    {
+      "question": "[BOTH] Hodor real name?",
+      "answer": "Wylis"
+    },
+    {
+      "question": "[SHOW] Three-Eyed Raven?",
+      "answer": "Brynden Rivers"
+    },
+    {
+      "question": "[BOTH] Bran ability?",
+      "answer": "Warging"
+    },
+    {
+      "question": "[BOTH] Iron Throne made of?",
+      "answer": "Swords"
+    },
+    {
+      "question": "[SHOW] Who kills Ramsay Bolton?",
+      "answer": "Sansa Stark"
+    },
+    {
+      "question": "[BOTH] Theon name in captivity?",
+      "answer": "Reek"
+    },
+    {
+      "question": "[SHOW] Who kills Daenerys?",
+      "answer": "Jon Snow"
+    },
+    {
+      "question": "[SHOW] Who becomes king at end?",
+      "answer": "Bran Stark"
+    },
+    {
+      "question": "[BOTH] Bran title?",
+      "answer": "Bran the Broken"
+    },
+    {
+      "question": "[SHOW] Queen in the North?",
+      "answer": "Sansa Stark"
+    },
+    {
+      "question": "[BOTH] Greyjoy words?",
+      "answer": "We Do Not Sow"
+    },
+    {
+      "question": "[SHOW] Robb Stark death?",
+      "answer": "Red Wedding"
+    },
+    {
+      "question": "[BOOK] Valyria location?",
+      "answer": "Essos"
+    },
+    {
+      "question": "[SHOW] Jon Snow mother?",
+      "answer": "Lyanna Stark"
+    },
+    {
+      "question": "[SHOW] Jon true name?",
+      "answer": "Aegon Targaryen"
+    },
+    {
+      "question": "[BOOK] Jon confirmed?",
+      "answer": "No"
+    },
+    {
+      "question": "[BOTH] Jon raised by?",
+      "answer": "Ned Stark"
+    },
+    {
+      "question": "[SHOW] King Beyond the Wall?",
+      "answer": "Mance Rayder"
+    },
+    {
+      "question": "[BOTH] Night's Watch oath?",
+      "answer": "No wife, no lands, no titles"
+    },
+    {
+      "question": "[BOTH] The Wall?",
+      "answer": "Northern barrier"
+    },
+    {
+      "question": "[SHOW] Jon resurrected by?",
+      "answer": "Melisandre"
+    },
+    {
+      "question": "[BOTH] Melisandre title?",
+      "answer": "Red Woman"
+    },
+    {
+      "question": "[SHOW] Stannis killed by?",
+      "answer": "Brienne of Tarth"
+    },
+    {
+      "question": "[BOTH] Stannis religion?",
+      "answer": "Lord of Light"
+    },
+    {
+      "question": "[SHOW] Shireen burned by?",
+      "answer": "Stannis Baratheon"
+    },
+    {
+      "question": "[BOTH] Oathkeeper?",
+      "answer": "Brienne sword"
+    },
+    {
+      "question": "[SHOW] Oathkeeper giver?",
+      "answer": "Jaime Lannister"
+    },
+    {
+      "question": "[BOTH] Oathkeeper forged from?",
+      "answer": "Ice"
+    },
+    {
+      "question": "[BOTH] Astapor known for?",
+      "answer": "Unsullied"
+    },
+    {
+      "question": "[BOTH] Valyrian steel kills?",
+      "answer": "White Walkers"
+    },
+    {
+      "question": "[SHOW] Oberyn killed by?",
+      "answer": "The Mountain"
+    },
+    {
+      "question": "[BOTH] Oberyn nickname?",
+      "answer": "Red Viper"
+    },
+    {
+      "question": "[SHOW] Dorne leader after Oberyn?",
+      "answer": "Ellaria Sand"
+    },
+    {
+      "question": "[BOTH] Martell sigil?",
+      "answer": "Sun and spear"
+    },
+    {
+      "question": "[SHOW] Myrcella poisoned by?",
+      "answer": "Ellaria Sand"
+    },
+    {
+      "question": "[BOTH] Myrcella father?",
+      "answer": "Jaime Lannister"
+    },
+    {
+      "question": "[SHOW] Tommen death?",
+      "answer": "Suicide"
+    },
+    {
+      "question": "[BOTH] Tommen house?",
+      "answer": "Baratheon"
+    },
+    {
+      "question": "[SHOW] High Sparrow?",
+      "answer": "Faith Militant leader"
+    },
+    {
+      "question": "[BOTH] Religion in King's Landing?",
+      "answer": "Faith of the Seven"
+    },
+    {
+      "question": "[SHOW] Battle of Bastards winner?",
+      "answer": "Jon Snow"
+    },
+    {
+      "question": "[SHOW] Vale saves Jon?",
+      "answer": "Knights of the Vale"
+    },
+    {
+      "question": "[BOTH] Vale leader?",
+      "answer": "Petyr Baelish"
+    },
+   {
    "asoiaf":[
       {
          "question":"[SHOW] What is the name of Jon Snow’s direwolf?",
@@ -304,6 +582,7 @@
          "question":"[BOTH] Who leads the Vale forces?",
          "answer":"Petyr Baelish"
       },
+      [
          {
             "question":"[SHOW] Who kills the Night King?",
             "answer":"Arya Stark"
