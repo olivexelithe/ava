@@ -107,7 +107,16 @@ class AvaGame:
 
         self.state = "lobby"
         self.topic = None
+
         self.rounds = 6
+        self.questions_per_round = 5
+
+        self.correct_lines = [
+            "is correct!",
+            "got it right!",
+            "nailed it!",
+            "that's right!",
+        ]
 
     # -------------------------
     # PLAYER MANAGEMENT
@@ -157,10 +166,10 @@ class AvaGame:
     # GAME LOGIC
     # -------------------------
 
-    def get_timer(self, i):
-        if i < self.rounds * 0.33:
+    def get_timer(self, round_num):
+        if round_num <= self.rounds * 0.33:
             return 25
-        elif i < self.rounds * 0.66:
+        elif round_num <= self.rounds * 0.66:
             return 20
         return 15
 
@@ -184,6 +193,9 @@ class AvaGame:
             return 1
         return 0
 
+    async def ava_say(self, message):
+        await self.channel.send(f"✨ **Ava:** {message}")
+
     # -------------------------
     # GAME LOOP
     # -------------------------
@@ -192,49 +204,103 @@ class AvaGame:
         questions = QUESTIONS[self.topic]
         random.shuffle(questions)
 
-        for i in range(self.rounds):
+        q_index = 0
 
-            q = questions[i % len(questions)]
-            self.current_answer = q["answer"]
-            self.accepting = True
+        for round_num in range(1, self.rounds + 1):
 
-            timer = self.get_timer(i)
+            await self.ava_say(f"Round {round_num} starting in 5 seconds... 🚀")
+            await asyncio.sleep(5)
 
-            await self.channel.send(
-                f"❓ **Round {i+1}**\n{q['question']}\n⏱️ {timer}s"
+            await self.ava_say(f"5 questions this round — let's go 🔥")
+
+            for q_num in range(1, self.questions_per_round + 1):
+
+                q = questions[q_index % len(questions)]
+                q_index += 1
+
+                self.current_answer = q["answer"]
+                self.accepting = True
+
+                timer = self.get_timer(round_num)
+
+                await self.channel.send(
+                    f"❓ **Round {round_num} • Question {q_num}/5**\n"
+                    f"{q['question']}\n⏱️ {timer}s"
+                )
+
+                start_time = asyncio.get_event_loop().time()
+
+                try:
+                    msg = await bot.wait_for(
+                        "message",
+                        timeout=timer,
+                        check=self.is_correct
+                    )
+                    winner = msg.author
+                    response_time = asyncio.get_event_loop().time() - start_time
+
+                except asyncio.TimeoutError:
+                    self.accepting = False
+                    await self.ava_say(
+                        f"⏰ Nobody got it… correct answer was **{self.current_answer}**"
+                    )
+                    continue
+
+                self.accepting = False
+
+                uid = winner.id
+
+                # streak system
+                self.streaks[uid] += 1
+                bonus = self.streak_bonus(self.streaks[uid])
+
+                for pid in self.players:
+                    if pid != uid:
+                        self.streaks[pid] = 0
+
+                # speed bonus
+                speed_bonus = 0
+                if response_time <= 3:
+                    speed_bonus = 1
+                    await self.ava_say(f"⚡ SPEED BONUS for {winner.display_name}!")
+
+                # streak commentary
+                if self.streaks[uid] >= 3:
+                    await self.ava_say(
+                        f"🔥 {winner.display_name} is on a {self.streaks[uid]} streak!"
+                    )
+
+                points = 1 + bonus + speed_bonus
+                self.scores[uid] = self.scores.get(uid, 0) + points
+
+                await self.ava_say(
+                    f"{winner.mention} {random.choice(self.correct_lines)}"
+                )
+
+                await asyncio.sleep(2)
+
+            # round summary
+            await self.ava_say(f"Round {round_num} complete! Scores:")
+
+            leaderboard = sorted(
+                self.scores.items(),
+                key=lambda x: x[1],
+                reverse=True
             )
 
-            try:
-                msg = await bot.wait_for(
-                    "message",
-                    timeout=timer,
-                    check=self.is_correct
-                )
-                winner = msg.author
+            msg = ""
+            for i, (pid, score) in enumerate(leaderboard, 1):
+                user = self.channel.guild.get_member(pid)
+                msg += f"{i}. {user.display_name} - {score} pts\n"
 
-            except asyncio.TimeoutError:
-                await self.channel.send("⏰ No correct answer.")
-                self.accepting = False
-                continue
-
-            self.accepting = False
-
-            uid = winner.id
-
-            self.streaks[uid] += 1
-            bonus = self.streak_bonus(self.streaks[uid])
-
-            for pid in self.players:
-                if pid != uid:
-                    self.streaks[pid] = 0
-
-            points = 1 + bonus
-            self.scores[uid] = self.scores.get(uid, 0) + points
-
-            await self.channel.send(f"✅ {winner.mention} +{points}")
-            await asyncio.sleep(2)
+            await self.channel.send(msg)
+            await asyncio.sleep(3)
 
         await self.end_game()
+
+    # -------------------------
+    # END GAME
+    # -------------------------
 
     async def end_game(self):
         sorted_scores = sorted(self.scores.items(), key=lambda x: x[1], reverse=True)
@@ -270,9 +336,9 @@ async def avaasoiaf(interaction: discord.Interaction):
     await interaction.response.send_message("🔥 ASOIAF Trivia starting!")
     await game.run_game()
 
-# -------------------------
-# LEAVE COMMAND (FIXED)
-# -------------------------
+# =========================
+# LEAVE COMMAND
+# =========================
 
 @bot.tree.command(name="leave", description="Leave game")
 async def leave(interaction: discord.Interaction):
