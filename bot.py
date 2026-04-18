@@ -4,6 +4,7 @@ import os
 import random
 import re
 import sqlite3
+import time
 import unicodedata
 from pathlib import Path
 
@@ -583,5 +584,17 @@ async def on_ready():
 if "DISCORD_TOKEN" not in os.environ:
     raise RuntimeError("Missing DISCORD_TOKEN environment variable.")
 
-bot.run(os.environ["DISCORD_TOKEN"])
-
+delay = 60
+while True:
+    try:
+        bot.run(os.environ["DISCORD_TOKEN"])
+        break
+    except discord.HTTPException as exc:
+        if exc.status != 429:
+            raise
+        print(
+            f"Discord is rate-limiting bot login attempts. "
+            f"Waiting {delay} seconds before trying again."
+        )
+        time.sleep(delay)
+        delay = min(delay * 2, 900)
