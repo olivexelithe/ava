@@ -1,7 +1,7 @@
 {
   "asoiaf": [
     {
-      "question": "[SHOW] What is Jon Snow\u2019s direwolf?",
+      "question": "[SHOW] What is Jon Snow's direwolf?",
       "answer": "Ghost"
     },
     {
@@ -276,1611 +276,2661 @@
       "question": "[BOTH] Vale leader?",
       "answer": "Petyr Baelish"
     },
-   {
-   "asoiaf":[
-      {
-         "question":"[SHOW] What is the name of Jon Snow’s direwolf?",
-         "answer":"Ghost"
-      },
-      {
-         "question":"[BOTH] What is the name of the Stark ancestral home?",
-         "answer":"Winterfell"
-      },
-      {
-         "question":"[BOOK] Who physically executes Ned Stark in the books?",
-         "answer":"Ilyn Payne"
-      },
-      {
-         "question":"[BOTH] What is Arya Stark’s sword called?",
-         "answer":"Needle"
-      },
-      {
-         "question":"[SHOW] Who is Daenerys Targaryen’s first husband?",
-         "answer":"Khal Drogo"
-      },
-      {
-         "question":"[BOTH] What is House Lannister’s sigil?",
-         "answer":"Lion"
-      },
-      {
-         "question":"[SHOW] Who pushes Bran Stark from the tower?",
-         "answer":"Jaime Lannister"
-      },
-      {
-         "question":"[BOTH] What is the capital of the Seven Kingdoms?",
-         "answer":"King’s Landing"
-      },
-      {
-         "question":"[SHOW] Who poisons Joffrey Baratheon?",
-         "answer":"Olenna Tyrell and Littlefinger"
-      },
-      {
-         "question":"[BOTH] What is Tyrion Lannister’s nickname?",
-         "answer":"The Imp"
-      },
-      {
-         "question":"[SHOW] Who kills Tywin Lannister?",
-         "answer":"Tyrion Lannister"
-      },
-      {
-         "question":"[BOTH] What is House Stark’s sigil animal?",
-         "answer":"Direwolf"
-      },
-      {
-         "question":"[SHOW] Who becomes King in the North after Robb Stark?",
-         "answer":"Jon Snow"
-      },
-      {
-         "question":"[SHOW] Who orchestrates the Red Wedding?",
-         "answer":"Roose Bolton and Walder Frey"
-      },
-      {
-         "question":"[BOTH] What is the name of Daenerys Targaryen’s largest dragon?",
-         "answer":"Drogon"
-      },
-      {
-         "question":"[SHOW] What command does Daenerys use for dragonfire?",
-         "answer":"Dracarys"
-      },
-      {
-         "question":"[BOTH] What does Dracarys mean?",
-         "answer":"Dragonfire"
-      },
-      {
-         "question":"[SHOW] Who is the leader of the Unsullied?",
-         "answer":"Grey Worm"
-      },
-      {
-         "question":"[BOOK] Does the Night King exist in the books?",
-         "answer":"No"
-      },
-      {
-         "question":"[SHOW] Who is Lord Commander of the Night’s Watch at the start?",
-         "answer":"Jeor Mormont"
-      },
-      {
-         "question":"[BOTH] What is Jon Snow’s sword called?",
-         "answer":"Longclaw"
-      },
-      {
-         "question":"[SHOW] Who kills the Night King?",
-         "answer":"Arya Stark"
-      },
-      {
-         "question":"[BOTH] What is House Targaryen’s sigil?",
-         "answer":"Three-headed dragon"
-      },
-      {
-         "question":"[SHOW] Who is Sansa Stark married to first?",
-         "answer":"Tyrion Lannister"
-      },
-      {
-         "question":"[BOTH] What is the motto of House Stark?",
-         "answer":"Winter is Coming"
-      },
-      {
-         "question":"[BOOK] What is House Stark’s ancestral sword?",
-         "answer":"Ice"
-      },
-      {
-         "question":"[BOTH] What is Hodor’s real name?",
-         "answer":"Wylis"
-      },
-      {
-         "question":"[SHOW] Who is the Three-Eyed Raven?",
-         "answer":"Brynden Rivers"
-      },
-      {
-         "question":"[BOTH] What ability lets Bran enter minds of animals?",
-         "answer":"Warging"
-      },
-      {
-         "question":"[BOTH] What is the Iron Throne made of?",
-         "answer":"Swords"
-      },
-      {
-         "question":"[SHOW] Who kills Ramsay Bolton?",
-         "answer":"Sansa Stark"
-      },
-      {
-         "question":"[BOTH] What is Theon Greyjoy renamed during captivity?",
-         "answer":"Reek"
-      },
-      {
-         "question":"[SHOW] Who kills Daenerys Targaryen?",
-         "answer":"Jon Snow"
-      },
-      {
-         "question":"[SHOW] Who becomes king at the end?",
-         "answer":"Bran Stark"
-      },
-      {
-         "question":"[BOTH] What title does Bran take?",
-         "answer":"Bran the Broken"
-      },
-      {
-         "question":"[SHOW] Who becomes Queen in the North?",
-         "answer":"Sansa Stark"
-      },
-      {
-         "question":"[BOTH] What is House Greyjoy’s words?",
-         "answer":"We Do Not Sow"
-      },
-      {
-         "question":"[SHOW] Who is killed at the Red Wedding?",
-         "answer":"Robb Stark"
-      },
-      {
-         "question":"[BOOK] What region is Valyria located in?",
-         "answer":"Essos"
-      },
-      {
-         "question":"[SHOW] Who is Jon Snow’s real mother?",
-         "answer":"Lyanna Stark"
-      },
-      {
-         "question":"[BOTH] What house does Jon Snow belong to (true parentage)?",
-         "answer":"House Targaryen and House Stark"
-      },
-      {
-         "question":"[SHOW] What is Jon Snow’s true name revealed to be?",
-         "answer":"Aegon Targaryen"
-      },
-      {
-         "question":"[BOOK] Is Jon Snow’s true name confirmed in the books?",
-         "answer":"No"
-      },
-      {
-         "question":"[BOTH] Who raised Jon Snow at Winterfell?",
-         "answer":"Ned Stark"
-      },
-      {
-         "question":"[SHOW] Who is the King Beyond the Wall during early seasons?",
-         "answer":"Mance Rayder"
-      },
-      {
-         "question":"[BOTH] What is the Night’s Watch oath?",
-         "answer":"No wife, no lands, no titles"
-      },
-      {
-         "question":"[BOTH] What structure separates the North from the wildlings?",
-         "answer":"The Wall"
-      },
-      {
-         "question":"[SHOW] Who brings Jon Snow back to life?",
-         "answer":"Melisandre"
-      },
-      {
-         "question":"[BOTH] What is Melisandre known as?",
-         "answer":"The Red Woman"
-      },
-      {
-         "question":"[SHOW] Who kills Stannis Baratheon?",
-         "answer":"Brienne of Tarth"
-      },
-      {
-         "question":"[BOTH] What god does Stannis follow?",
-         "answer":"The Lord of Light"
-      },
-      {
-         "question":"[SHOW] Who burns Shireen Baratheon?",
-         "answer":"Stannis Baratheon"
-      },
-      {
-         "question":"[BOTH] Who advises Stannis?",
-         "answer":"Melisandre"
-      },
-      {
-         "question":"[BOTH] What is Brienne’s sword called?",
-         "answer":"Oathkeeper"
-      },
-      {
-         "question":"[SHOW] Who gives Brienne Oathkeeper?",
-         "answer":"Jaime Lannister"
-      },
-      {
-         "question":"[BOTH] What sword was Oathkeeper forged from?",
-         "answer":"Ice"
-      },
-      {
-         "question":"[BOOK] Who originally owns Ice?",
-         "answer":"House Stark"
-      },
-      {
-         "question":"[BOTH] What city does Daenerys conquer first in Slaver’s Bay?",
-         "answer":"Astapor"
-      },
-      {
-         "question":"[BOTH] What does Valyrian steel famously kill?",
-         "answer":"White Walkers"
-      },
-      {
-         "question":"[BOOK] What is dragonglass called in lore?",
-         "answer":"Obsidian"
-      },
-      {
-         "question":"[SHOW] Who kills Oberyn Martell?",
-         "answer":"Gregor Clegane (The Mountain)"
-      },
-      {
-         "question":"[BOTH] What is Oberyn Martell known for?",
-         "answer":"The Red Viper"
-      },
-      {
-         "question":"[SHOW] Who leads Dorne after Oberyn?",
-         "answer":"Ellaria Sand"
-      },
-      {
-         "question":"[BOTH] What is House Martell’s sigil?",
-         "answer":"Sun and spear"
-      },
-      {
-         "question":"[SHOW] Who poisons Myrcella Baratheon?",
-         "answer":"Ellaria Sand / Sand Snakes"
-      },
-      {
-         "question":"[BOTH] What is Myrcella Baratheon’s true father?",
-         "answer":"Jaime Lannister"
-      },
-      {
-         "question":"[SHOW] What kills King Tommen?",
-         "answer":"He jumps from a window/suicide"
-      },
-      {
-         "question":"[BOTH] What house does Tommen belong to?",
-         "answer":"House Baratheon"
-      },
-      {
-         "question":"[SHOW] Who is the High Sparrow?",
-         "answer":"Leader of the Faith Militant"
-      },
-      {
-         "question":"[BOTH] What religion dominates King’s Landing?",
-         "answer":"Faith of the Seven"
-      },
-      {
-         "question":"[BOTH] Who becomes Queen after that event?",
-         "answer":"Cersei Lannister"
-      },
-      {
-         "question":"[BOOK] Does the Sept explosion happen in the books?",
-         "answer":"No"
-      },
-      {
-         "question":"[SHOW] Who is killed in the Battle of the Bastards?",
-         "answer":"Ramsay Bolton"
-      },
-      {
-         "question":"[BOTH] What battle reunites Winterfell?",
-         "answer":"Battle of the Bastards"
-      },
-      {
-         "question":"[SHOW] Who saves Jon Snow’s army?",
-         "answer":"Knights of the Vale"
-      },
-      {
-         "question":"[BOTH] Who leads the Vale forces?",
-         "answer":"Petyr Baelish"
-      },
-      [
-         {
-            "question":"[SHOW] Who kills the Night King?",
-            "answer":"Arya Stark"
-         },
-         {
-            "question":"[BOTH] What is Jon Snow's sword called?",
-            "answer":"Longclaw"
-         },
-         {
-            "question":"[SHOW] Who is Jon Snow's father revealed to be?",
-            "answer":"Rhaegar Targaryen"
-         },
-         {
-            "question":"[BOOK] Is Jon Snow’s parentage confirmed in the books?",
-            "answer":"Not confirmed"
-         },
-         {
-            "question":"[BOTH] What is Arya Stark’s weapon?",
-            "answer":"Needle"
-         },
-         {
-            "question":"[SHOW] Who becomes King in the North after Robb?",
-            "answer":"Jon Snow"
-         },
-         {
-            "question":"[BOTH] What is the Stark home called?",
-            "answer":"Winterfell"
-         },
-         {
-            "question":"[SHOW] Who kills Joffrey Baratheon?",
-            "answer":"Olenna Tyrell"
-         },
-         {
-            "question":"[BOTH] What poison kills Joffrey?",
-            "answer":"The Strangler"
-         },
-         {
-            "question":"[BOOK] Who helps kill Joffrey?",
-            "answer":"Littlefinger"
-         },
-         {
-            "question":"[SHOW] Who is the Hound?",
-            "answer":"Sandor Clegane"
-         },
-         {
-            "question":"[BOTH] Who is the Mountain?",
-            "answer":"Gregor Clegane"
-         },
-         {
-            "question":"[SHOW] Who kills the Mountain?",
-            "answer":"Arya Stark"
-         },
-         {
-            "question":"[BOTH] What house do the Cleganes serve?",
-            "answer":"Lannister"
-         },
-         {
-            "question":"[BOOK] Is the Mountain undead in the books?",
-            "answer":"No"
-         },
-         {
-            "question":"[SHOW] Who rules the Iron Islands?",
-            "answer":"Euron Greyjoy"
-         },
-         {
-            "question":"[BOTH] What is Theon Greyjoy called when tortured?",
-            "answer":"Reek"
-         },
-         {
-            "question":"[SHOW] Who rescues Theon?",
-            "answer":"Sansa Stark"
-         },
-         {
-            "question":"[BOTH] Who kills Ramsay Bolton?",
-            "answer":"Sansa Stark"
-         },
-         {
-            "question":"[BOOK] Is Ramsay alive in the books?",
-            "answer":"Yes"
-         },
-         {
-            "question":"[SHOW] What destroys King's Landing?",
-            "answer":"Drogon"
-         },
-         {
-            "question":"[BOTH] Who is Daenerys Targaryen?",
-            "answer":"Mother of Dragons"
-         },
-         {
-            "question":"[SHOW] Who kills Daenerys?",
-            "answer":"Jon Snow"
-         },
-         {
-            "question":"[BOTH] What does Drogon do after?",
-            "answer":"Melts throne"
-         },
-         {
-            "question":"[BOOK] Is Daenerys dead in books?",
-            "answer":"No"
-         },
-         {
-            "question":"[SHOW] Who becomes king at the end?",
-            "answer":"Bran Stark"
-         },
-         {
-            "question":"[BOTH] What title does Bran take?",
-            "answer":"Bran the Broken"
-         },
-         {
-            "question":"[SHOW] Who becomes Queen in the North?",
-            "answer":"Sansa Stark"
-         },
-         {
-            "question":"[BOTH] Who is Tyrion Lannister?",
-            "answer":"Hand of the King"
-         },
-         {
-            "question":"[BOOK] What is Tyrion called?",
-            "answer":"The Imp"
-         },
-         {
-            "question":"[SHOW] Who leads the Unsullied?",
-            "answer":"Grey Worm"
-         },
-         {
-            "question":"[BOTH] What command frees the Unsullied?",
-            "answer":"Dracarys"
-         },
-         {
-            "question":"[SHOW] What city do the Unsullied come from?",
-            "answer":"Astapor"
-         },
-         {
-            "question":"[BOTH] What are White Walkers called in books?",
-            "answer":"The Others"
-         },
-         {
-            "question":"[BOOK] Do White Walkers exist in show only?",
-            "answer":"No"
-         },
-         {
-            "question":"[SHOW] Who trains Arya Stark?",
-            "answer":"Faceless Men"
-         },
-         {
-            "question":"[BOTH] What is Arya’s kill weapon?",
-            "answer":"Needle"
-         },
-         {
-            "question":"[SHOW] Where is Arya trained?",
-            "answer":"Braavos"
-         },
-         {
-            "question":"[BOTH] What is House Stark's motto?",
-            "answer":"Winter is Coming"
-         },
-         {
-            "question":"[BOOK] What is House Lannister's motto?",
-            "answer":"Hear Me Roar"
-         },
-         {
-            "question":"[SHOW] Who burns Shireen Baratheon?",
-            "answer":"Stannis Baratheon"
-         },
-         {
-            "question":"[BOTH] Who serves Stannis?",
-            "answer":"Melisandre"
-         },
-         {
-            "question":"[BOOK] Is Stannis alive?",
-            "answer":"Yes"
-         },
-         {
-            "question":"[SHOW] Who kills Stannis?",
-            "answer":"Brienne"
-         },
-         {
-            "question":"[BOTH] What religion does Stannis follow?",
-            "answer":"Lord of Light"
-         },
-         [
-            {
-               "question":"[BOTH] What continent is Winterfell located on?",
-               "answer":"Westeros"
-            },
-            {
-               "question":"[BOTH] What continent is Meereen located on?",
-               "answer":"Essos"
-            },
-            {
-               "question":"[SHOW] What is north of the Wall?",
-               "answer":"The Lands of Always Winter"
-            },
-            {
-               "question":"[BOTH] What body of water separates Westeros and Essos?",
-               "answer":"Narrow Sea"
-            },
-            {
-               "question":"[BOOK] What region lies beyond Asshai?",
-               "answer":"Shadow Lands"
-            },
-            {
-               "question":"[BOTH] What is the capital of Westeros?",
-               "answer":"King's Landing"
-            },
-            {
-               "question":"[BOTH] Where is Dragonstone located?",
-               "answer":"Blackwater Bay"
-            },
-            {
-               "question":"[SHOW] What region is Dorne located in?",
-               "answer":"South Westeros"
-            },
-            {
-               "question":"[BOTH] What is the northernmost castle?",
-               "answer":"Castle Black"
-            },
-            {
-               "question":"[BOOK] What lies at the far east of Essos?",
-               "answer":"Asshai"
-            },
-            {
-               "question":"[SHOW] Where is Arya trained?",
-               "answer":"Braavos"
-            },
-            {
-               "question":"[BOTH] What is Braavos known for?",
-               "answer":"Free City"
-            },
-            {
-               "question":"[SHOW] What city is Meereen part of?",
-               "answer":"Slaver's Bay"
-            },
-            {
-               "question":"[BOTH] What cities are in Slaver’s Bay?",
-               "answer":"Astapor, Yunkai, Meereen"
-            },
-            {
-               "question":"[BOOK] What region is Valyria located in?",
-               "answer":"Essos"
-            },
-            {
-               "question":"[BOTH] What protects the North?",
-               "answer":"The Wall"
-            },
-            {
-               "question":"[SHOW] Who controls the Wall at start?",
-               "answer":"Night’s Watch"
-            },
-            {
-               "question":"[BOTH] What castle is at the base of the Wall?",
-               "answer":"Castle Black"
-            },
-            {
-               "question":"[BOOK] What lies beyond the Wall?",
-               "answer":"Wildlings and Others"
-            },
-            {
-               "question":"[SHOW] Who leads the Wildlings?",
-               "answer":"Mance Rayder"
-            },
-            {
-               "question":"[BOTH] What is House Stark’s seat?",
-               "answer":"Winterfell"
-            },
-            {
-               "question":"[BOTH] What is House Lannister’s seat?",
-               "answer":"Casterly Rock"
-            },
-            {
-               "question":"[SHOW] Where is House Tyrell based?",
-               "answer":"Highgarden"
-            },
-            {
-               "question":"[BOTH] Where is House Greyjoy based?",
-               "answer":"Pyke"
-            },
-            {
-               "question":"[BOOK] Where is House Martell based?",
-               "answer":"Sunspear"
-            },
-            {
-               "question":"[SHOW] What region is Harrenhal in?",
-               "answer":"Riverlands"
-            },
-            {
-               "question":"[BOTH] What region is Winterfell in?",
-               "answer":"North"
-            },
-            {
-               "question":"[SHOW] What region is King's Landing in?",
-               "answer":"Crownlands"
-            },
-            {
-               "question":"[BOTH] What region is Casterly Rock in?",
-               "answer":"Westerlands"
-            },
-            {
-               "question":"[BOOK] What region is Storm’s End in?",
-               "answer":"Stormlands"
-            },
-            {
-               "question":"[SHOW] What is across the Narrow Sea from Westeros?",
-               "answer":"Essos"
-            },
-            {
-               "question":"[BOTH] What is Essos known for?",
-               "answer":"Free cities and slavery"
-            },
-            {
-               "question":"[BOOK] What is the far eastern city of mystery?",
-               "answer":"Asshai"
-            },
-            {
-               "question":"[SHOW] Where does Daenerys begin her journey?",
-               "answer":"Essos"
-            },
-            {
-               "question":"[BOTH] Where does Daenerys end up?",
-               "answer":"Westeros"
-            },
-            {
-               "question":"[SHOW] What city is destroyed by Daenerys?",
-               "answer":"King's Landing"
-            },
-            {
-               "question":"[BOTH] What sea surrounds King's Landing?",
-               "answer":"Blackwater Bay"
-            },
-            {
-               "question":"[BOOK] What river runs near Riverrun?",
-               "answer":"Red Fork"
-            },
-            {
-               "question":"[SHOW] Where is Riverrun located?",
-               "answer":"Riverlands"
-            },
-            {
-               "question":"[BOTH] What is the Twins?",
-               "answer":"Bridge castle"
-            },
-            {
-               "question":"[SHOW] Where is the Iron Throne located?",
-               "answer":"King's Landing"
-            },
-            {
-               "question":"[BOTH] What continent is King's Landing on?",
-               "answer":"Westeros"
-            },
-            {
-               "question":"[BOOK] What lies in the far North?",
-               "answer":"The Wall"
-            },
-            {
-               "question":"[SHOW] What lies beyond the Wall?",
-               "answer":"White Walkers"
-            },
-            {
-               "question":"[BOTH] What is the main conflict of the North?",
-               "answer":"Survival"
-            },
-            [
-               {
-                  "question":"[BOTH] What is the name of the world in Game of Thrones?",
-                  "answer":"Planetos"
-               },
-               {
-                  "question":"[BOTH] What continent is Dorne located on?",
-                  "answer":"Westeros"
-               },
-               {
-                  "question":"[SHOW] What city does Daenerys first rule?",
-                  "answer":"Meereen"
-               },
-               {
-                  "question":"[BOTH] What is Meereen part of?",
-                  "answer":"Slaver's Bay"
-               },
-               {
-                  "question":"[BOOK] What is Astapor known for?",
-                  "answer":"Unsullied training"
-               },
-               {
-                  "question":"[SHOW] Where is the Iron Islands located?",
-                  "answer":"Off the west coast of Westeros"
-               },
-               {
-                  "question":"[BOTH] What is House Greyjoy's seat?",
-                  "answer":"Pyke"
-               },
-               {
-                  "question":"[SHOW] What region is the Eyrie in?",
-                  "answer":"The Vale"
-               },
-               {
-                  "question":"[BOTH] What is the capital of the Vale?",
-                  "answer":"Gates of the Moon / Eyrie"
-               },
-               {
-                  "question":"[BOOK] Who rules the Vale?",
-                  "answer":"House Arryn"
-               },
-               {
-                  "question":"[BOTH] What lies beyond the Wall?",
-                  "answer":"Wildlings"
-               },
-               {
-                  "question":"[SHOW] What are White Walkers called?",
-                  "answer":"White Walkers"
-               },
-               {
-                  "question":"[BOOK] What are White Walkers called in books?",
-                  "answer":"The Others"
-               },
-               {
-                  "question":"[BOTH] What weapon kills White Walkers?",
-                  "answer":"Dragonglass"
-               },
-               {
-                  "question":"[SHOW] What material kills the Night King?",
-                  "answer":"Valyrian steel"
-               },
-               {
-                  "question":"[BOTH] What is Winterfell known for?",
-                  "answer":"Stark seat"
-               },
-               {
-                  "question":"[SHOW] Who rules Winterfell after Bolton?",
-                  "answer":"Sansa Stark"
-               },
-               {
-                  "question":"[BOOK] Who holds Winterfell in the books?",
-                  "answer":"House Bolton"
-               },
-               {
-                  "question":"[BOTH] What is the North ruled by?",
-                  "answer":"House Stark"
-               },
-               {
-                  "question":"[SHOW] What event takes place at Winterfell?",
-                  "answer":"Battle of the Bastards"
-               },
-               {
-                  "question":"[BOTH] What is King's Landing?",
-                  "answer":"Capital city"
-               },
-               {
-                  "question":"[SHOW] Who destroys King's Landing?",
-                  "answer":"Daenerys Targaryen"
-               },
-               {
-                  "question":"[BOOK] Has King's Landing been destroyed in books?",
-                  "answer":"No"
-               },
-               {
-                  "question":"[BOTH] What is the Iron Throne made of?",
-                  "answer":"Swords"
-               },
-               {
-                  "question":"[SHOW] Who sits on the Iron Throne last?",
-                  "answer":"Bran Stark"
-               },
-               {
-                  "question":"[BOTH] What is House Targaryen’s ancestral home?",
-                  "answer":"Dragonstone"
-               },
-               {
-                  "question":"[SHOW] Where is Dragonstone located?",
-                  "answer":"Blackwater Bay"
-               },
-               {
-                  "question":"[BOOK] What is Dragonstone used for?",
-                  "answer":"Targaryen stronghold"
-               },
-               {
-                  "question":"[BOTH] What do Targaryens control?",
-                  "answer":"Dragons"
-               },
-               {
-                  "question":"[SHOW] What is Daenerys called?",
-                  "answer":"Mother of Dragons"
-               },
-               {
-                  "question":"[BOTH] What is Valyria known for?",
-                  "answer":"Ancient dragonlords"
-               },
-               {
-                  "question":"[BOOK] What destroyed Valyria?",
-                  "answer":"The Doom"
-               },
-               {
-                  "question":"[BOTH] What metal comes from Valyria?",
-                  "answer":"Valyrian steel"
-               },
-               {
-                  "question":"[SHOW] Who wields Valyrian steel sword Longclaw?",
-                  "answer":"Jon Snow"
-               },
-               {
-                  "question":"[BOTH] What is Longclaw’s sigil animal?",
-                  "answer":"White wolf"
-               },
-               {
-                  "question":"[SHOW] Who leads the Night’s Watch?",
-                  "answer":"Jon Snow"
-               },
-               {
-                  "question":"[BOTH] What is the Night’s Watch duty?",
-                  "answer":"Guard the Wall"
-               },
-               {
-                  "question":"[BOOK] What oath do they swear?",
-                  "answer":"No wife, no land"
-               },
-               {
-                  "question":"[SHOW] What causes Jon Snow’s death?",
-                  "answer":"Mutiny"
-               },
-               {
-                  "question":"[BOTH] Who resurrects Jon Snow?",
-                  "answer":"Melisandre"
-               },
-               {
-                  "question":"[SHOW] Who is Tyrion Lannister?",
-                  "answer":"Hand of the King"
-               },
-               {
-                  "question":"[BOTH] What is Tyrion’s nickname?",
-                  "answer":"The Imp"
-               },
-               {
-                  "question":"[BOOK] What is Tyrion accused of?",
-                  "answer":"Joffrey’s murder"
-               },
-               {
-                  "question":"[SHOW] Who frees Tyrion?",
-                  "answer":"Varys"
-               },
-               {
-                  "question":"[BOTH] What is Varys known as?",
-                  "answer":"The Spider"
-               },
-               {
-                  "question":"[SHOW] What city does Arya escape from?",
-                  "answer":"King's Landing"
-               },
-               {
-                  "question":"[BOTH] Where does Arya train?",
-                  "answer":"Braavos"
-               },
-               {
-                  "question":"[BOOK] What is Arya’s goal?",
-                  "answer":"Revenge list"
-               },
-               {
-                  "question":"[SHOW] Who helps Arya become assassin?",
-                  "answer":"Faceless Men"
-               },
-               {
-                  "question":"[BOTH] What is Arya’s sword?",
-                  "answer":"Needle"
-               },
-               {
-                  "question":"[BOTH] What is the Targaryen civil war called?",
-                  "answer":"The Dance of the Dragons"
-               },
-               {
-                  "question":"[BOOK] Which book covers the Dance of the Dragons?",
-                  "answer":"Fire & Blood"
-               },
-               {
-                  "question":"[SHOW] Who is King Viserys I’s heir?",
-                  "answer":"Rhaenyra Targaryen"
-               },
-               {
-                  "question":"[BOTH] Who is Rhaenyra’s rival for the throne?",
-                  "answer":"Aegon II Targaryen"
-               },
-               {
-                  "question":"[SHOW] Who is Rhaenyra Targaryen’s dragon?",
-                  "answer":"Syrax"
-               },
-               {
-                  "question":"[BOTH] What is Daemon Targaryen known for?",
-                  "answer":"Rogue prince"
-               },
-               {
-                  "question":"[SHOW] Who is Daemon Targaryen’s first wife?",
-                  "answer":"Rhea Royce"
-               },
-               {
-                  "question":"[BOTH] What dragon does Daemon ride?",
-                  "answer":"Caraxes"
-               },
-               {
-                  "question":"[SHOW] Who is Alicent Hightower?",
-                  "answer":"Queen consort"
-               },
-               {
-                  "question":"[BOTH] What faction does Alicent support?",
-                  "answer":"Green faction"
-               },
-               {
-                  "question":"[SHOW] What faction supports Rhaenyra?",
-                  "answer":"Black faction"
-               },
-               {
-                  "question":"[BOTH] What causes the Dance of Dragons?",
-                  "answer":"Succession dispute"
-               },
-               {
-                  "question":"[BOOK] Who starts the civil war?",
-                  "answer":"Political rivalry after Viserys' death"
-               },
-               {
-                  "question":"[SHOW] What is King Viserys I’s biggest issue?",
-                  "answer":"Succession crisis"
-               },
-               {
-                  "question":"[BOTH] What is the Targaryen symbol?",
-                  "answer":"Three-headed dragon"
-               },
-               {
-                  "question":"[SHOW] What illness does Viserys suffer from?",
-                  "answer":"Chronic decay and infection"
-               },
-               {
-                  "question":"[BOTH] What city is House Targaryen based in?",
-                  "answer":"Dragonstone"
-               },
-               {
-                  "question":"[BOOK] What throne do Targaryens sit on?",
-                  "answer":"Iron Throne"
-               },
-               {
-                  "question":"[SHOW] Who kills Lucerys Velaryon?",
-                  "answer":"Aemond Targaryen indirectly via dragon"
-               },
-               {
-                  "question":"[BOTH] What dragon does Aemond ride?",
-                  "answer":"Vhagar"
-               },
-               {
-                  "question":"[SHOW] What is Vhagar known for?",
-                  "answer":"Largest living dragon"
-               },
-               {
-                  "question":"[BOOK] Who is Vhagar originally ridden by?",
-                  "answer":"Visenya Targaryen"
-               },
-               {
-                  "question":"[BOTH] What triggers full civil war?",
-                  "answer":"Lucerys’ death"
-               },
-               {
-                  "question":"[SHOW] Who is Rhaenyra’s husband?",
-                  "answer":"Daemon Targaryen"
-               },
-               {
-                  "question":"[BOTH] What is Daemon and Rhaenyra’s relationship?",
-                  "answer":"Uncle and niece"
-               },
-               {
-                  "question":"[SHOW] What city is King’s Landing in HOTD?",
-                  "answer":"Crownlands"
-               },
-               {
-                  "question":"[BOTH] What castle is the Targaryen seat?",
-                  "answer":"Dragonstone"
-               },
-               {
-                  "question":"[BOOK] What book covers Targaryen history?",
-                  "answer":"Fire & Blood"
-               },
-               {
-                  "question":"[SHOW] Who is Otto Hightower?",
-                  "answer":"Hand of the King"
-               },
-               {
-                  "question":"[BOTH] What side does Otto support?",
-                  "answer":"Green faction"
-               },
-               {
-                  "question":"[SHOW] Who is Aegon II’s dragon?",
-                  "answer":"Sunfyre"
-               },
-               {
-                  "question":"[BOTH] What is Aegon II’s claim?",
-                  "answer":"Rightful heir (Green claim)"
-               },
-               {
-                  "question":"[BOOK] Who crowns Aegon II?",
-                  "answer":"The Greens"
-               },
-               {
-                  "question":"[SHOW] Who is Rhaenys Targaryen known as?",
-                  "answer":"The Queen Who Never Was"
-               },
-               {
-                  "question":"[BOTH] What dragon does Rhaenys ride?",
-                  "answer":"Meleys"
-               },
-               {
-                  "question":"[SHOW] What happens at the Dragonpit?",
-                  "answer":"Aegon is crowned"
-               },
-               {
-                  "question":"[BOTH] What is the Dragonpit?",
-                  "answer":"Dragon holding arena"
-               },
-               {
-                  "question":"[BOOK] What major event begins HOTD era?",
-                  "answer":"Viserys’ death"
-               },
-               {
-                  "question":"[SHOW] Who kills Prince Lucerys?",
-                  "answer":"Aemond Targaryen (dragon attack)"
-               },
-               {
-                  "question":"[BOTH] What dragon does Lucerys ride?",
-                  "answer":"Arrax"
-               },
-               {
-                  "question":"[SHOW] What is the result of Lucerys’ death?",
-                  "answer":"War begins"
-               },
-               {
-                  "question":"[BOTH] What is the Dance of Dragons?",
-                  "answer":"Civil war"
-               },
-               {
-                  "question":"[BOOK] What are the factions called?",
-                  "answer":"Greens and Blacks"
-               },
-               {
-                  "question":"[BOOK] Who is Quentyn Martell attempting to marry?",
-                  "answer":"Daenerys Targaryen"
-               },
-               {
-                  "question":"[SHOW] What happens to Quentyn Martell?",
-                  "answer":"He dies by dragonfire"
-               },
-               {
-                  "question":"[BOTH] What is House Martell’s seat?",
-                  "answer":"Sunspear"
-               },
-               {
-                  "question":"[BOOK] Who is Arianne Martell plotting to crown?",
-                  "answer":"Myrcella Baratheon"
-               },
-               {
-                  "question":"[SHOW] Does Arianne Martell appear?",
-                  "answer":"No"
-               },
-               {
-                  "question":"[BOOK] Who is Young Griff?",
-                  "answer":"Aegon Targaryen (claimant)"
-               },
-               {
-                  "question":"[SHOW] Does Young Griff exist in the show?",
-                  "answer":"No"
-               },
-               {
-                  "question":"[BOOK] Who raises Young Griff?",
-                  "answer":"Jon Connington"
-               },
-               {
-                  "question":"[BOTH] What house does Jon Connington serve?",
-                  "answer":"Targaryen loyalists"
-               },
-               {
-                  "question":"[BOOK] What is Jon Connington’s title?",
-                  "answer":"Hand of the King"
-               },
-               {
-                  "question":"[BOOK] What is the fate of Stannis Baratheon in the books?",
-                  "answer":"Unconfirmed alive"
-               },
-               {
-                  "question":"[SHOW] Who kills Stannis?",
-                  "answer":"Brienne of Tarth"
-               },
-               {
-                  "question":"[BOTH] What god does Stannis follow?",
-                  "answer":"Lord of Light"
-               },
-               {
-                  "question":"[BOOK] Who is Stannis fighting in the North?",
-                  "answer":"Boltons"
-               },
-               {
-                  "question":"[SHOW] What is Stannis’ major defeat?",
-                  "answer":"Battle of Winterfell loss"
-               },
-               {
-                  "question":"[BOOK] What is Lady Stoneheart’s identity?",
-                  "answer":"Resurrected Catelyn Stark"
-               },
-               {
-                  "question":"[SHOW] Does Lady Stoneheart appear?",
-                  "answer":"No"
-               },
-               {
-                  "question":"[BOOK] Who revives Catelyn Stark?",
-                  "answer":"Beric Dondarrion"
-               },
-               {
-                  "question":"[BOTH] What group does Beric lead?",
-                  "answer":"Brotherhood Without Banners"
-               },
-               {
-                  "question":"[BOOK] What is Beric’s fate?",
-                  "answer":"He sacrifices himself"
-               },
-               {
-                  "question":"[BOOK] Who kills Aegon the Conqueror’s dragon Balerion?",
-                  "answer":"Old age"
-               },
-               {
-                  "question":"[BOTH] What is Balerion known as?",
-                  "answer":"Black Dread"
-               },
-               {
-                  "question":"[BOOK] Who was the last rider of Balerion?",
-                  "answer":"Viserys I"
-               },
-               {
-                  "question":"[SHOW] Is Balerion shown in HOTD?",
-                  "answer":"Only referenced"
-               },
-               {
-                  "question":"[BOTH] What is Valyrian steel linked to?",
-                  "answer":"Dragonfire forging"
-               },
-               {
-                  "question":"[SHOW] Who is Coldhands in the show?",
-                  "answer":"Benjen Stark (merged character)"
-               },
-               {
-                  "question":"[BOTH] What region is Beyond the Wall called?",
-                  "answer":"Far North"
-               },
-               {
-                  "question":"[BOOK] What creatures exist beyond the Wall?",
-                  "answer":"The Others"
-               },
-               {
-                  "question":"[SHOW] What is beyond the Wall inhabited by?",
-                  "answer":"White Walkers and Wildlings"
-               },
-               {
-                  "question":"[BOOK] What is the name of Victarion Greyjoy’s dragon horn?",
-                  "answer":"Dragonbinder"
-               },
-               {
-                  "question":"[SHOW] Does Victarion Greyjoy appear?",
-                  "answer":"No"
-               },
-               {
-                  "question":"[BOOK] What does Dragonbinder supposedly do?",
-                  "answer":"Control dragons"
-               },
-               {
-                  "question":"[BOTH] What house rules the Iron Islands?",
-                  "answer":"Greyjoy"
-               },
-               {
-                  "question":"[BOOK] What is the prophecy of Azor Ahai?",
-                  "answer":"Hero who defeats darkness"
-               },
-               {
-                  "question":"[SHOW] Who is believed to be Azor Ahai?",
-                  "answer":"Jon Snow or Daenerys"
-               },
-               {
-                  "question":"[BOTH] What weapon is Lightbringer?",
-                  "answer":"Mythic flaming sword"
-               },
-               {
-                  "question":"[BOOK] What religion follows Azor Ahai?",
-                  "answer":"Lord of Light faith"
-               },
-               {
-                  "question":"[SHOW] Who believes in Azor Ahai?",
-                  "answer":"Melisandre"
-               },
-               {
-                  "question":"[BOOK] What is the real name of the Hound's survival theory?",
-                  "answer":"Gravedigger theory"
-               },
-               {
-                  "question":"[BOTH] Who is Gregor Clegane?",
-                  "answer":"The Mountain"
-               },
-               {
-                  "question":"[BOTH] What destroyed Valyria?",
-                  "answer":"The Doom"
-               },
-               {
-                  "question":"[BOOK] What creatures are tied to Valyria?",
-                  "answer":"Dragons"
-               },
-               {
-                  "question":"[BOTH] What is Essos known for?",
-                  "answer":"Free Cities"
-               },
-               {
-                  "question":"[BOOK] What is the farthest known city east?",
-                  "answer":"Asshai"
-               },
-               {
-                  "question":"[BOTH] What year was Daenerys Targaryen born?",
-                  "answer":"284 AC"
-               },
-               {
-                  "question":"[BOOK] What major rebellion ends shortly before Daenerys is born?",
-                  "answer":"Robert’s Rebellion"
-               },
-               {
-                  "question":"[BOTH] What year does Robert’s Rebellion end?",
-                  "answer":"283 AC"
-               },
-               {
-                  "question":"[SHOW] Who wins Robert’s Rebellion?",
-                  "answer":"Robert Baratheon"
-               },
-               {
-                  "question":"[BOTH] Who kills the Mad King?",
-                  "answer":"Jaime Lannister"
-               },
-               {
-                  "question":"[BOOK] When does Aegon II Targaryen take the throne?",
-                  "answer":"129 AC"
-               },
-               {
-                  "question":"[BOTH] What civil war does Aegon II’s rule begin?",
-                  "answer":"Dance of the Dragons"
-               },
-               {
-                  "question":"[SHOW] Who is Aegon II’s sister rival?",
-                  "answer":"Rhaenyra Targaryen"
-               },
-               {
-                  "question":"[BOTH] What house does Rhaenyra belong to?",
-                  "answer":"Targaryen"
-               },
-               {
-                  "question":"[BOOK] What dragon does Rhaenyra ride?",
-                  "answer":"Syrax"
-               },
-               {
-                  "question":"[BOTH] What is House Stark’s motto?",
-                  "answer":"Winter is Coming"
-               },
-               {
-                  "question":"[BOTH] What is House Lannister’s motto?",
-                  "answer":"Hear Me Roar"
-               },
-               {
-                  "question":"[BOTH] What is House Greyjoy’s motto?",
-                  "answer":"We Do Not Sow"
-               },
-               {
-                  "question":"[BOOK] What is House Tyrell’s motto?",
-                  "answer":"Growing Strong"
-               },
-               {
-                  "question":"[BOTH] What is House Baratheon’s motto?",
-                  "answer":"Ours is the Fury"
-               },
-               {
-                  "question":"[BOTH] What is House Stark’s ancestral seat?",
-                  "answer":"Winterfell"
-               },
-               {
-                  "question":"[BOTH] What is House Lannister’s seat?",
-                  "answer":"Casterly Rock"
-               },
-               {
-                  "question":"[BOTH] What is House Baratheon’s seat?",
-                  "answer":"Storm’s End"
-               },
-               {
-                  "question":"[BOOK] What is House Martell’s seat?",
-                  "answer":"Sunspear"
-               },
-               {
-                  "question":"[BOTH] What is House Arryn’s seat?",
-                  "answer":"The Eyrie"
-               },
-               {
-                  "question":"[SHOW] Which house rules the Reach?",
-                  "answer":"Tyrell (pre-Cersei takeover)"
-               },
-               {
-                  "question":"[BOTH] Which house rules the North?",
-                  "answer":"Stark"
-               },
-               {
-                  "question":"[BOOK] Which house rules the Iron Islands?",
-                  "answer":"Greyjoy"
-               },
-               {
-                  "question":"[BOTH] Which house rules Dorne?",
-                  "answer":"Martell"
-               },
-               {
-                  "question":"[SHOW] Which house rules the Westerlands?",
-                  "answer":"Lannister"
-               },
-               {
-                  "question":"[BOTH] What event happens in 298 AC?",
-                  "answer":"Start of Game of Thrones story"
-               },
-               {
-                  "question":"[SHOW] When does Robert Baratheon die?",
-                  "answer":"298 AC"
-               },
-               {
-                  "question":"[BOTH] What year does Ned Stark die?",
-                  "answer":"298 AC"
-               },
-               {
-                  "question":"[SHOW] When is Joffrey crowned?",
-                  "answer":"298 AC"
-               },
-               {
-                  "question":"[BOTH] What war begins after Robert’s death?",
-                  "answer":"War of the Five Kings"
-               },
-               {
-                  "question":"[BOOK] Who is the oldest known living dragon in HOTD era?",
-                  "answer":"Vhagar"
-               },
-               {
-                  "question":"[BOTH] What dragon is known as the largest ever?",
-                  "answer":"Balerion"
-               },
-               {
-                  "question":"[BOOK] What dynasty built King’s Landing?",
-                  "answer":"Targaryen"
-               },
-               {
-                  "question":"[BOTH] What city is capital of Westeros?",
-                  "answer":"King’s Landing"
-               },
-               {
-                  "question":"[SHOW] What river borders King’s Landing?",
-                  "answer":"Blackwater Rush"
-               },
-               {
-                  "question":"[BOOK] What is the estimated time gap between HOTD and GOT?",
-                  "answer":"~170 years"
-               },
-               {
-                  "question":"[BOTH] What event ended Targaryen dragon dominance?",
-                  "answer":"Dance of the Dragons"
-               },
-               {
-                  "question":"[SHOW] What kills most dragons in HOTD?",
-                  "answer":"Civil war"
-               },
-               {
-                  "question":"[BOOK] What language do Targaryens speak?",
-                  "answer":"High Valyrian"
-               },
-               {
-                  "question":"[BOTH] What is north of Westeros?",
-                  "answer":"The Wall"
-               },
-               {
-                  "question":"[BOOK] What lies east of Essos?",
-                  "answer":"Asshai"
-               },
-               {
-                  "question":"[BOTH] What sea separates Westeros and Essos?",
-                  "answer":"Narrow Sea"
-               },
-               {
-                  "question":"[SHOW] What region is beyond the Wall called?",
-                  "answer":"Far North"
-               },
-               {
-                  "question":"[BOOK] What house is known for flaying enemies?",
-                  "answer":"Bolton"
-               },
-               {
-                  "question":"[BOTH] What is House Bolton’s sigil?",
-                  "answer":"Flayed man"
-               },
-               {
-                  "question":"[SHOW] Who destroys House Bolton rule?",
-                  "answer":"Jon Snow"
-               },
-               {
-                  "question":"[BOTH] What castle does House Bolton control?",
-                  "answer":"Winterfell"
-               },
-               [
-                  {
-                     "question":"[BOOK] What dynasty challenges Targaryen rule repeatedly?",
-                     "answer":"Blackfyre"
-                  },
-                  {
-                     "question":"[BOTH] Who started the Blackfyre Rebellion?",
-                     "answer":"Daemon Blackfyre"
-                  },
-                  {
-                     "question":"[BOOK] What is Daemon Blackfyre’s claim?",
-                     "answer":"Illegitimate Targaryen son"
-                  },
-                  {
-                     "question":"[BOTH] What sword is Blackfyre?",
-                     "answer":"Valyrian steel sword"
-                  },
-                  {
-                     "question":"[BOOK] Who wields Blackfyre originally?",
-                     "answer":"Aegon the Conqueror"
-                  },
-                  {
-                     "question":"[BOTH] What council decides Viserys I heir?",
-                     "answer":"Great Council of 101 AC"
-                  },
-                  {
-                     "question":"[BOOK] Who is chosen in the Great Council?",
-                     "answer":"Viserys I"
-                  },
-                  {
-                     "question":"[BOTH] Who is passed over in 101 AC?",
-                     "answer":"Rhaenys Targaryen"
-                  },
-                  {
-                     "question":"[SHOW] What title does Rhaenys hold?",
-                     "answer":"Queen Who Never Was"
-                  },
-                  {
-                     "question":"[BOTH] What is the outcome of the council?",
-                     "answer":"Viserys becomes king"
-                  },
-                  {
-                     "question":"[BOOK] What year does Aegon the Conqueror invade Westeros?",
-                     "answer":"1 AC"
-                  },
-                  {
-                     "question":"[BOTH] What event starts Targaryen rule?",
-                     "answer":"Aegon’s Conquest"
-                  },
-                  {
-                     "question":"[BOOK] What city is burned during conquest?",
-                     "answer":"Harrenhal"
-                  },
-                  {
-                     "question":"[BOTH] What dragon burns Harrenhal?",
-                     "answer":"Balerion"
-                  },
-                  {
-                     "question":"[SHOW] What is Harrenhal known for?",
-                     "answer":"Cursed castle"
-                  },
-                  {
-                     "question":"[BOOK] What is the Doom of Valyria?",
-                     "answer":"Volcanic destruction"
-                  },
-                  {
-                     "question":"[BOTH] What civilization ruled Valyria?",
-                     "answer":"Dragonlords"
-                  },
-                  {
-                     "question":"[BOOK] What is Valyria’s fate?",
-                     "answer":"Destroyed"
-                  },
-                  {
-                     "question":"[BOTH] What remains of Valyria?",
-                     "answer":"Ruins"
-                  },
-                  {
-                     "question":"[SHOW] What metal comes from Valyria?",
-                     "answer":"Valyrian steel"
-                  },
-                  {
-                     "question":"[BOOK] Who is the last dragon before Daenerys?",
-                     "answer":"Killed during reign of Aegon III era"
-                  },
-                  {
-                     "question":"[BOTH] What causes dragons to die out?",
-                     "answer":"Targaryen civil wars"
-                  },
-                  {
-                     "question":"[SHOW] What event reduces dragons to extinction?",
-                     "answer":"Dance of the Dragons"
-                  },
-                  {
-                     "question":"[BOTH] What dragon remains in HOTD era?",
-                     "answer":"Vhagar"
-                  },
-                  {
-                     "question":"[BOOK] What dragon is youngest in HOTD era?",
-                     "answer":"Syrax"
-                  },
-                  {
-                     "question":"[BOTH] What is the capital of the Seven Kingdoms?",
-                     "answer":"King’s Landing"
-                  },
-                  {
-                     "question":"[BOOK] What river runs near King’s Landing?",
-                     "answer":"Blackwater Rush"
-                  },
-                  {
-                     "question":"[BOTH] What battle defends King’s Landing?",
-                     "answer":"Battle of Blackwater"
-                  },
-                  {
-                     "question":"[SHOW] Who wins Blackwater Bay battle?",
-                     "answer":"Lannisters"
-                  },
-                  {
-                     "question":"[BOTH] What weapon is used at Blackwater?",
-                     "answer":"Wildfire"
-                  },
-                  {
-                     "question":"[BOOK] Who is the original Azor Ahai?",
-                     "answer":"Legendary hero"
-                  },
-                  {
-                     "question":"[BOTH] What prophecy is Azor Ahai tied to?",
-                     "answer":"Prince That Was Promised"
-                  },
-                  {
-                     "question":"[SHOW] Who is believed to be the prophecy candidate?",
-                     "answer":"Jon Snow"
-                  },
-                  {
-                     "question":"[BOTH] What religion believes in Azor Ahai?",
-                     "answer":"Lord of Light"
-                  },
-                  {
-                     "question":"[BOOK] Who spreads the prophecy?",
-                     "answer":"Red Priests"
-                  },
-                  {
-                     "question":"[BOOK] What is the purpose of the Night’s Watch?",
-                     "answer":"Guard the Wall"
-                  },
-                  {
-                     "question":"[BOTH] What lies beyond the Wall?",
-                     "answer":"Others / White Walkers"
-                  },
-                  {
-                     "question":"[SHOW] Who defeats the Night King?",
-                     "answer":"Arya Stark"
-                  },
-                  {
-                     "question":"[BOTH] What weapon kills White Walkers?",
-                     "answer":"Dragonglass"
-                  },
-                  {
-                     "question":"[BOOK] What is dragonglass also called?",
-                     "answer":"Obsidian"
-                  },
-                  {
-                     "question":"[BOOK] What is the fate of the Iron Throne in prophecy?",
-                     "answer":"Uncertain destruction"
-                  },
-                  {
-                     "question":"[BOTH] Who sits the Iron Throne at the end?",
-                     "answer":"Bran Stark"
-                  },
-                  {
-                     "question":"[SHOW] What happens to the Iron Throne?",
-                     "answer":"Destroyed by Drogon"
-                  },
-                  {
-                     "question":"[BOTH] What does Drogon do with throne?",
-                     "answer":"Melts it"
-                  },
-                  {
-                     "question":"[BOOK] What is Tyrion’s final role?",
-                     "answer":"Hand of the King"
-                  },
-                  {
-                     "question":"[BOTH] What house rules the North?",
-                     "answer":"Stark"
-                  },
-                  {
-                     "question":"[BOOK] What house rules the Westerlands?",
-                     "answer":"Lannister"
-                  },
-                  {
-                     "question":"[BOTH] What house rules Dorne?",
-                     "answer":"Martell"
-                  },
-                  {
-                     "question":"[BOOK] What house rules the Vale?",
-                     "answer":"Arryn"
-                  },
-                  {
-                     "question":"[BOTH] What house rules the Reach?",
-                     "answer":"Tyrell"
-                  }
-               ]
-            }
+    {
+      "question": "[SHOW] What is the name of Jon Snow's direwolf?",
+      "answer": "Ghost"
+    },
+    {
+      "question": "[BOTH] What is the name of the Stark ancestral home?",
+      "answer": "Winterfell"
+    },
+    {
+      "question": "[BOOK] Who physically executes Ned Stark in the books?",
+      "answer": "Ilyn Payne"
+    },
+    {
+      "question": "[BOTH] What is Arya Stark's sword called?",
+      "answer": "Needle"
+    },
+    {
+      "question": "[SHOW] Who is Daenerys Targaryen's first husband?",
+      "answer": "Khal Drogo"
+    },
+    {
+      "question": "[SHOW] Who pushes Bran Stark from the tower?",
+      "answer": "Jaime Lannister"
+    },
+    {
+      "question": "[BOTH] What is the capital of the Seven Kingdoms?",
+      "answer": "King's Landing"
+    },
+    {
+      "question": "[SHOW] Who poisons Joffrey Baratheon?",
+      "answer": "Olenna Tyrell and Littlefinger"
+    },
+    {
+      "question": "[BOTH] What is Tyrion Lannister's nickname?",
+      "answer": "The Imp"
+    },
+    {
+      "question": "[BOTH] What is House Stark's sigil animal?",
+      "answer": "Direwolf"
+    },
+    {
+      "question": "[BOTH] What is the name of Daenerys Targaryen's largest dragon?",
+      "answer": "Drogon"
+    },
+    {
+      "question": "[SHOW] What command does Daenerys use for dragonfire?",
+      "answer": "Dracarys"
+    },
+    {
+      "question": "[BOTH] What does Dracarys mean?",
+      "answer": "Dragonfire"
+    },
+    {
+      "question": "[SHOW] Who is the leader of the Unsullied?",
+      "answer": "Grey Worm"
+    },
+    {
+      "question": "[BOOK] Does the Night King exist in the books?",
+      "answer": "No"
+    },
+    {
+      "question": "[SHOW] Who is Lord Commander of the Night's Watch at the start?",
+      "answer": "Jeor Mormont"
+    },
+    {
+      "question": "[BOTH] What is Jon Snow's sword called?",
+      "answer": "Longclaw"
+    },
+    {
+      "question": "[SHOW] Who kills the Night King?",
+      "answer": "Arya Stark"
+    },
+    {
+      "question": "[BOTH] What is House Targaryen's sigil?",
+      "answer": "Three-headed dragon"
+    },
+    {
+      "question": "[SHOW] Who is Sansa Stark married to first?",
+      "answer": "Tyrion Lannister"
+    },
+    {
+      "question": "[BOTH] What is the motto of House Stark?",
+      "answer": "Winter is Coming"
+    },
+    {
+      "question": "[BOOK] What is House Stark's ancestral sword?",
+      "answer": "Ice"
+    },
+    {
+      "question": "[BOTH] What is Hodor's real name?",
+      "answer": "Wylis"
+    },
+    {
+      "question": "[SHOW] Who is the Three-Eyed Raven?",
+      "answer": "Brynden Rivers"
+    },
+    {
+      "question": "[BOTH] What ability lets Bran enter minds of animals?",
+      "answer": "Warging"
+    },
+    {
+      "question": "[BOTH] What is the Iron Throne made of?",
+      "answer": "Swords"
+    },
+    {
+      "question": "[BOTH] What is Theon Greyjoy renamed during captivity?",
+      "answer": "Reek"
+    },
+    {
+      "question": "[SHOW] Who kills Daenerys Targaryen?",
+      "answer": "Jon Snow"
+    },
+    {
+      "question": "[SHOW] Who becomes king at the end?",
+      "answer": "Bran Stark"
+    },
+    {
+      "question": "[BOTH] What title does Bran take?",
+      "answer": "Bran the Broken"
+    },
+    {
+      "question": "[SHOW] Who becomes Queen in the North?",
+      "answer": "Sansa Stark"
+    },
+    {
+      "question": "[BOTH] What is House Greyjoy's words?",
+      "answer": "We Do Not Sow"
+    },
+    {
+      "question": "[SHOW] Who is killed at the Red Wedding?",
+      "answer": "Robb Stark"
+    },
+    {
+      "question": "[BOOK] What region is Valyria located in?",
+      "answer": "Essos"
+    },
+    {
+      "question": "[SHOW] Who is Jon Snow's real mother?",
+      "answer": "Lyanna Stark"
+    },
+    {
+      "question": "[BOTH] What house does Jon Snow belong to (true parentage)?",
+      "answer": "House Targaryen and House Stark"
+    },
+    {
+      "question": "[SHOW] What is Jon Snow's true name revealed to be?",
+      "answer": "Aegon Targaryen"
+    },
+    {
+      "question": "[BOOK] Is Jon Snow's true name confirmed in the books?",
+      "answer": "No"
+    },
+    {
+      "question": "[BOTH] Who raised Jon Snow at Winterfell?",
+      "answer": "Ned Stark"
+    },
+    {
+      "question": "[SHOW] Who is the King Beyond the Wall during early seasons?",
+      "answer": "Mance Rayder"
+    },
+    {
+      "question": "[BOTH] What is the Night's Watch oath?",
+      "answer": "No wife, no lands, no titles"
+    },
+    {
+      "question": "[BOTH] What structure separates the North from the wildlings?",
+      "answer": "The Wall"
+    },
+    {
+      "question": "[SHOW] Who brings Jon Snow back to life?",
+      "answer": "Melisandre"
+    },
+    {
+      "question": "[BOTH] What is Melisandre known as?",
+      "answer": "The Red Woman"
+    },
+    {
+      "question": "[SHOW] Who kills Stannis Baratheon?",
+      "answer": "Brienne of Tarth"
+    },
+    {
+      "question": "[BOTH] What god does Stannis follow?",
+      "answer": "The Lord of Light"
+    },
+    {
+      "question": "[SHOW] Who burns Shireen Baratheon?",
+      "answer": "Stannis Baratheon"
+    },
+    {
+      "question": "[BOTH] Who advises Stannis?",
+      "answer": "Melisandre"
+    },
+    {
+      "question": "[BOTH] What is Brienne's sword called?",
+      "answer": "Oathkeeper"
+    },
+    {
+      "question": "[SHOW] Who gives Brienne Oathkeeper?",
+      "answer": "Jaime Lannister"
+    },
+    {
+      "question": "[BOTH] What sword was Oathkeeper forged from?",
+      "answer": "Ice"
+    },
+    {
+      "question": "[BOOK] Who originally owns Ice?",
+      "answer": "House Stark"
+    },
+    {
+      "question": "[BOTH] What city does Daenerys conquer first in Slaver's Bay?",
+      "answer": "Astapor"
+    },
+    {
+      "question": "[BOTH] What does Valyrian steel famously kill?",
+      "answer": "White Walkers"
+    },
+    {
+      "question": "[BOOK] What is dragonglass called in lore?",
+      "answer": "Obsidian"
+    },
+    {
+      "question": "[SHOW] Who kills Oberyn Martell?",
+      "answer": "Gregor Clegane (The Mountain)"
+    },
+    {
+      "question": "[BOTH] What is Oberyn Martell known for?",
+      "answer": "The Red Viper"
+    },
+    {
+      "question": "[SHOW] Who leads Dorne after Oberyn?",
+      "answer": "Ellaria Sand"
+    },
+    {
+      "question": "[BOTH] What is House Martell's sigil?",
+      "answer": "Sun and spear"
+    },
+    {
+      "question": "[SHOW] Who poisons Myrcella Baratheon?",
+      "answer": "Ellaria Sand / Sand Snakes"
+    },
+    {
+      "question": "[BOTH] What is Myrcella Baratheon's true father?",
+      "answer": "Jaime Lannister"
+    },
+    {
+      "question": "[SHOW] What kills King Tommen?",
+      "answer": "He jumps from a window/suicide"
+    },
+    {
+      "question": "[BOTH] What house does Tommen belong to?",
+      "answer": "House Baratheon"
+    },
+    {
+      "question": "[SHOW] Who is the High Sparrow?",
+      "answer": "Leader of the Faith Militant"
+    },
+    {
+      "question": "[BOTH] What religion dominates King's Landing?",
+      "answer": "Faith of the Seven"
+    },
+    {
+      "question": "[BOTH] Who becomes Queen after that event?",
+      "answer": "Cersei Lannister"
+    },
+    {
+      "question": "[BOOK] Does the Sept explosion happen in the books?",
+      "answer": "No"
+    },
+    {
+      "question": "[SHOW] Who is killed in the Battle of the Bastards?",
+      "answer": "Ramsay Bolton"
+    },
+    {
+      "question": "[BOTH] What battle reunites Winterfell?",
+      "answer": "Battle of the Bastards"
+    },
+    {
+      "question": "[SHOW] Who saves Jon Snow's army?",
+      "answer": "Knights of the Vale"
+    },
+    {
+      "question": "[BOTH] Who leads the Vale forces?",
+      "answer": "Petyr Baelish"
+    },
+    {
+      "question": "[SHOW] Who is Jon Snow's father revealed to be?",
+      "answer": "Rhaegar Targaryen"
+    },
+    {
+      "question": "[BOOK] Is Jon Snow's parentage confirmed in the books?",
+      "answer": "Not confirmed"
+    },
+    {
+      "question": "[BOTH] What is Arya Stark's weapon?",
+      "answer": "Needle"
+    },
+    {
+      "question": "[SHOW] Who becomes King in the North after Robb?",
+      "answer": "Jon Snow"
+    },
+    {
+      "question": "[BOTH] What is the Stark home called?",
+      "answer": "Winterfell"
+    },
+    {
+      "question": "[SHOW] Who kills Joffrey Baratheon?",
+      "answer": "Olenna Tyrell"
+    },
+    {
+      "question": "[BOTH] What poison kills Joffrey?",
+      "answer": "The Strangler"
+    },
+    {
+      "question": "[BOOK] Who helps kill Joffrey?",
+      "answer": "Littlefinger"
+    },
+    {
+      "question": "[SHOW] Who is the Hound?",
+      "answer": "Sandor Clegane"
+    },
+    {
+      "question": "[BOTH] Who is the Mountain?",
+      "answer": "Gregor Clegane"
+    },
+    {
+      "question": "[SHOW] Who kills the Mountain?",
+      "answer": "Arya Stark"
+    },
+    {
+      "question": "[BOTH] What house do the Cleganes serve?",
+      "answer": "Lannister"
+    },
+    {
+      "question": "[BOOK] Is the Mountain undead in the books?",
+      "answer": "No"
+    },
+    {
+      "question": "[SHOW] Who rules the Iron Islands?",
+      "answer": "Euron Greyjoy"
+    },
+    {
+      "question": "[BOTH] What is Theon Greyjoy called when tortured?",
+      "answer": "Reek"
+    },
+    {
+      "question": "[SHOW] Who rescues Theon?",
+      "answer": "Sansa Stark"
+    },
+    {
+      "question": "[BOTH] Who kills Ramsay Bolton?",
+      "answer": "Sansa Stark"
+    },
+    {
+      "question": "[BOOK] Is Ramsay alive in the books?",
+      "answer": "Yes"
+    },
+    {
+      "question": "[SHOW] What destroys King's Landing?",
+      "answer": "Drogon"
+    },
+    {
+      "question": "[BOTH] Who is Daenerys Targaryen?",
+      "answer": "Mother of Dragons"
+    },
+    {
+      "question": "[BOTH] What does Drogon do after?",
+      "answer": "Melts throne"
+    },
+    {
+      "question": "[BOOK] Is Daenerys dead in books?",
+      "answer": "No"
+    },
+    {
+      "question": "[BOTH] Who is Tyrion Lannister?",
+      "answer": "Hand of the King"
+    },
+    {
+      "question": "[BOOK] What is Tyrion called?",
+      "answer": "The Imp"
+    },
+    {
+      "question": "[SHOW] Who leads the Unsullied?",
+      "answer": "Grey Worm"
+    },
+    {
+      "question": "[BOTH] What command frees the Unsullied?",
+      "answer": "Dracarys"
+    },
+    {
+      "question": "[SHOW] What city do the Unsullied come from?",
+      "answer": "Astapor"
+    },
+    {
+      "question": "[BOTH] What are White Walkers called in books?",
+      "answer": "The Others"
+    },
+    {
+      "question": "[BOOK] Do White Walkers exist in show only?",
+      "answer": "No"
+    },
+    {
+      "question": "[SHOW] Who trains Arya Stark?",
+      "answer": "Faceless Men"
+    },
+    {
+      "question": "[BOTH] What is Arya's kill weapon?",
+      "answer": "Needle"
+    },
+    {
+      "question": "[SHOW] Where is Arya trained?",
+      "answer": "Braavos"
+    },
+    {
+      "question": "[BOTH] What is House Stark's motto?",
+      "answer": "Winter is Coming"
+    },
+    {
+      "question": "[BOOK] What is House Lannister's motto?",
+      "answer": "Hear Me Roar"
+    },
+    {
+      "question": "[BOTH] Who serves Stannis?",
+      "answer": "Melisandre"
+    },
+    {
+      "question": "[BOOK] Is Stannis alive?",
+      "answer": "Yes"
+    },
+    {
+      "question": "[SHOW] Who kills Stannis?",
+      "answer": "Brienne"
+    },
+    {
+      "question": "[BOTH] What religion does Stannis follow?",
+      "answer": "Lord of Light"
+    },
+    {
+      "question": "[BOTH] What continent is Winterfell located on?",
+      "answer": "Westeros"
+    },
+    {
+      "question": "[BOTH] What continent is Meereen located on?",
+      "answer": "Essos"
+    },
+    {
+      "question": "[SHOW] What is north of the Wall?",
+      "answer": "The Lands of Always Winter"
+    },
+    {
+      "question": "[BOTH] What body of water separates Westeros and Essos?",
+      "answer": "Narrow Sea"
+    },
+    {
+      "question": "[BOOK] What region lies beyond Asshai?",
+      "answer": "Shadow Lands"
+    },
+    {
+      "question": "[BOTH] Where is Dragonstone located?",
+      "answer": "Blackwater Bay"
+    },
+    {
+      "question": "[SHOW] What region is Dorne located in?",
+      "answer": "South Westeros"
+    },
+    {
+      "question": "[BOTH] What is the northernmost castle?",
+      "answer": "Castle Black"
+    },
+    {
+      "question": "[BOOK] What lies at the far east of Essos?",
+      "answer": "Asshai"
+    },
+    {
+      "question": "[BOTH] What is Braavos known for?",
+      "answer": "Free City"
+    },
+    {
+      "question": "[SHOW] What city is Meereen part of?",
+      "answer": "Slaver's Bay"
+    },
+    {
+      "question": "[BOTH] What cities are in Slaver's Bay?",
+      "answer": "Astapor, Yunkai, Meereen"
+    },
+    {
+      "question": "[BOTH] What protects the North?",
+      "answer": "The Wall"
+    },
+    {
+      "question": "[SHOW] Who controls the Wall at start?",
+      "answer": "Night's Watch"
+    },
+    {
+      "question": "[BOTH] What castle is at the base of the Wall?",
+      "answer": "Castle Black"
+    },
+    {
+      "question": "[BOOK] What lies beyond the Wall?",
+      "answer": "Wildlings and Others"
+    },
+    {
+      "question": "[SHOW] Who leads the Wildlings?",
+      "answer": "Mance Rayder"
+    },
+    {
+      "question": "[BOTH] What is House Stark's seat?",
+      "answer": "Winterfell"
+    },
+    {
+      "question": "[BOTH] What is House Lannister's seat?",
+      "answer": "Casterly Rock"
+    },
+    {
+      "question": "[SHOW] Where is House Tyrell based?",
+      "answer": "Highgarden"
+    },
+    {
+      "question": "[BOTH] Where is House Greyjoy based?",
+      "answer": "Pyke"
+    },
+    {
+      "question": "[BOOK] Where is House Martell based?",
+      "answer": "Sunspear"
+    },
+    {
+      "question": "[SHOW] What region is Harrenhal in?",
+      "answer": "Riverlands"
+    },
+    {
+      "question": "[BOTH] What region is Winterfell in?",
+      "answer": "North"
+    },
+    {
+      "question": "[SHOW] What region is King's Landing in?",
+      "answer": "Crownlands"
+    },
+    {
+      "question": "[BOTH] What region is Casterly Rock in?",
+      "answer": "Westerlands"
+    },
+    {
+      "question": "[BOOK] What region is Storm's End in?",
+      "answer": "Stormlands"
+    },
+    {
+      "question": "[SHOW] What is across the Narrow Sea from Westeros?",
+      "answer": "Essos"
+    },
+    {
+      "question": "[BOTH] What is Essos known for?",
+      "answer": "Free cities and slavery"
+    },
+    {
+      "question": "[BOOK] What is the far eastern city of mystery?",
+      "answer": "Asshai"
+    },
+    {
+      "question": "[SHOW] Where does Daenerys begin her journey?",
+      "answer": "Essos"
+    },
+    {
+      "question": "[BOTH] Where does Daenerys end up?",
+      "answer": "Westeros"
+    },
+    {
+      "question": "[SHOW] What city is destroyed by Daenerys?",
+      "answer": "King's Landing"
+    },
+    {
+      "question": "[BOTH] What sea surrounds King's Landing?",
+      "answer": "Blackwater Bay"
+    },
+    {
+      "question": "[BOOK] What river runs near Riverrun?",
+      "answer": "Red Fork"
+    },
+    {
+      "question": "[SHOW] Where is Riverrun located?",
+      "answer": "Riverlands"
+    },
+    {
+      "question": "[BOTH] What is the Twins?",
+      "answer": "Bridge castle"
+    },
+    {
+      "question": "[SHOW] Where is the Iron Throne located?",
+      "answer": "King's Landing"
+    },
+    {
+      "question": "[BOTH] What continent is King's Landing on?",
+      "answer": "Westeros"
+    },
+    {
+      "question": "[BOOK] What lies in the far North?",
+      "answer": "The Wall"
+    },
+    {
+      "question": "[SHOW] What lies beyond the Wall?",
+      "answer": "White Walkers"
+    },
+    {
+      "question": "[BOTH] What is the main conflict of the North?",
+      "answer": "Survival"
+    },
+    {
+      "question": "[BOTH] What is the name of the world in Game of Thrones?",
+      "answer": "Planetos"
+    },
+    {
+      "question": "[BOTH] What continent is Dorne located on?",
+      "answer": "Westeros"
+    },
+    {
+      "question": "[SHOW] What city does Daenerys first rule?",
+      "answer": "Meereen"
+    },
+    {
+      "question": "[BOTH] What is Meereen part of?",
+      "answer": "Slaver's Bay"
+    },
+    {
+      "question": "[BOOK] What is Astapor known for?",
+      "answer": "Unsullied training"
+    },
+    {
+      "question": "[SHOW] Where is the Iron Islands located?",
+      "answer": "Off the west coast of Westeros"
+    },
+    {
+      "question": "[BOTH] What is House Greyjoy's seat?",
+      "answer": "Pyke"
+    },
+    {
+      "question": "[SHOW] What region is the Eyrie in?",
+      "answer": "The Vale"
+    },
+    {
+      "question": "[BOTH] What is the capital of the Vale?",
+      "answer": "Gates of the Moon / Eyrie"
+    },
+    {
+      "question": "[BOOK] Who rules the Vale?",
+      "answer": "House Arryn"
+    },
+    {
+      "question": "[BOTH] What lies beyond the Wall?",
+      "answer": "Wildlings"
+    },
+    {
+      "question": "[SHOW] What are White Walkers called?",
+      "answer": "White Walkers"
+    },
+    {
+      "question": "[BOOK] What are White Walkers called in books?",
+      "answer": "The Others"
+    },
+    {
+      "question": "[BOTH] What weapon kills White Walkers?",
+      "answer": "Dragonglass"
+    },
+    {
+      "question": "[SHOW] What material kills the Night King?",
+      "answer": "Valyrian steel"
+    },
+    {
+      "question": "[BOTH] What is Winterfell known for?",
+      "answer": "Stark seat"
+    },
+    {
+      "question": "[SHOW] Who rules Winterfell after Bolton?",
+      "answer": "Sansa Stark"
+    },
+    {
+      "question": "[BOOK] Who holds Winterfell in the books?",
+      "answer": "House Bolton"
+    },
+    {
+      "question": "[BOTH] What is the North ruled by?",
+      "answer": "House Stark"
+    },
+    {
+      "question": "[SHOW] What event takes place at Winterfell?",
+      "answer": "Battle of the Bastards"
+    },
+    {
+      "question": "[BOTH] What is King's Landing?",
+      "answer": "Capital city"
+    },
+    {
+      "question": "[SHOW] Who destroys King's Landing?",
+      "answer": "Daenerys Targaryen"
+    },
+    {
+      "question": "[BOOK] Has King's Landing been destroyed in books?",
+      "answer": "No"
+    },
+    {
+      "question": "[SHOW] Who sits on the Iron Throne last?",
+      "answer": "Bran Stark"
+    },
+    {
+      "question": "[BOTH] What is House Targaryen's ancestral home?",
+      "answer": "Dragonstone"
+    },
+    {
+      "question": "[SHOW] Where is Dragonstone located?",
+      "answer": "Blackwater Bay"
+    },
+    {
+      "question": "[BOOK] What is Dragonstone used for?",
+      "answer": "Targaryen stronghold"
+    },
+    {
+      "question": "[BOTH] What do Targaryens control?",
+      "answer": "Dragons"
+    },
+    {
+      "question": "[SHOW] What is Daenerys called?",
+      "answer": "Mother of Dragons"
+    },
+    {
+      "question": "[BOTH] What is Valyria known for?",
+      "answer": "Ancient dragonlords"
+    },
+    {
+      "question": "[BOOK] What destroyed Valyria?",
+      "answer": "The Doom"
+    },
+    {
+      "question": "[BOTH] What metal comes from Valyria?",
+      "answer": "Valyrian steel"
+    },
+    {
+      "question": "[SHOW] Who wields Valyrian steel sword Longclaw?",
+      "answer": "Jon Snow"
+    },
+    {
+      "question": "[BOTH] What is Longclaw's sigil animal?",
+      "answer": "White wolf"
+    },
+    {
+      "question": "[SHOW] Who leads the Night's Watch?",
+      "answer": "Jon Snow"
+    },
+    {
+      "question": "[BOTH] What is the Night's Watch duty?",
+      "answer": "Guard the Wall"
+    },
+    {
+      "question": "[BOOK] What oath do they swear?",
+      "answer": "No wife, no land"
+    },
+    {
+      "question": "[SHOW] What causes Jon Snow's death?",
+      "answer": "Mutiny"
+    },
+    {
+      "question": "[BOTH] Who resurrects Jon Snow?",
+      "answer": "Melisandre"
+    },
+    {
+      "question": "[SHOW] Who is Tyrion Lannister?",
+      "answer": "Hand of the King"
+    },
+    {
+      "question": "[BOTH] What is Tyrion's nickname?",
+      "answer": "The Imp"
+    },
+    {
+      "question": "[BOOK] What is Tyrion accused of?",
+      "answer": "Joffrey's murder"
+    },
+    {
+      "question": "[SHOW] Who frees Tyrion?",
+      "answer": "Varys"
+    },
+    {
+      "question": "[BOTH] What is Varys known as?",
+      "answer": "The Spider"
+    },
+    {
+      "question": "[SHOW] What city does Arya escape from?",
+      "answer": "King's Landing"
+    },
+    {
+      "question": "[BOTH] Where does Arya train?",
+      "answer": "Braavos"
+    },
+    {
+      "question": "[BOOK] What is Arya's goal?",
+      "answer": "Revenge list"
+    },
+    {
+      "question": "[SHOW] Who helps Arya become assassin?",
+      "answer": "Faceless Men"
+    },
+    {
+      "question": "[BOTH] What is Arya's sword?",
+      "answer": "Needle"
+    },
+    {
+      "question": "[BOTH] What is the Targaryen civil war called?",
+      "answer": "The Dance of the Dragons"
+    },
+    {
+      "question": "[BOOK] Which book covers the Dance of the Dragons?",
+      "answer": "Fire & Blood"
+    },
+    {
+      "question": "[SHOW] Who is King Viserys I's heir?",
+      "answer": "Rhaenyra Targaryen"
+    },
+    {
+      "question": "[BOTH] Who is Rhaenyra's rival for the throne?",
+      "answer": "Aegon II Targaryen"
+    },
+    {
+      "question": "[SHOW] Who is Rhaenyra Targaryen's dragon?",
+      "answer": "Syrax"
+    },
+    {
+      "question": "[BOTH] What is Daemon Targaryen known for?",
+      "answer": "Rogue prince"
+    },
+    {
+      "question": "[SHOW] Who is Daemon Targaryen's first wife?",
+      "answer": "Rhea Royce"
+    },
+    {
+      "question": "[BOTH] What dragon does Daemon ride?",
+      "answer": "Caraxes"
+    },
+    {
+      "question": "[SHOW] Who is Alicent Hightower?",
+      "answer": "Queen consort"
+    },
+    {
+      "question": "[BOTH] What faction does Alicent support?",
+      "answer": "Green faction"
+    },
+    {
+      "question": "[SHOW] What faction supports Rhaenyra?",
+      "answer": "Black faction"
+    },
+    {
+      "question": "[BOTH] What causes the Dance of Dragons?",
+      "answer": "Succession dispute"
+    },
+    {
+      "question": "[BOOK] Who starts the civil war?",
+      "answer": "Political rivalry after Viserys' death"
+    },
+    {
+      "question": "[SHOW] What is King Viserys I's biggest issue?",
+      "answer": "Succession crisis"
+    },
+    {
+      "question": "[BOTH] What is the Targaryen symbol?",
+      "answer": "Three-headed dragon"
+    },
+    {
+      "question": "[SHOW] What illness does Viserys suffer from?",
+      "answer": "Chronic decay and infection"
+    },
+    {
+      "question": "[BOTH] What city is House Targaryen based in?",
+      "answer": "Dragonstone"
+    },
+    {
+      "question": "[BOOK] What throne do Targaryens sit on?",
+      "answer": "Iron Throne"
+    },
+    {
+      "question": "[SHOW] Who kills Lucerys Velaryon?",
+      "answer": "Aemond Targaryen indirectly via dragon"
+    },
+    {
+      "question": "[BOTH] What dragon does Aemond ride?",
+      "answer": "Vhagar"
+    },
+    {
+      "question": "[SHOW] What is Vhagar known for?",
+      "answer": "Largest living dragon"
+    },
+    {
+      "question": "[BOOK] Who is Vhagar originally ridden by?",
+      "answer": "Visenya Targaryen"
+    },
+    {
+      "question": "[BOTH] What triggers full civil war?",
+      "answer": "Lucerys' death"
+    },
+    {
+      "question": "[SHOW] Who is Rhaenyra's husband?",
+      "answer": "Daemon Targaryen"
+    },
+    {
+      "question": "[BOTH] What is Daemon and Rhaenyra's relationship?",
+      "answer": "Uncle and niece"
+    },
+    {
+      "question": "[SHOW] What city is King's Landing in HOTD?",
+      "answer": "Crownlands"
+    },
+    {
+      "question": "[BOTH] What castle is the Targaryen seat?",
+      "answer": "Dragonstone"
+    },
+    {
+      "question": "[BOOK] What book covers Targaryen history?",
+      "answer": "Fire & Blood"
+    },
+    {
+      "question": "[SHOW] Who is Otto Hightower?",
+      "answer": "Hand of the King"
+    },
+    {
+      "question": "[BOTH] What side does Otto support?",
+      "answer": "Green faction"
+    },
+    {
+      "question": "[SHOW] Who is Aegon II's dragon?",
+      "answer": "Sunfyre"
+    },
+    {
+      "question": "[BOTH] What is Aegon II's claim?",
+      "answer": "Rightful heir (Green claim)"
+    },
+    {
+      "question": "[BOOK] Who crowns Aegon II?",
+      "answer": "The Greens"
+    },
+    {
+      "question": "[SHOW] Who is Rhaenys Targaryen known as?",
+      "answer": "The Queen Who Never Was"
+    },
+    {
+      "question": "[BOTH] What dragon does Rhaenys ride?",
+      "answer": "Meleys"
+    },
+    {
+      "question": "[SHOW] What happens at the Dragonpit?",
+      "answer": "Aegon is crowned"
+    },
+    {
+      "question": "[BOTH] What is the Dragonpit?",
+      "answer": "Dragon holding arena"
+    },
+    {
+      "question": "[BOOK] What major event begins HOTD era?",
+      "answer": "Viserys' death"
+    },
+    {
+      "question": "[SHOW] Who kills Prince Lucerys?",
+      "answer": "Aemond Targaryen (dragon attack)"
+    },
+    {
+      "question": "[BOTH] What dragon does Lucerys ride?",
+      "answer": "Arrax"
+    },
+    {
+      "question": "[SHOW] What is the result of Lucerys' death?",
+      "answer": "War begins"
+    },
+    {
+      "question": "[BOTH] What is the Dance of Dragons?",
+      "answer": "Civil war"
+    },
+    {
+      "question": "[BOOK] What are the factions called?",
+      "answer": "Greens and Blacks"
+    },
+    {
+      "question": "[BOOK] Who is Quentyn Martell attempting to marry?",
+      "answer": "Daenerys Targaryen"
+    },
+    {
+      "question": "[SHOW] What happens to Quentyn Martell?",
+      "answer": "He dies by dragonfire"
+    },
+    {
+      "question": "[BOTH] What is House Martell's seat?",
+      "answer": "Sunspear"
+    },
+    {
+      "question": "[BOOK] Who is Arianne Martell plotting to crown?",
+      "answer": "Myrcella Baratheon"
+    },
+    {
+      "question": "[SHOW] Does Arianne Martell appear?",
+      "answer": "No"
+    },
+    {
+      "question": "[BOOK] Who is Young Griff?",
+      "answer": "Aegon Targaryen (claimant)"
+    },
+    {
+      "question": "[SHOW] Does Young Griff exist in the show?",
+      "answer": "No"
+    },
+    {
+      "question": "[BOOK] Who raises Young Griff?",
+      "answer": "Jon Connington"
+    },
+    {
+      "question": "[BOTH] What house does Jon Connington serve?",
+      "answer": "Targaryen loyalists"
+    },
+    {
+      "question": "[BOOK] What is Jon Connington's title?",
+      "answer": "Hand of the King"
+    },
+    {
+      "question": "[BOOK] What is the fate of Stannis Baratheon in the books?",
+      "answer": "Unconfirmed alive"
+    },
+    {
+      "question": "[SHOW] Who kills Stannis?",
+      "answer": "Brienne of Tarth"
+    },
+    {
+      "question": "[BOTH] What god does Stannis follow?",
+      "answer": "Lord of Light"
+    },
+    {
+      "question": "[BOOK] Who is Stannis fighting in the North?",
+      "answer": "Boltons"
+    },
+    {
+      "question": "[SHOW] What is Stannis' major defeat?",
+      "answer": "Battle of Winterfell loss"
+    },
+    {
+      "question": "[BOOK] What is Lady Stoneheart's identity?",
+      "answer": "Resurrected Catelyn Stark"
+    },
+    {
+      "question": "[SHOW] Does Lady Stoneheart appear?",
+      "answer": "No"
+    },
+    {
+      "question": "[BOOK] Who revives Catelyn Stark?",
+      "answer": "Beric Dondarrion"
+    },
+    {
+      "question": "[BOTH] What group does Beric lead?",
+      "answer": "Brotherhood Without Banners"
+    },
+    {
+      "question": "[BOOK] What is Beric's fate?",
+      "answer": "He sacrifices himself"
+    },
+    {
+      "question": "[BOOK] Who kills Aegon the Conqueror's dragon Balerion?",
+      "answer": "Old age"
+    },
+    {
+      "question": "[BOTH] What is Balerion known as?",
+      "answer": "Black Dread"
+    },
+    {
+      "question": "[BOOK] Who was the last rider of Balerion?",
+      "answer": "Viserys I"
+    },
+    {
+      "question": "[SHOW] Is Balerion shown in HOTD?",
+      "answer": "Only referenced"
+    },
+    {
+      "question": "[BOTH] What is Valyrian steel linked to?",
+      "answer": "Dragonfire forging"
+    },
+    {
+      "question": "[SHOW] Who is Coldhands in the show?",
+      "answer": "Benjen Stark (merged character)"
+    },
+    {
+      "question": "[BOTH] What region is Beyond the Wall called?",
+      "answer": "Far North"
+    },
+    {
+      "question": "[BOOK] What creatures exist beyond the Wall?",
+      "answer": "The Others"
+    },
+    {
+      "question": "[SHOW] What is beyond the Wall inhabited by?",
+      "answer": "White Walkers and Wildlings"
+    },
+    {
+      "question": "[BOOK] What is the name of Victarion Greyjoy's dragon horn?",
+      "answer": "Dragonbinder"
+    },
+    {
+      "question": "[SHOW] Does Victarion Greyjoy appear?",
+      "answer": "No"
+    },
+    {
+      "question": "[BOOK] What does Dragonbinder supposedly do?",
+      "answer": "Control dragons"
+    },
+    {
+      "question": "[BOTH] What house rules the Iron Islands?",
+      "answer": "Greyjoy"
+    },
+    {
+      "question": "[BOOK] What is the prophecy of Azor Ahai?",
+      "answer": "Hero who defeats darkness"
+    },
+    {
+      "question": "[SHOW] Who is believed to be Azor Ahai?",
+      "answer": "Jon Snow or Daenerys"
+    },
+    {
+      "question": "[BOTH] What weapon is Lightbringer?",
+      "answer": "Mythic flaming sword"
+    },
+    {
+      "question": "[BOOK] What religion follows Azor Ahai?",
+      "answer": "Lord of Light faith"
+    },
+    {
+      "question": "[SHOW] Who believes in Azor Ahai?",
+      "answer": "Melisandre"
+    },
+    {
+      "question": "[BOOK] What is the real name of the Hound's survival theory?",
+      "answer": "Gravedigger theory"
+    },
+    {
+      "question": "[BOTH] Who is Gregor Clegane?",
+      "answer": "The Mountain"
+    },
+    {
+      "question": "[BOTH] What destroyed Valyria?",
+      "answer": "The Doom"
+    },
+    {
+      "question": "[BOOK] What creatures are tied to Valyria?",
+      "answer": "Dragons"
+    },
+    {
+      "question": "[BOTH] What is Essos known for?",
+      "answer": "Free Cities"
+    },
+    {
+      "question": "[BOOK] What is the farthest known city east?",
+      "answer": "Asshai"
+    },
+    {
+      "question": "[BOTH] What year was Daenerys Targaryen born?",
+      "answer": "284 AC"
+    },
+    {
+      "question": "[BOOK] What major rebellion ends shortly before Daenerys is born?",
+      "answer": "Robert's Rebellion"
+    },
+    {
+      "question": "[BOTH] What year does Robert's Rebellion end?",
+      "answer": "283 AC"
+    },
+    {
+      "question": "[SHOW] Who wins Robert's Rebellion?",
+      "answer": "Robert Baratheon"
+    },
+    {
+      "question": "[BOTH] Who kills the Mad King?",
+      "answer": "Jaime Lannister"
+    },
+    {
+      "question": "[BOOK] When does Aegon II Targaryen take the throne?",
+      "answer": "129 AC"
+    },
+    {
+      "question": "[BOTH] What civil war does Aegon II's rule begin?",
+      "answer": "Dance of the Dragons"
+    },
+    {
+      "question": "[SHOW] Who is Aegon II's sister rival?",
+      "answer": "Rhaenyra Targaryen"
+    },
+    {
+      "question": "[BOTH] What house does Rhaenyra belong to?",
+      "answer": "Targaryen"
+    },
+    {
+      "question": "[BOOK] What dragon does Rhaenyra ride?",
+      "answer": "Syrax"
+    },
+    {
+      "question": "[BOTH] What is House Lannister's motto?",
+      "answer": "Hear Me Roar"
+    },
+    {
+      "question": "[BOTH] What is House Greyjoy's motto?",
+      "answer": "We Do Not Sow"
+    },
+    {
+      "question": "[BOOK] What is House Tyrell's motto?",
+      "answer": "Growing Strong"
+    },
+    {
+      "question": "[BOTH] What is House Baratheon's motto?",
+      "answer": "Ours is the Fury"
+    },
+    {
+      "question": "[BOTH] What is House Stark's ancestral seat?",
+      "answer": "Winterfell"
+    },
+    {
+      "question": "[BOTH] What is House Baratheon's seat?",
+      "answer": "Storm's End"
+    },
+    {
+      "question": "[BOOK] What is House Martell's seat?",
+      "answer": "Sunspear"
+    },
+    {
+      "question": "[BOTH] What is House Arryn's seat?",
+      "answer": "The Eyrie"
+    },
+    {
+      "question": "[SHOW] Which house rules the Reach?",
+      "answer": "Tyrell (pre-Cersei takeover)"
+    },
+    {
+      "question": "[BOTH] Which house rules the North?",
+      "answer": "Stark"
+    },
+    {
+      "question": "[BOOK] Which house rules the Iron Islands?",
+      "answer": "Greyjoy"
+    },
+    {
+      "question": "[BOTH] Which house rules Dorne?",
+      "answer": "Martell"
+    },
+    {
+      "question": "[SHOW] Which house rules the Westerlands?",
+      "answer": "Lannister"
+    },
+    {
+      "question": "[BOTH] What event happens in 298 AC?",
+      "answer": "Start of Game of Thrones story"
+    },
+    {
+      "question": "[SHOW] When does Robert Baratheon die?",
+      "answer": "298 AC"
+    },
+    {
+      "question": "[BOTH] What year does Ned Stark die?",
+      "answer": "298 AC"
+    },
+    {
+      "question": "[SHOW] When is Joffrey crowned?",
+      "answer": "298 AC"
+    },
+    {
+      "question": "[BOTH] What war begins after Robert's death?",
+      "answer": "War of the Five Kings"
+    },
+    {
+      "question": "[BOOK] Who is the oldest known living dragon in HOTD era?",
+      "answer": "Vhagar"
+    },
+    {
+      "question": "[BOTH] What dragon is known as the largest ever?",
+      "answer": "Balerion"
+    },
+    {
+      "question": "[BOOK] What dynasty built King's Landing?",
+      "answer": "Targaryen"
+    },
+    {
+      "question": "[BOTH] What city is capital of Westeros?",
+      "answer": "King's Landing"
+    },
+    {
+      "question": "[SHOW] What river borders King's Landing?",
+      "answer": "Blackwater Rush"
+    },
+    {
+      "question": "[BOOK] What is the estimated time gap between HOTD and GOT?",
+      "answer": "~170 years"
+    },
+    {
+      "question": "[BOTH] What event ended Targaryen dragon dominance?",
+      "answer": "Dance of the Dragons"
+    },
+    {
+      "question": "[SHOW] What kills most dragons in HOTD?",
+      "answer": "Civil war"
+    },
+    {
+      "question": "[BOOK] What language do Targaryens speak?",
+      "answer": "High Valyrian"
+    },
+    {
+      "question": "[BOTH] What is north of Westeros?",
+      "answer": "The Wall"
+    },
+    {
+      "question": "[BOOK] What lies east of Essos?",
+      "answer": "Asshai"
+    },
+    {
+      "question": "[BOTH] What sea separates Westeros and Essos?",
+      "answer": "Narrow Sea"
+    },
+    {
+      "question": "[SHOW] What region is beyond the Wall called?",
+      "answer": "Far North"
+    },
+    {
+      "question": "[BOOK] What house is known for flaying enemies?",
+      "answer": "Bolton"
+    },
+    {
+      "question": "[BOTH] What is House Bolton's sigil?",
+      "answer": "Flayed man"
+    },
+    {
+      "question": "[SHOW] Who destroys House Bolton rule?",
+      "answer": "Jon Snow"
+    },
+    {
+      "question": "[BOTH] What castle does House Bolton control?",
+      "answer": "Winterfell"
+    },
+    {
+      "question": "[BOOK] What dynasty challenges Targaryen rule repeatedly?",
+      "answer": "Blackfyre"
+    },
+    {
+      "question": "[BOTH] Who started the Blackfyre Rebellion?",
+      "answer": "Daemon Blackfyre"
+    },
+    {
+      "question": "[BOOK] What is Daemon Blackfyre's claim?",
+      "answer": "Illegitimate Targaryen son"
+    },
+    {
+      "question": "[BOTH] What sword is Blackfyre?",
+      "answer": "Valyrian steel sword"
+    },
+    {
+      "question": "[BOOK] Who wields Blackfyre originally?",
+      "answer": "Aegon the Conqueror"
+    },
+    {
+      "question": "[BOTH] What council decides Viserys I heir?",
+      "answer": "Great Council of 101 AC"
+    },
+    {
+      "question": "[BOOK] Who is chosen in the Great Council?",
+      "answer": "Viserys I"
+    },
+    {
+      "question": "[BOTH] Who is passed over in 101 AC?",
+      "answer": "Rhaenys Targaryen"
+    },
+    {
+      "question": "[SHOW] What title does Rhaenys hold?",
+      "answer": "Queen Who Never Was"
+    },
+    {
+      "question": "[BOTH] What is the outcome of the council?",
+      "answer": "Viserys becomes king"
+    },
+    {
+      "question": "[BOOK] What year does Aegon the Conqueror invade Westeros?",
+      "answer": "1 AC"
+    },
+    {
+      "question": "[BOTH] What event starts Targaryen rule?",
+      "answer": "Aegon's Conquest"
+    },
+    {
+      "question": "[BOOK] What city is burned during conquest?",
+      "answer": "Harrenhal"
+    },
+    {
+      "question": "[BOTH] What dragon burns Harrenhal?",
+      "answer": "Balerion"
+    },
+    {
+      "question": "[SHOW] What is Harrenhal known for?",
+      "answer": "Cursed castle"
+    },
+    {
+      "question": "[BOOK] What is the Doom of Valyria?",
+      "answer": "Volcanic destruction"
+    },
+    {
+      "question": "[BOTH] What civilization ruled Valyria?",
+      "answer": "Dragonlords"
+    },
+    {
+      "question": "[BOOK] What is Valyria's fate?",
+      "answer": "Destroyed"
+    },
+    {
+      "question": "[BOTH] What remains of Valyria?",
+      "answer": "Ruins"
+    },
+    {
+      "question": "[SHOW] What metal comes from Valyria?",
+      "answer": "Valyrian steel"
+    },
+    {
+      "question": "[BOOK] Who is the last dragon before Daenerys?",
+      "answer": "Killed during reign of Aegon III era"
+    },
+    {
+      "question": "[BOTH] What causes dragons to die out?",
+      "answer": "Targaryen civil wars"
+    },
+    {
+      "question": "[SHOW] What event reduces dragons to extinction?",
+      "answer": "Dance of the Dragons"
+    },
+    {
+      "question": "[BOTH] What dragon remains in HOTD era?",
+      "answer": "Vhagar"
+    },
+    {
+      "question": "[BOOK] What dragon is youngest in HOTD era?",
+      "answer": "Syrax"
+    },
+    {
+      "question": "[BOOK] What river runs near King's Landing?",
+      "answer": "Blackwater Rush"
+    },
+    {
+      "question": "[BOTH] What battle defends King's Landing?",
+      "answer": "Battle of Blackwater"
+    },
+    {
+      "question": "[SHOW] Who wins Blackwater Bay battle?",
+      "answer": "Lannisters"
+    },
+    {
+      "question": "[BOTH] What weapon is used at Blackwater?",
+      "answer": "Wildfire"
+    },
+    {
+      "question": "[BOOK] Who is the original Azor Ahai?",
+      "answer": "Legendary hero"
+    },
+    {
+      "question": "[BOTH] What prophecy is Azor Ahai tied to?",
+      "answer": "Prince That Was Promised"
+    },
+    {
+      "question": "[SHOW] Who is believed to be the prophecy candidate?",
+      "answer": "Jon Snow"
+    },
+    {
+      "question": "[BOTH] What religion believes in Azor Ahai?",
+      "answer": "Lord of Light"
+    },
+    {
+      "question": "[BOOK] Who spreads the prophecy?",
+      "answer": "Red Priests"
+    },
+    {
+      "question": "[BOOK] What is the purpose of the Night's Watch?",
+      "answer": "Guard the Wall"
+    },
+    {
+      "question": "[BOTH] What lies beyond the Wall?",
+      "answer": "Others / White Walkers"
+    },
+    {
+      "question": "[SHOW] Who defeats the Night King?",
+      "answer": "Arya Stark"
+    },
+    {
+      "question": "[BOOK] What is dragonglass also called?",
+      "answer": "Obsidian"
+    },
+    {
+      "question": "[BOOK] What is the fate of the Iron Throne in prophecy?",
+      "answer": "Uncertain destruction"
+    },
+    {
+      "question": "[BOTH] Who sits the Iron Throne at the end?",
+      "answer": "Bran Stark"
+    },
+    {
+      "question": "[SHOW] What happens to the Iron Throne?",
+      "answer": "Destroyed by Drogon"
+    },
+    {
+      "question": "[BOTH] What does Drogon do with throne?",
+      "answer": "Melts it"
+    },
+    {
+      "question": "[BOOK] What is Tyrion's final role?",
+      "answer": "Hand of the King"
+    },
+    {
+      "question": "[BOTH] What house rules the North?",
+      "answer": "Stark"
+    },
+    {
+      "question": "[BOOK] What house rules the Westerlands?",
+      "answer": "Lannister"
+    },
+    {
+      "question": "[BOTH] What house rules Dorne?",
+      "answer": "Martell"
+    },
+    {
+      "question": "[BOOK] What house rules the Vale?",
+      "answer": "Arryn"
+    },
+    {
+      "question": "[BOTH] What house rules the Reach?",
+      "answer": "Tyrell"
+    },
+    {
+      "question": "[BOOK] What alias does Barristan Selmy use while serving in Meereen?",
+      "answer": "Arstan Whitebeard"
+    },
+    {
+      "question": "[BOOK] What is the name of the ship that carries Tyrion Lannister and Jorah Mormont down the Rhoyne?",
+      "answer": "The Shy Maid"
+    },
+    {
+      "question": "[BOOK] Who is the father of Aegon Targaryen (Young Griff) according to his claimed identity?",
+      "answer": "Rhaegar Targaryen"
+    },
+    {
+      "question": "[BOOK] What sellsword company did Daario Naharis originally command?",
+      "answer": "The Stormcrows"
+    },
+    {
+      "question": "[BOOK] What is the name of Roose Bolton's second wife?",
+      "answer": "Walda Frey"
+    },
+    {
+      "question": "[BOOK] What distinctive physical trait does Petyr Baelish have that is often mentioned?",
+      "answer": "His mocking smile (or grey-green eyes with a mocking look)"
+    },
+    {
+      "question": "[BOOK] What is the name of the maester executed by Stannis Baratheon for treason at Dragonstone?",
+      "answer": "Maester Cressen"
+    },
+    {
+      "question": "[BOOK] What is the name of the inn where Catelyn Stark arrests Tyrion Lannister?",
+      "answer": "The Inn at the Crossroads"
+    },
+    {
+      "question": "[BOOK] What Valyrian steel sword is reforged into Oathkeeper and Widow's Wail?",
+      "answer": "Ice"
+    },
+    {
+      "question": "[BOOK] What is the name of Brienne of Tarth's father?",
+      "answer": "Selwyn Tarth"
+    },
+    {
+      "question": "[BOTH] What is the name of the Tyrell castle?",
+      "answer": "Highgarden"
+    },
+    {
+      "question": "[BOTH] What is the seat of House Tarly?",
+      "answer": "Horn Hill"
+    },
+    {
+      "question": "[BOTH] Who was known as \"The Sword of the Morning\"?",
+      "answer": "Ser Arthur Dayne"
+    },
+    {
+      "question": "[BOTH] What is the name of Sandor Clegane's brother?",
+      "answer": "Gregor Clegane"
+    },
+    {
+      "question": "[BOTH] What city is known as \"The City of a Thousand Thrones\"?",
+      "answer": "Vaes Dothrak"
+    },
+    {
+      "question": "[SHOW] What alias does Arya Stark use while serving Tywin Lannister at Harrenhal?",
+      "answer": "Arry"
+    },
+    {
+      "question": "[SHOW] Who kills Meryn Trant?",
+      "answer": "Arya Stark"
+    },
+    {
+      "question": "[SHOW] What is the name of the poison used to kill Joffrey Baratheon?",
+      "answer": "The Strangler"
+    },
+    {
+      "question": "[SHOW] What is the name of the dragon killed beyond the Wall and resurrected?",
+      "answer": "Viserion"
+    },
+    {
+      "question": "[SHOW] Who becomes King of the Six Kingdoms at the end?",
+      "answer": "Bran Stark"
+    },
+    {
+      "question": "[BOOK] What is the name of the ancient Valyrian road running across Essos?",
+      "answer": "The Valyrian Roads"
+    },
+    {
+      "question": "[BOOK] What is the name of the Faceless Men's temple in Braavos?",
+      "answer": "The House of Black and White"
+    },
+    {
+      "question": "[BOOK] What is the name of Euron Greyjoy's ship?",
+      "answer": "Silence"
+    },
+    {
+      "question": "[BOOK] What is the name of the Red Priest who accompanies Tyrion Lannister in Essos?",
+      "answer": "Moqorro"
+    },
+    {
+      "question": "[BOOK] What is the name of the Targaryen sword wielded by Aegon the Conqueror?",
+      "answer": "Blackfyre"
+    },
+    {
+      "question": "[BOOK] What is the name of House Dayne's ancestral sword?",
+      "answer": "Dawn"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Blackwood?",
+      "answer": "Raventree Hall"
+    },
+    {
+      "question": "[BOOK] What is the name of the dead weirwood at Raventree Hall?",
+      "answer": "The Raventree"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Bracken?",
+      "answer": "Stone Hedge"
+    },
+    {
+      "question": "[BOOK] What riverlands house is in constant feud with House Blackwood?",
+      "answer": "House Bracken"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Mallister?",
+      "answer": "Seagard"
+    },
+    {
+      "question": "[BOOK] What is the name of the lord of Seagard during the War of the Five Kings?",
+      "answer": "Jason Mallister"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Hightower?",
+      "answer": "The Hightower (in Oldtown)"
+    },
+    {
+      "question": "[BOOK] What is the name of the island where House Hightower resides?",
+      "answer": "Battle Isle"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Redwyne?",
+      "answer": "The Arbor"
+    },
+    {
+      "question": "[BOOK] What is the name of the Redwyne fleet?",
+      "answer": "The Redwyne Fleet"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Rowan?",
+      "answer": "Goldengrove"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Umber?",
+      "answer": "Last Hearth"
+    },
+    {
+      "question": "[BOOK] What is the nickname of the head of House Umber during the series?",
+      "answer": "The Greatjon"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Karstark?",
+      "answer": "Karhold"
+    },
+    {
+      "question": "[BOOK] From which Stark is House Karstark descended?",
+      "answer": "Karlon Stark"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Mormont?",
+      "answer": "Bear Island"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Velaryon?",
+      "answer": "Driftmark"
+    },
+    {
+      "question": "[BOOK] What is the name of the Velaryon castle on Driftmark?",
+      "answer": "High Tide"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Celtigar?",
+      "answer": "Claw Isle"
+    },
+    {
+      "question": "[BOOK] What is House Celtigar known to possess in great quantity?",
+      "answer": "Valyrian steel axes (or treasure/wealth-accept either depending on strictness)"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Yronwood?",
+      "answer": "Yronwood"
+    },
+    {
+      "question": "[BOOK] What title does the head of House Yronwood traditionally hold?",
+      "answer": "The Bloodroyal"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Fowler?",
+      "answer": "Skyreach"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Uller?",
+      "answer": "Hellholt"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Crakehall?",
+      "answer": "Crakehall"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Marbrand?",
+      "answer": "Ashemark"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Westerling?",
+      "answer": "The Crag"
+    },
+    {
+      "question": "[BOOK] Which minor Westerlands house does Jeyne Westerling belong to?",
+      "answer": "House Westerling"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Glover?",
+      "answer": "Deepwood Motte"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Cerwyn?",
+      "answer": "Castle Cerwyn"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Hornwood?",
+      "answer": "Hornwood"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Tallhart?",
+      "answer": "Torrhen's Square"
+    },
+    {
+      "question": "[BOOK] What is the seat of House Dayne?",
+      "answer": "Starfall"
+    },
+    {
+      "question": "[BOOK] What are the words of House Mormont?",
+      "answer": "Here We Stand"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Mormont?",
+      "answer": "A black bear on a green field"
+    },
+    {
+      "question": "[BOOK] What are the words of House Karstark?",
+      "answer": "The Sun of Winter"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Karstark?",
+      "answer": "A white sunburst on black"
+    },
+    {
+      "question": "[BOOK] What are the words of House Umber?",
+      "answer": "None (they have no official words)"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Umber?",
+      "answer": "A roaring giant, brown on russet"
+    },
+    {
+      "question": "[BOOK] What are the words of House Glover?",
+      "answer": "None (they have no official words)"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Glover?",
+      "answer": "A silver fist on scarlet"
+    },
+    {
+      "question": "[BOOK] What are the words of House Blackwood?",
+      "answer": "None (they have no official words)"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Blackwood?",
+      "answer": "A dead weirwood with ravens"
+    },
+    {
+      "question": "[BOOK] What are the words of House Bracken?",
+      "answer": "None (they have no official words)"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Bracken?",
+      "answer": "A red stallion on gold"
+    },
+    {
+      "question": "[BOOK] What are the words of House Mallister?",
+      "answer": "Above the Rest"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Mallister?",
+      "answer": "A silver eagle on purple"
+    },
+    {
+      "question": "[BOOK] What are the words of House Hightower?",
+      "answer": "We Light the Way"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Hightower?",
+      "answer": "A white tower with fire at the top"
+    },
+    {
+      "question": "[BOOK] What are the words of House Redwyne?",
+      "answer": "None (they have no official words)"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Redwyne?",
+      "answer": "A burgundy grape cluster on blue"
+    },
+    {
+      "question": "[BOOK] What are the words of House Rowan?",
+      "answer": "None (they have no official words)"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Rowan?",
+      "answer": "A golden tree on silver"
+    },
+    {
+      "question": "[BOOK] What are the words of House Yronwood?",
+      "answer": "We Guard the Way"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Yronwood?",
+      "answer": "A black portcullis on yellow"
+    },
+    {
+      "question": "[BOOK] What are the words of House Fowler?",
+      "answer": "Let Me Soar"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Fowler?",
+      "answer": "A blue hawk on silver"
+    },
+    {
+      "question": "[BOOK] What are the words of House Crakehall?",
+      "answer": "None (they have no official words)"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Crakehall?",
+      "answer": "A black boar on yellow"
+    },
+    {
+      "question": "[BOOK] What are the words of House Marbrand?",
+      "answer": "Burning Bright"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Marbrand?",
+      "answer": "A burning tree"
+    },
+    {
+      "question": "[BOOK] What are the words of House Westerling?",
+      "answer": "Honor, Not Honors"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Westerling?",
+      "answer": "A silver seashell on purple"
+    },
+    {
+      "question": "[BOOK] What are the words of House Velaryon?",
+      "answer": "The Old, the True, the Brave"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Velaryon?",
+      "answer": "A silver seahorse on green"
+    },
+    {
+      "question": "[BOOK] What are the words of House Celtigar?",
+      "answer": "None (they have no official words)"
+    },
+    {
+      "question": "[BOOK] What is the sigil of House Celtigar?",
+      "answer": "A red crab on white"
+    },
+    {
+      "question": "[SHOW] What is the name of the Valyrian steel dagger central to the prophecy revealed by Viserys I Targaryen?",
+      "answer": "The Catspaw Dagger"
+    },
+    {
+      "question": "[SHOW] What phrase must be spoken while holding the dagger to reveal the hidden message?",
+      "answer": "\"From my blood come the Prince That Was Promised, and his will be the Song of Ice and Fire.\""
+    },
+    {
+      "question": "[SHOW] What is the name of Daemon Targaryen's dragon?",
+      "answer": "Caraxes"
+    },
+    {
+      "question": "[SHOW] What is the nickname of Caraxes?",
+      "answer": "The Blood Wyrm"
+    },
+    {
+      "question": "[SHOW] What is the name of Rhaenys Targaryen's dragon?",
+      "answer": "Meleys"
+    },
+    {
+      "question": "[SHOW] What is Meleys known as?",
+      "answer": "The Red Queen"
+    },
+    {
+      "question": "[SHOW] What is the name of Laenor Velaryon's dragon?",
+      "answer": "Seasmoke"
+    },
+    {
+      "question": "[SHOW] What is the name of the castle on Driftmark used by House Velaryon?",
+      "answer": "High Tide"
+    },
+    {
+      "question": "[SHOW] What is the name of the Velaryon fleet?",
+      "answer": "The Velaryon Fleet"
+    },
+    {
+      "question": "[SHOW] What title is held by Corlys Velaryon?",
+      "answer": "The Sea Snake"
+    },
+    {
+      "question": "[SHOW] What is the name of Alicent Hightower's lady-in-waiting who becomes a spy?",
+      "answer": "Talya"
+    },
+    {
+      "question": "[SHOW] What color does Alicent Hightower wear to signal her faction at the wedding feast?",
+      "answer": "Green"
+    },
+    {
+      "question": "[SHOW] What color is associated with Rhaenyra Targaryen's faction?",
+      "answer": "Black"
+    },
+    {
+      "question": "[SHOW] What is the name of Larys Strong's clubfoot condition?",
+      "answer": "A congenital clubfoot (no specific formal name given in the show)"
+    },
+    {
+      "question": "[SHOW] Which castle is burned on Larys Strong's orders?",
+      "answer": "Harrenhal"
+    },
+    {
+      "question": "[SHOW] Who are killed in that fire?",
+      "answer": "Lyonel Strong and Harwin Strong"
+    },
+    {
+      "question": "[SHOW] What is the name of Aemond Targaryen's dragon?",
+      "answer": "Vhagar"
+    },
+    {
+      "question": "[SHOW] Who was Vhagar's rider before Aemond?",
+      "answer": "Laena Velaryon"
+    },
+    {
+      "question": "[SHOW] What insult is used against Aemond after he loses his eye?",
+      "answer": "\"One-Eye\""
+    },
+    {
+      "question": "[SHOW] What is the name of the Kingsguard knight who kills Joffrey Lonmouth?",
+      "answer": "Ser Criston Cole"
+    },
+    {
+      "question": "[SHOW] What is Ser Criston Cole's nickname later in the conflict?",
+      "answer": "The Kingmaker"
+    },
+    {
+      "question": "[SHOW] What is the name of the ceremony where Rhaenyra Targaryen is declared heir?",
+      "answer": "The investiture (or ceremony of naming her Princess of Dragonstone)"
+    },
+    {
+      "question": "[SHOW] What title does that grant her?",
+      "answer": "Princess of Dragonstone"
+    },
+    {
+      "question": "[SHOW] What is the name of Otto Hightower's position at court?",
+      "answer": "Hand of the King"
+    },
+    {
+      "question": "[SHOW] Who replaces him temporarily as Hand?",
+      "answer": "Lyonel Strong"
+    },
+    {
+      "question": "[SHOW] What is the name of the black council's seat of power?",
+      "answer": "Dragonstone"
+    },
+    {
+      "question": "[SHOW] What is the name of the green council's seat of power?",
+      "answer": "King's Landing"
+    },
+    {
+      "question": "[SHOW] What alias does Varys use when he tells Tyrion Lannister the story of the sorcerer?",
+      "answer": "Rugen"
+    },
+    {
+      "question": "[SHOW] What is the name of the poison that Olenna Tyrell uses to kill Joffrey Baratheon?",
+      "answer": "The Strangler"
+    },
+    {
+      "question": "[SHOW] What is the name of the man who trained Arya Stark in Braavos?",
+      "answer": "Jaqen H'ghar"
+    },
+    {
+      "question": "[SHOW] What is the many-faced god also called?",
+      "answer": "The God of Death"
+    },
+    {
+      "question": "[SHOW] What is the name of Bran Stark's direwolf?",
+      "answer": "Summer"
+    },
+    {
+      "question": "[SHOW] What is the name of Rickon Stark's direwolf?",
+      "answer": "Shaggydog"
+    },
+    {
+      "question": "[SHOW] What is the name of Sansa Stark's direwolf?",
+      "answer": "Lady"
+    },
+    {
+      "question": "[SHOW] What is the name of the executioner who beheads Ned Stark?",
+      "answer": "Ser Ilyn Payne"
+    },
+    {
+      "question": "[SHOW] What position does Ser Ilyn Payne hold?",
+      "answer": "The King's Justice"
+    },
+    {
+      "question": "[SHOW] What is the name of the sellsword company led by Daario Naharis in the show?",
+      "answer": "The Second Sons"
+    },
+    {
+      "question": "[SHOW] What city does Daenerys Targaryen rule before Meereen?",
+      "answer": "Yunkai"
+    },
+    {
+      "question": "[SHOW] What is the name of Melisandre's god?",
+      "answer": "The Lord of Light"
+    },
+    {
+      "question": "[SHOW] What is the High Valyrian name for the Lord of Light?",
+      "answer": "R'hllor"
+    },
+    {
+      "question": "[SHOW] What is the name of the wildling settlement attacked at the start of Season 4?",
+      "answer": "Mole's Town"
+    },
+    {
+      "question": "[SHOW] Who leads that attack?",
+      "answer": "Styr (of the Thenns)"
+    },
+    {
+      "question": "[SHOW] What is the name of the bank that backs Stannis Baratheon?",
+      "answer": "The Iron Bank of Braavos"
+    },
+    {
+      "question": "[SHOW] Who represents the bank in negotiations with Stannis?",
+      "answer": "Tycho Nestoris"
+    },
+    {
+      "question": "[SHOW] What is the name of Grey Worm before he is given his Unsullied name?",
+      "answer": "He has no name (Unsullied are stripped of their birth names)"
+    },
+    {
+      "question": "[SHOW] What does the name \"Grey Worm\" symbolize?",
+      "answer": "It is a demeaning name given by the masters (one of many assigned names)"
+    },
+    {
+      "question": "[SHOW] What is the name of the castle held by House Frey?",
+      "answer": "The Twins"
+    },
+    {
+      "question": "[SHOW] What river runs between the two castles?",
+      "answer": "The Green Fork of the Trident"
+    },
+    {
+      "question": "[SHOW] What is the name of Sandor Clegane's horse?",
+      "answer": "Stranger"
+    },
+    {
+      "question": "[SHOW] What fear does Sandor suffer from?",
+      "answer": "Fire (pyrophobia)"
+    },
+    {
+      "question": "[SHOW] What is the name of the maester serving at Castle Black?",
+      "answer": "Maester Aemon"
+    },
+    {
+      "question": "[SHOW] What is his full name and lineage?",
+      "answer": "Aemon Targaryen"
+    },
+    {
+      "question": "[SHOW] Who said: \"Chaos isn't a pit. Chaos is a ladder.\"",
+      "answer": "Petyr Baelish"
+    },
+    {
+      "question": "[SHOW] Who said: \"When you play the game of thrones, you win or you die.\"",
+      "answer": "Cersei Lannister"
+    },
+    {
+      "question": "[SHOW] Who said: \"I drink and I know things.\"",
+      "answer": "Tyrion Lannister"
+    },
+    {
+      "question": "[SHOW] Who said: \"Any man who must say 'I am the king' is no true king.\"",
+      "answer": "Tywin Lannister"
+    },
+    {
+      "question": "[SHOW] Who said: \"The things I do for love.\"",
+      "answer": "Jaime Lannister"
+    },
+    {
+      "question": "[SHOW] Who said: \"A lion does not concern himself with the opinion of sheep.\"",
+      "answer": "Tywin Lannister"
+    },
+    {
+      "question": "[SHOW] Who said: \"You know nothing, Jon Snow.\"",
+      "answer": "Ygritte"
+    },
+    {
+      "question": "[SHOW] Who said: \"The North remembers.\"",
+      "answer": "Barbrey Dustin"
+    },
+    {
+      "question": "[SHOW] Who said: \"Hold the door!\"",
+      "answer": "Hodor"
+    },
+    {
+      "question": "[SHOW] Who said: \"A girl has no name.\"",
+      "answer": "Arya Stark"
+    },
+    {
+      "question": "[SHOW] Who said: \"Valar Morghulis.\"",
+      "answer": "Jaqen H'ghar"
+    },
+    {
+      "question": "[SHOW] Who said: \"Valar Dohaeris.\"",
+      "answer": "Daenerys Targaryen"
+    },
+    {
+      "question": "[SHOW] Who said: \"I choose violence.\"",
+      "answer": "Cersei Lannister"
+    },
+    {
+      "question": "[SHOW] Who said: \"What do we say to the God of Death?\"",
+      "answer": "Syrio Forel"
+    },
+    {
+      "question": "[SHOW] Who said: \"Not today.\"",
+      "answer": "Arya Stark"
+    },
+    {
+      "question": "[SHOW] Who said: \"Tell Cersei. I want her to know it was me.\"",
+      "answer": "Olenna Tyrell"
+    },
+    {
+      "question": "[SHOW] Who said: \"Power resides where men believe it resides.\"",
+      "answer": "Varys"
+    },
+    {
+      "question": "[SHOW] Who said: \"There is only one god, and his name is Death.\"",
+      "answer": "Syrio Forel"
+    },
+    {
+      "question": "[SHOW] Who said: \"Explain to me why it is more noble to kill ten thousand men in battle than a dozen at dinner.\"",
+      "answer": "Tywin Lannister"
+    },
+    {
+      "question": "[SHOW] Who said: \"A very small man can cast a very large shadow.\"",
+      "answer": "Varys"
+    },
+    {
+      "question": "[SHOW] Who said: \"The world is overflowing with horrible things, but they're all a tray of cakes next to death.\"",
+      "answer": "Olenna Tyrell"
+    },
+    {
+      "question": "[SHOW] Who said: \"You're going to die tomorrow, Lord Bolton. Sleep well.\"",
+      "answer": "Sansa Stark"
+    },
+    {
+      "question": "[SHOW] Who said: \"There's no cure for being a cunt.\"",
+      "answer": "Bronn"
+    },
+    {
+      "question": "[SHOW] Who said: \"Everyone who isn't us is an enemy.\"",
+      "answer": "Cersei Lannister"
+    },
+    {
+      "question": "[SHOW] Who said: \"I have a tender spot in my heart for cripples and bastards and broken things.\"",
+      "answer": "Tyrion Lannister"
+    },
+    {
+      "question": "[SHOW] Who said: \"You want a good girl, but you need the bad pussy.\"",
+      "answer": "Tyene Sand"
+    },
+    {
+      "question": "[SHOW] Who said: \"I am the sword in the darkness.\"",
+      "answer": "Jon Snow"
+    },
+    {
+      "question": "[SHOW] Who said: \"You lived your life for the king. You're going to die for some chickens?\"",
+      "answer": "Sandor Clegane"
+    },
+    {
+      "question": "[SHOW] Who said: \"Lots of people name their swords.\"",
+      "answer": "Arya Stark"
+    },
+    {
+      "question": "[SHOW] Who said: \"My real father died in King's Landing.\"",
+      "answer": "Theon Greyjoy"
+    },
+    {
+      "question": "[SHOW] Who said: \"If you think this has a happy ending, you haven't been paying attention.\"",
+      "answer": "Ramsay Bolton"
+    },
+    {
+      "question": "[SHOW] Who said: \"The freedom to make my own mistakes was all I ever wanted.\"",
+      "answer": "Mance Rayder"
+    },
+    {
+      "question": "[SHOW] Who said: \"The true history of the world is a history of great conversations in elegant rooms.\"",
+      "answer": "Tyrion Lannister"
+    },
+    {
+      "question": "[SHOW] Who said: \"I fought, I lost. Now I rest. But you, Lord Snow... you'll be fighting their battles forever.\"",
+      "answer": "Alliser Thorne"
+    },
+    {
+      "question": "[SHOW] Who said: \"You're in the great game now. And the great game is terrifying.\"",
+      "answer": "Olenna Tyrell"
+    },
+    {
+      "question": "[SHOW] Who said: \"We both peddle fantasies, brother Lancel.\"",
+      "answer": "Olenna Tyrell"
+    },
+    {
+      "question": "[BOOK] Who said: \"Fear cuts deeper than swords.\"",
+      "answer": "Syrio Forel"
+    },
+    {
+      "question": "[BOOK] Who said: \"A reader lives a thousand lives before he dies... The man who never reads lives only one.\"",
+      "answer": "Jojen Reed"
+    },
+    {
+      "question": "[BOOK] Who said: \"So many vows... they make you swear and swear.\"",
+      "answer": "Jaime Lannister"
+    },
+    {
+      "question": "[BOOK] Who said: \"There are no men like me. There's only me.\"",
+      "answer": "Jaime Lannister"
+    },
+    {
+      "question": "[BOOK] Who said: \"The north remembers, Lord Davos. The north remembers, and the mummer's farce is almost done.\"",
+      "answer": "Wyman Manderly"
+    },
+    {
+      "question": "[BOOK] Who said: \"May the Freys choke on their fables.\"",
+      "answer": "Wyman Manderly"
+    },
+    {
+      "question": "[BOOK] Who said: \"A mind needs books as a sword needs a whetstone, if it is to keep its edge.\"",
+      "answer": "Tyrion Lannister"
+    },
+    {
+      "question": "[BOOK] Who said: \"I have a tender spot in my heart for cripples and bastards and broken things.\"",
+      "answer": "Tyrion Lannister"
+    },
+    {
+      "question": "[BOOK] Who said: \"Kill the boy and let the man be born.\"",
+      "answer": "Maester Aemon"
+    },
+    {
+      "question": "[BOOK] Who said: \"Love is the death of duty.\"",
+      "answer": "Maester Aemon"
+    },
+    {
+      "question": "[BOOK] Who said: \"Men's lives have meaning, not their deaths.\"",
+      "answer": "Brienne of Tarth"
+    },
+    {
+      "question": "[BOOK] Who said: \"No chance, and no choice.\"",
+      "answer": "Brienne of Tarth"
+    },
+    {
+      "question": "[BOOK] Who said: \"All dwarfs are bastards in their father's eyes.\"",
+      "answer": "Tyrion Lannister"
+    },
+    {
+      "question": "[BOOK] Who said: \"A lord must learn that sometimes words can accomplish what swords cannot.\"",
+      "answer": "Robb Stark"
+    },
+    {
+      "question": "[BOOK] Who said: \"What is dead may never die, but rises again, harder and stronger.\"",
+      "answer": "Aeron Greyjoy"
+    },
+    {
+      "question": "[BOTH] Finish the quote: \"When you play the game of thrones, you win or you die...\"",
+      "answer": "There is no middle ground"
+    },
+    {
+      "question": "[BOOK] Finish the quote: \"Fear cuts deeper than...\"",
+      "answer": "swords"
+    },
+    {
+      "question": "[BOTH] Finish the quote: \"A Lannister always...\"",
+      "answer": "pays his debts"
+    },
+    {
+      "question": "[SHOW] Finish the quote: \"Chaos isn't a pit...\"",
+      "answer": "Chaos is a ladder"
+    },
+    {
+      "question": "[BOOK] Finish the quote: \"A reader lives a thousand lives before he dies...\"",
+      "answer": "The man who never reads lives only one"
+    },
+    {
+      "question": "[BOOK] Finish the quote: \"Kill the boy...\"",
+      "answer": "and let the man be born"
+    },
+    {
+      "question": "[BOTH] Finish the quote: \"The night is dark and...\"",
+      "answer": "full of terrors"
+    },
+    {
+      "question": "[BOTH] Finish the quote: \"What is dead may never die...\"",
+      "answer": "but rises again, harder and stronger"
+    },
+    {
+      "question": "[SHOW] Finish the quote: \"You know nothing...\"",
+      "answer": "Jon Snow"
+    },
+    {
+      "question": "[BOOK] Finish the quote: \"The north remembers...\"",
+      "answer": "and the mummer's farce is almost done"
+    },
+    {
+      "question": "[SHOW] Finish the quote: \"Hold the door...\"",
+      "answer": "Hold the door (-> Hodor)"
+    },
+    {
+      "question": "[BOTH] Finish the quote: \"Valar Morghulis...\"",
+      "answer": "All men must die"
+    },
+    {
+      "question": "[BOTH] Finish the quote: \"Valar Dohaeris...\"",
+      "answer": "All men must serve"
+    },
+    {
+      "question": "[SHOW] Finish the quote: \"I drink and...\"",
+      "answer": "I know things"
+    },
+    {
+      "question": "[BOOK] Finish the quote: \"All dwarfs are bastards...\"",
+      "answer": "in their father's eyes"
+    },
+    {
+      "question": "[BOOK] Finish the quote: \"A mind needs books as a sword needs...\"",
+      "answer": "a whetstone"
+    },
+    {
+      "question": "[SHOW] Finish the quote: \"If you think this has a happy ending...\"",
+      "answer": "you haven't been paying attention"
+    },
+    {
+      "question": "[SHOW] Finish the quote: \"There's no cure for...\"",
+      "answer": "being a cunt"
+    },
+    {
+      "question": "[BOOK] Finish the quote: \"Love is the death of...\"",
+      "answer": "duty"
+    },
+    {
+      "question": "[BOOK] Finish the quote: \"No chance...\"",
+      "answer": "and no choice"
+    },
+    {
+      "question": "[SHOW] Finish the quote: \"The things I do...\"",
+      "answer": "for love"
+    },
+    {
+      "question": "[SHOW] Finish the quote: \"Any man who must say 'I am the king'...\"",
+      "answer": "is no true king"
+    },
+    {
+      "question": "[BOOK] Finish the quote: \"So many vows...\"",
+      "answer": "they make you swear and swear"
+    },
+    {
+      "question": "[SHOW] Finish the quote: \"Power resides where...\"",
+      "answer": "men believe it resides"
+    },
+    {
+      "question": "[SHOW] Finish the quote: \"What do we say to the God of Death?\"",
+      "answer": "Not today"
+    },
+    {
+      "question": "[BOOK] Finish the quote: \"Men's lives have meaning...\"",
+      "answer": "not their deaths"
+    },
+    {
+      "question": "[SHOW] Finish the quote: \"The freedom to make my own mistakes...\"",
+      "answer": "was all I ever wanted"
+    },
+    {
+      "question": "[BOOK] Finish the quote: \"A very small man can cast...\"",
+      "answer": "a very large shadow"
+    },
+    {
+      "question": "[SHOW] Finish the quote: \"Everyone who isn't us...\"",
+      "answer": "is an enemy"
+    },
+    {
+      "question": "[BOOK] Finish the quote: \"May the Freys...\"",
+      "answer": "choke on their fables"
+    },
+    {
+      "question": "[BOOK] What name does Arya Stark give when she first arrives in Braavos?",
+      "answer": "Cat of the Canals"
+    },
+    {
+      "question": "[BOOK] What is the name of the Braavosi courtesan who trains Arya in seduction?",
+      "answer": "The Courtesan of the Pearl (also called the Black Pearl's predecessor, but commonly \"the Courtesan of the Pearl\")"
+    },
+    {
+      "question": "[BOOK] What is the name of the coin given to Arya by Jaqen H'ghar?",
+      "answer": "An iron coin of Braavos"
+    },
+    {
+      "question": "[BOOK] What is the name of Victarion Greyjoy's ship?",
+      "answer": "The Iron Victory"
+    },
+    {
+      "question": "[BOOK] What is the name of the red priest traveling with Victarion?",
+      "answer": "Moqorro"
+    },
+    {
+      "question": "[BOOK] What magical item does Moqorro claim to see visions in?",
+      "answer": "Flames (or a fire)"
+    },
+    {
+      "question": "[BOOK] What is the name of the castle where Theon Greyjoy is held and tortured?",
+      "answer": "The Dreadfort"
+    },
+    {
+      "question": "[BOOK] What alias is forced upon Theon during his captivity?",
+      "answer": "Reek"
+    },
+    {
+      "question": "[BOOK] What is the name of the septon who travels with Brienne of Tarth?",
+      "answer": "Septon Meribald"
+    },
+    {
+      "question": "[BOOK] What is the name of Meribald's dog?",
+      "answer": "Dog"
+    },
+    {
+      "question": "[BOOK] What is the name of the outlaw group led by Beric Dondarrion?",
+      "answer": "The Brotherhood Without Banners"
+    },
+    {
+      "question": "[BOOK] What title do they give themselves regarding the king?",
+      "answer": "The King's Men (or men of the king-contextual answers accepted)"
+    },
+    {
+      "question": "[BOTH] What is the name of Tywin Lannister's horse?",
+      "answer": "Honor"
+    },
+    {
+      "question": "[SHOW] What is the name of Daenerys Targaryen's Dothraki handmaiden who teaches her language?",
+      "answer": "Irri"
+    },
+    {
+      "question": "[SHOW] What is the name of the other main handmaiden killed in Qarth?",
+      "answer": "Doreah"
+    },
+    {
+      "question": "[SHOW] What is the name of the master of whisperers who serves before Varys returns to Westeros?",
+      "answer": "Qyburn (later Master of Whisperers under Cersei)"
+    },
+    {
+      "question": "[SHOW] What is Qyburn's former profession before being expelled?",
+      "answer": "Maester"
+    },
+    {
+      "question": "[SHOW] What is the name of the warlock who imprisons Daenerys Targaryen in Qarth?",
+      "answer": "Pyat Pree"
+    },
+    {
+      "question": "[SHOW] What is the name of the tower where she is imprisoned?",
+      "answer": "The House of the Undying"
+    },
+    {
+      "question": "[BOOK] What is the name of the Dornish knight known as the \"Knight of the Lemonwood\"?",
+      "answer": "Ser Doran's bannerman-Ser Daemon Sand is associated, but correct answer: Ser Andrey Dalt"
+    },
+    {
+      "question": "[BOOK] What is the name of Arianne Martell's cousin who accompanies her plot?",
+      "answer": "Ser Gerold Dayne (\"Darkstar\")"
+    },
+    {
+      "question": "[BOOK] What is the name of the maester serving at White Harbor?",
+      "answer": "Maester Theomore"
+    },
+    {
+      "question": "[BOOK] What is the name of Wyman Manderly's son who is held captive?",
+      "answer": "Wylis Manderly"
+    },
+    {
+      "question": "[BOOK] What is the name of the sellsword company Jon Connington joins?",
+      "answer": "The Golden Company"
+    },
+    {
+      "question": "[BOOK] What is Jon Connington's alias while in exile?",
+      "answer": "Griff"
+    },
+    {
+      "question": "[SHOW] What is the name of the leader of the Thenns?",
+      "answer": "Styr"
+    },
+    {
+      "question": "[SHOW] What distinguishing trait do the Thenns have?",
+      "answer": "They are cannibals"
+    },
+    {
+      "question": "[BOTH] What is the name of the prison in King's Landing?",
+      "answer": "The Black Cells"
+    },
+    {
+      "question": "[SHOW] What is the name of the massive crossbow used to kill dragons?",
+      "answer": "Scorpion"
+    },
+    {
+      "question": "[BOOK] What is the name of Davos Seaworth's wife?",
+      "answer": "Marya Seaworth"
+    },
+    {
+      "question": "[BOOK] How many sons does Davos have originally?",
+      "answer": "Seven"
+    },
+    {
+      "question": "[BOOK] What is the name of the island where the Targaryens first settled in Westeros?",
+      "answer": "Dragonstone"
+    },
+    {
+      "question": "[BOOK] What is the name of the castle on Dragonstone?",
+      "answer": "Dragonstone"
+    },
+    {
+      "question": "[BOOK] In what year AC did Aegon's Conquest begin?",
+      "answer": "2 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC was King's Landing founded?",
+      "answer": "2 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did the Field of Fire take place?",
+      "answer": "1 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did The Dance of the Dragons begin?",
+      "answer": "129 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did the Dance of the Dragons end?",
+      "answer": "131 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did Aegon II Targaryen die?",
+      "answer": "131 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did Blackfyre Rebellion (first) begin?",
+      "answer": "196 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did Daemon Blackfyre die?",
+      "answer": "196 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC was Robert Baratheon born?",
+      "answer": "262 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC was Eddard Stark born?",
+      "answer": "263 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did Defiance of Duskendale occur?",
+      "answer": "277 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did Aerys II Targaryen begin his descent into madness (post-Duskendale)?",
+      "answer": "277 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did Robert's Rebellion begin?",
+      "answer": "282 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did Robert's Rebellion end?",
+      "answer": "283 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did the Battle of the Trident take place?",
+      "answer": "283 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did Rhaegar Targaryen die?",
+      "answer": "283 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did Aerys II Targaryen die?",
+      "answer": "283 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did Daenerys Targaryen get married to Khal Drogo?",
+      "answer": "298 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC do the events of A Game of Thrones begin?",
+      "answer": "298 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did Eddard Stark die?",
+      "answer": "299 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did the War of the Five Kings begin?",
+      "answer": "299 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did the Red Wedding occur?",
+      "answer": "299 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did Joffrey Baratheon die?",
+      "answer": "300 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC did Tywin Lannister die?",
+      "answer": "300 AC"
+    },
+    {
+      "question": "[BOOK] In what year AC is A Dance with Dragons primarily set?",
+      "answer": "300 AC"
+    }
+  ]
+}
