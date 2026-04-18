@@ -54,12 +54,38 @@ BASE_DIR = Path(__file__).resolve().parent
 QUESTIONS_FILE = BASE_DIR / "questions.json"
 DB_NAME = BASE_DIR / "ava.db"
 AVA_PURPLE = discord.Color.from_rgb(126, 87, 194)
+AVA_DEEP_PURPLE = discord.Color.from_rgb(74, 45, 121)
+AVA_GOLD = discord.Color.from_rgb(214, 168, 72)
 
 intents = discord.Intents.default()
 intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 active_games = {}
+
+
+def ava_embed(title, description=None, color=AVA_PURPLE):
+    embed = discord.Embed(title=title, description=description, color=color)
+    embed.set_author(name="Ava")
+    embed.set_footer(text="ASOIAF Trivia")
+    return embed
+
+
+def progress_bar(current, total, width=12):
+    filled = round((current / total) * width)
+    return "[" + ("#" * filled) + ("-" * (width - filled)) + f"] {current}/{total}"
+
+
+def place_label(index):
+    labels = {1: "1st", 2: "2nd", 3: "3rd"}
+    return labels.get(index, f"{index}th")
+
+
+def split_question_label(question):
+    match = re.match(r"^\[(.*?)\]\s*(.*)$", question)
+    if not match:
+        return "TRIVIA", question
+    return match.group(1), match.group(2)
 
 # =========================
 # LOAD QUESTIONS
@@ -262,26 +288,31 @@ class AvaGame:
     def build_lobby_embed(self):
         players = "\n".join(f"<@{player_id}>" for player_id in self.players) or "No players yet"
 
-        embed = discord.Embed(
-            title="Ava Trivia Lobby",
+        embed = ava_embed(
+            "Ava's Great Hall",
             description=(
-                "**ASOIAF trivia is ready.**\n\n"
-                "Use the buttons below, or the slash commands if you prefer."
+                "**A new ASOIAF trivia table is forming.**\n\n"
+                "Take a seat with **Join**, step away with **Leave**, and begin the game with **Start**."
             ),
-            color=AVA_PURPLE,
+            color=AVA_DEEP_PURPLE,
         )
 
-        embed.add_field(name="Players", value=players, inline=False)
-        embed.add_field(name="Status", value=self.state.upper(), inline=False)
+        embed.add_field(name=f"Players ({len(self.players)})", value=players, inline=False)
+        embed.add_field(name="Status", value=f"`{self.state.upper()}`", inline=True)
         embed.add_field(
-            name="Format",
+            name="Game Format",
             value=(
                 f"{self.rounds} rounds, {self.questions_per_round} questions per round\n"
                 "Timers: 35s early, 30s middle, 25s final rounds"
             ),
+            inline=True,
+        )
+        embed.add_field(
+            name="Answer Rules",
+            value="Minor typos count. Bracketed alternatives count. Fast answers can earn a bonus.",
             inline=False,
         )
-        embed.set_footer(text="Ava accepts small typos and bracketed answer alternatives.")
+        embed.set_footer(text="Buttons and slash commands both work.")
 
         return embed
 
@@ -329,19 +360,28 @@ class AvaGame:
         return 0
 
     async def ava_say(self, message):
-        embed = discord.Embed(description=message, color=AVA_PURPLE)
-        embed.set_author(name="Ava")
+        embed = ava_embed("Ava Speaks", message, AVA_PURPLE)
         await self.channel.send(embed=embed)
 
     def build_question_embed(self, question, round_num, question_num, timer):
-        embed = discord.Embed(
-            title=f"Round {round_num} - Question {question_num}/{self.questions_per_round}",
-            description=f"**{question}**",
-            color=AVA_PURPLE,
+        label, clean_question = split_question_label(question)
+        overall_question = ((round_num - 1) * self.questions_per_round) + question_num
+        total_questions = self.rounds * self.questions_per_round
+
+        embed = ava_embed(
+            f"Round {round_num} - Question {question_num}",
+            description=f">>> **{clean_question}**",
+            color=AVA_DEEP_PURPLE,
         )
-        embed.add_field(name="Time Limit", value=f"{timer} seconds", inline=True)
-        embed.add_field(name="Answer In Chat", value="Small spelling mistakes are OK.", inline=True)
-        embed.set_footer(text="Ava will accept bracketed alternatives where the answer lists them.")
+        embed.add_field(name="Source", value=f"`{label}`", inline=True)
+        embed.add_field(name="Time Limit", value=f"`{timer}s`", inline=True)
+        embed.add_field(name="Progress", value=progress_bar(overall_question, total_questions), inline=False)
+        embed.add_field(
+            name="How To Answer",
+            value="Type your answer in chat. Small spelling mistakes are accepted.",
+            inline=False,
+        )
+        embed.set_footer(text="First accepted answer wins the point.")
         return embed
 
     async def player_name(self, user_id):
@@ -350,6 +390,15 @@ class AvaGame:
             return member.display_name
         user = await bot.fetch_user(user_id)
         return user.name
+
+    async def build_score_lines(self, leaderboard):
+        lines = []
+        for index, (player_id, score) in enumerate(leaderboard, 1):
+            name = await self.player_name(player_id)
+            streak = self.streaks.get(player_id, 0)
+            streak_text = f" | streak {streak}" if streak else ""
+            lines.append(f"**{place_label(index)}** - {name}: **{score} pts**{streak_text}")
+        return lines
 
     # -------------------------
     # GAME LOOP
@@ -376,9 +425,15 @@ class AvaGame:
                     active_games.pop(self.guild_id, None)
                     return
 
-                await self.ava_say(f"Round {round_num} starting in 5 seconds...")
+                await self.ava_say(
+                    f"**Round {round_num} begins in 5 seconds.**\n"
+                    "Summon your lore, watch the timer, and answer in chat."
+                )
                 await asyncio.sleep(5)
-                await self.ava_say(f"{self.questions_per_round} questions this round. Let's go!")
+                await self.ava_say(
+                    f"**{self.questions_per_round} questions this round.**\n"
+                    "Ava is listening for the first close-enough answer."
+                )
 
                 for q_num in range(1, self.questions_per_round + 1):
                     if not self.players:
@@ -428,11 +483,11 @@ class AvaGame:
                     speed_bonus = 0
                     if response_time <= 3:
                         speed_bonus = 1
-                        await self.ava_say(f"SPEED BONUS for {winner.display_name}!")
+                        await self.ava_say(f"**Speed bonus** for {winner.display_name}.")
 
                     if self.streaks[uid] >= 3:
                         await self.ava_say(
-                            f"{winner.display_name} is on a {self.streaks[uid]} streak!"
+                            f"**Streak watch:** {winner.display_name} is on {self.streaks[uid]} in a row."
                         )
 
                     points = 1 + bonus + speed_bonus
@@ -459,17 +514,19 @@ class AvaGame:
             await self.ava_say(f"Round {round_num} complete! No scores yet.")
             return
 
-        lines = []
-        for index, (player_id, score) in enumerate(leaderboard, 1):
-            name = await self.player_name(player_id)
-            lines.append(f"{index}. {name} - {score} pts")
+        lines = await self.build_score_lines(leaderboard)
 
-        embed = discord.Embed(
+        embed = ava_embed(
             title=f"Round {round_num} Scores",
             description="\n".join(lines),
-            color=AVA_PURPLE,
+            color=AVA_PURPLE if round_num < self.rounds else AVA_GOLD,
         )
-        embed.set_footer(text="Streaks and speed bonuses can swing the table quickly.")
+        embed.add_field(
+            name="Round Progress",
+            value=progress_bar(round_num, self.rounds, width=10),
+            inline=False,
+        )
+        embed.set_footer(text="Streaks and speed bonuses can change everything.")
         await self.channel.send(embed=embed)
 
     # -------------------------
@@ -480,24 +537,23 @@ class AvaGame:
         sorted_scores = sorted(self.scores.items(), key=lambda item: item[1], reverse=True)
 
         if not sorted_scores:
-            embed = discord.Embed(
+            embed = ava_embed(
                 title="Final Results",
                 description="No scores recorded.",
                 color=AVA_PURPLE,
             )
         else:
-            lines = []
+            lines = await self.build_score_lines(sorted_scores)
+            winner_id, winner_score = sorted_scores[0]
+            winner_name = await self.player_name(winner_id)
             for index, (user_id, score) in enumerate(sorted_scores, 1):
-                name = await self.player_name(user_id)
-                trophy = " - winner" if index == 1 else ""
-                lines.append(f"{index}. {name} - {score} pts{trophy}")
                 update_stats(user_id, self.guild_id, score, index == 1)
-            embed = discord.Embed(
+            embed = ava_embed(
                 title="Final Results",
-                description="\n".join(lines),
-                color=AVA_PURPLE,
+                description=f"**Winner: {winner_name} with {winner_score} pts**\n\n" + "\n".join(lines),
+                color=AVA_GOLD,
             )
-            embed.set_footer(text="Leaderboard updated.")
+            embed.set_footer(text="Leaderboard updated. The realm remembers.")
 
         await self.channel.send(embed=embed)
         active_games.pop(self.guild_id, None)
@@ -671,7 +727,7 @@ async def avaforceend(interaction: discord.Interaction):
 
     await game.update_lobby()
 
-    embed = discord.Embed(
+    embed = ava_embed(
         title="Ava Game Ended",
         description=f"The game was force-ended by {interaction.user.mention}.",
         color=AVA_PURPLE,
@@ -692,10 +748,10 @@ async def leaderboard(interaction: discord.Interaction):
         user = await bot.fetch_user(int(user_id))
         lines.append(f"{index}. {user.name} - {points} pts, {wins} wins")
 
-    embed = discord.Embed(
+    embed = ava_embed(
         title="Ava Leaderboard",
         description="\n".join(lines),
-        color=AVA_PURPLE,
+        color=AVA_GOLD,
     )
 
     await interaction.response.send_message(embed=embed)
