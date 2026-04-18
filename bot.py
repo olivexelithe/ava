@@ -53,6 +53,7 @@ except ImportError:
 BASE_DIR = Path(__file__).resolve().parent
 QUESTIONS_FILE = BASE_DIR / "questions.json"
 DB_NAME = BASE_DIR / "ava.db"
+AVA_PURPLE = discord.Color.from_rgb(126, 87, 194)
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -262,33 +263,36 @@ class AvaGame:
         players = "\n".join(f"<@{player_id}>" for player_id in self.players) or "No players yet"
 
         embed = discord.Embed(
-            title="AVA TRIVIA LOBBY",
+            title="Ava Trivia Lobby",
             description=(
-                "ASOIAF trivia is ready.\n\n"
-                "Use `/join` to enter the game.\n"
-                "Use `/start` when everyone is ready.\n"
-                "Use `/leave` if you need to drop out."
+                "**ASOIAF trivia is ready.**\n\n"
+                "Use the buttons below, or the slash commands if you prefer."
             ),
-            color=discord.Color.blurple(),
+            color=AVA_PURPLE,
         )
 
         embed.add_field(name="Players", value=players, inline=False)
         embed.add_field(name="Status", value=self.state.upper(), inline=False)
         embed.add_field(
             name="Format",
-            value=f"{self.rounds} rounds, {self.questions_per_round} questions per round",
+            value=(
+                f"{self.rounds} rounds, {self.questions_per_round} questions per round\n"
+                "Timers: 35s early, 30s middle, 25s final rounds"
+            ),
             inline=False,
         )
+        embed.set_footer(text="Ava accepts small typos and bracketed answer alternatives.")
 
         return embed
 
     async def update_lobby(self):
         embed = self.build_lobby_embed()
+        view = AvaLobbyView(self) if self.state == "lobby" else None
 
         if self.lobby_message:
-            await self.lobby_message.edit(embed=embed)
+            await self.lobby_message.edit(embed=embed, view=view)
         else:
-            self.lobby_message = await self.channel.send(embed=embed)
+            self.lobby_message = await self.channel.send(embed=embed, view=view)
 
     # -------------------------
     # GAME LOGIC
@@ -296,10 +300,10 @@ class AvaGame:
 
     def get_timer(self, round_num):
         if round_num <= self.rounds * 0.33:
-            return 25
+            return 35
         if round_num <= self.rounds * 0.66:
-            return 20
-        return 15
+            return 30
+        return 25
 
     def is_correct(self, message):
         if not self.accepting:
@@ -325,7 +329,20 @@ class AvaGame:
         return 0
 
     async def ava_say(self, message):
-        await self.channel.send(f"**Ava:** {message}")
+        embed = discord.Embed(description=message, color=AVA_PURPLE)
+        embed.set_author(name="Ava")
+        await self.channel.send(embed=embed)
+
+    def build_question_embed(self, question, round_num, question_num, timer):
+        embed = discord.Embed(
+            title=f"Round {round_num} - Question {question_num}/{self.questions_per_round}",
+            description=f"**{question}**",
+            color=AVA_PURPLE,
+        )
+        embed.add_field(name="Time Limit", value=f"{timer} seconds", inline=True)
+        embed.add_field(name="Answer In Chat", value="Small spelling mistakes are OK.", inline=True)
+        embed.set_footer(text="Ava will accept bracketed alternatives where the answer lists them.")
+        return embed
 
     async def player_name(self, user_id):
         member = self.channel.guild.get_member(user_id)
@@ -378,9 +395,7 @@ class AvaGame:
                     timer = self.get_timer(round_num)
 
                     await self.channel.send(
-                        f"**Round {round_num} - Question {q_num}/{self.questions_per_round}**\n"
-                        f"{q['question']}\n"
-                        f"Time: {timer}s"
+                        embed=self.build_question_embed(q["question"], round_num, q_num, timer)
                     )
 
                     start_time = asyncio.get_running_loop().time()
@@ -439,11 +454,9 @@ class AvaGame:
             raise
 
     async def send_round_summary(self, round_num):
-        await self.ava_say(f"Round {round_num} complete! Scores:")
-
         leaderboard = sorted(self.scores.items(), key=lambda item: item[1], reverse=True)
         if not leaderboard:
-            await self.channel.send("No scores yet.")
+            await self.ava_say(f"Round {round_num} complete! No scores yet.")
             return
 
         lines = []
@@ -451,7 +464,13 @@ class AvaGame:
             name = await self.player_name(player_id)
             lines.append(f"{index}. {name} - {score} pts")
 
-        await self.channel.send("\n".join(lines))
+        embed = discord.Embed(
+            title=f"Round {round_num} Scores",
+            description="\n".join(lines),
+            color=AVA_PURPLE,
+        )
+        embed.set_footer(text="Streaks and speed bonuses can swing the table quickly.")
+        await self.channel.send(embed=embed)
 
     # -------------------------
     # END GAME
@@ -460,18 +479,87 @@ class AvaGame:
     async def end_game(self):
         sorted_scores = sorted(self.scores.items(), key=lambda item: item[1], reverse=True)
 
-        msg = "**FINAL RESULTS**\n"
-
         if not sorted_scores:
-            msg += "No scores recorded."
+            embed = discord.Embed(
+                title="Final Results",
+                description="No scores recorded.",
+                color=AVA_PURPLE,
+            )
         else:
+            lines = []
             for index, (user_id, score) in enumerate(sorted_scores, 1):
                 name = await self.player_name(user_id)
-                msg += f"{index}. {name} - {score} pts\n"
+                trophy = " - winner" if index == 1 else ""
+                lines.append(f"{index}. {name} - {score} pts{trophy}")
                 update_stats(user_id, self.guild_id, score, index == 1)
+            embed = discord.Embed(
+                title="Final Results",
+                description="\n".join(lines),
+                color=AVA_PURPLE,
+            )
+            embed.set_footer(text="Leaderboard updated.")
 
-        await self.channel.send(msg)
+        await self.channel.send(embed=embed)
         active_games.pop(self.guild_id, None)
+
+
+class AvaLobbyView(discord.ui.View):
+    def __init__(self, game):
+        super().__init__(timeout=None)
+        self.game = game
+
+    def get_current_game(self, interaction):
+        if interaction.guild is None:
+            return None
+        game = active_games.get(interaction.guild.id)
+        if game is not self.game:
+            return None
+        return game
+
+    @discord.ui.button(label="Join", style=discord.ButtonStyle.success)
+    async def join_button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        game = self.get_current_game(interaction)
+        if not game or game.state != "lobby":
+            return await interaction.response.send_message(
+                "This lobby is no longer open.",
+                ephemeral=True,
+            )
+
+        game.join(interaction.user)
+        await game.update_lobby()
+        await interaction.response.send_message("You're in!", ephemeral=True)
+
+    @discord.ui.button(label="Leave", style=discord.ButtonStyle.secondary)
+    async def leave_button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        game = self.get_current_game(interaction)
+        if not game:
+            return await interaction.response.send_message(
+                "This lobby is no longer active.",
+                ephemeral=True,
+            )
+
+        game.leave(interaction.user)
+        await game.update_lobby()
+        await interaction.response.send_message("You left the lobby.", ephemeral=True)
+
+    @discord.ui.button(label="Start", style=discord.ButtonStyle.primary)
+    async def start_button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        game = self.get_current_game(interaction)
+        if not game or game.state != "lobby":
+            return await interaction.response.send_message(
+                "This game has already started or ended.",
+                ephemeral=True,
+            )
+        if interaction.user.id not in game.players:
+            return await interaction.response.send_message(
+                "Join the lobby before starting it.",
+                ephemeral=True,
+            )
+
+        game.state = "active"
+        await game.update_lobby()
+        await interaction.response.send_message("Starting ASOIAF trivia!")
+        game.task = asyncio.create_task(game.run_game())
 
 # =========================
 # SLASH COMMANDS
@@ -539,6 +627,7 @@ async def start(interaction: discord.Interaction):
         )
 
     game.state = "active"
+    await game.update_lobby()
     await interaction.response.send_message("Starting ASOIAF trivia!")
     game.task = asyncio.create_task(game.run_game())
 
@@ -555,6 +644,41 @@ async def leave(interaction: discord.Interaction):
     await interaction.response.send_message("You left the game.", ephemeral=True)
 
 
+@bot.tree.command(name="avaforceend", description="Force end the current Ava trivia game")
+async def avaforceend(interaction: discord.Interaction):
+    game = active_games.get(interaction.guild.id)
+
+    if not game:
+        return await interaction.response.send_message("No active Ava game to end.", ephemeral=True)
+
+    can_force_end = (
+        interaction.user.id in game.players
+        or interaction.user.guild_permissions.manage_guild
+        or interaction.user.guild_permissions.administrator
+    )
+    if not can_force_end:
+        return await interaction.response.send_message(
+            "Only a player or server manager can force end Ava's game.",
+            ephemeral=True,
+        )
+
+    game.accepting = False
+    game.state = "ended"
+    active_games.pop(interaction.guild.id, None)
+
+    if game.task and not game.task.done():
+        game.task.cancel()
+
+    await game.update_lobby()
+
+    embed = discord.Embed(
+        title="Ava Game Ended",
+        description=f"The game was force-ended by {interaction.user.mention}.",
+        color=AVA_PURPLE,
+    )
+    await interaction.response.send_message(embed=embed)
+
+
 @bot.tree.command(name="leaderboard", description="Show the Ava trivia leaderboard")
 async def leaderboard(interaction: discord.Interaction):
     rows = get_leaderboard(interaction.guild.id)
@@ -562,13 +686,19 @@ async def leaderboard(interaction: discord.Interaction):
     if not rows:
         return await interaction.response.send_message("No leaderboard scores yet.")
 
-    msg = "**LEADERBOARD**\n"
+    lines = []
 
     for index, (user_id, points, wins) in enumerate(rows[:10], 1):
         user = await bot.fetch_user(int(user_id))
-        msg += f"{index}. {user.name} - {points} pts, {wins} wins\n"
+        lines.append(f"{index}. {user.name} - {points} pts, {wins} wins")
 
-    await interaction.response.send_message(msg)
+    embed = discord.Embed(
+        title="Ava Leaderboard",
+        description="\n".join(lines),
+        color=AVA_PURPLE,
+    )
+
+    await interaction.response.send_message(embed=embed)
 
 # =========================
 # READY
