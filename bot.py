@@ -9,6 +9,7 @@ import unicodedata
 from pathlib import Path
 
 import discord
+from discord import app_commands
 from discord.ext import commands
 
 try:
@@ -53,21 +54,37 @@ except ImportError:
 BASE_DIR = Path(__file__).resolve().parent
 QUESTIONS_FILE = BASE_DIR / "questions.json"
 DB_NAME = BASE_DIR / "ava.db"
-AVA_PURPLE = discord.Color.from_rgb(126, 87, 194)
-AVA_DEEP_PURPLE = discord.Color.from_rgb(74, 45, 121)
-AVA_GOLD = discord.Color.from_rgb(214, 168, 72)
+AVA_PURPLE = discord.Color(0xB072FF)
+AVA_DEEP_PURPLE = discord.Color(0xB072FF)
+AVA_GOLD = discord.Color(0xB072FF)
 
 intents = discord.Intents.default()
 intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 active_games = {}
+TOPIC_DETAILS = {
+    "asoiaf": {
+        "name": "A Song of Ice and Fire",
+        "short": "ASOIAF",
+        "description": "Game of Thrones, House of the Dragon, book lore, quotes, houses, battles, and deep-cut canon.",
+        "status": "live",
+        "emoji": "👑",
+    },
+    "animals": {
+        "name": "Animals",
+        "short": "Animals",
+        "description": "Wildlife, pets, habitats, nature facts, animal behaviour, and species identification.",
+        "status": "coming_soon",
+        "emoji": "🦊",
+    },
+}
 
 
 def ava_embed(title, description=None, color=AVA_PURPLE):
     embed = discord.Embed(title=title, description=description, color=color)
     embed.set_author(name="Ava")
-    embed.set_footer(text="ASOIAF Trivia")
+    embed.set_footer(text="Ava Trivia")
     return embed
 
 
@@ -86,6 +103,28 @@ def split_question_label(question):
     if not match:
         return "TRIVIA", question
     return match.group(1), match.group(2)
+
+
+def get_topic_info(topic_key):
+    default = {
+        "name": topic_key.replace("_", " ").title(),
+        "short": topic_key.replace("_", " ").title(),
+        "description": "Trivia topic",
+        "status": "live",
+        "emoji": "✨",
+    }
+    return {**default, **TOPIC_DETAILS.get(topic_key, {})}
+
+
+def topic_has_questions(topic_key):
+    return bool(QUESTIONS.get(topic_key))
+
+
+def available_topic_choices():
+    return [
+        app_commands.Choice(name=info["name"], value=key)
+        for key, info in TOPIC_DETAILS.items()
+    ]
 
 # =========================
 # LOAD QUESTIONS
@@ -242,7 +281,7 @@ def answer_matches(guess, answer):
 
 
 class AvaGame:
-    def __init__(self, guild_id, channel):
+    def __init__(self, guild_id, channel, topic_key):
         self.guild_id = guild_id
         self.channel = channel
 
@@ -255,7 +294,8 @@ class AvaGame:
         self.accepting = False
         self.current_answer = None
         self.state = "lobby"
-        self.topic = "asoiaf"
+        self.topic = topic_key
+        self.topic_info = get_topic_info(topic_key)
 
         self.rounds = 6
         self.questions_per_round = 5
@@ -266,6 +306,9 @@ class AvaGame:
             "nailed it!",
             "that's right!",
         ]
+
+    def topic_title(self):
+        return f"{self.topic_info['emoji']} {self.topic_info['name']}"
 
     # -------------------------
     # PLAYER MANAGEMENT
@@ -291,7 +334,7 @@ class AvaGame:
         embed = ava_embed(
             "Ava's Great Hall",
             description=(
-                "**A new ASOIAF trivia table is forming.**\n\n"
+                f"**A new {self.topic_info['name']} trivia table is forming.**\n\n"
                 "Take a seat with **Join**, step away with **Leave**, and begin the game with **Start**."
             ),
             color=AVA_DEEP_PURPLE,
@@ -299,13 +342,14 @@ class AvaGame:
 
         embed.add_field(name=f"Players ({len(self.players)})", value=players, inline=False)
         embed.add_field(name="Status", value=f"`{self.state.upper()}`", inline=True)
+        embed.add_field(name="Topic", value=f"{self.topic_info['emoji']} {self.topic_info['short']}", inline=True)
         embed.add_field(
             name="Game Format",
             value=(
                 f"{self.rounds} rounds, {self.questions_per_round} questions per round\n"
                 "Timers: 35s early, 30s middle, 25s final rounds"
             ),
-            inline=True,
+            inline=False,
         )
         embed.add_field(
             name="Answer Rules",
@@ -373,6 +417,7 @@ class AvaGame:
             description=f">>> **{clean_question}**",
             color=AVA_DEEP_PURPLE,
         )
+        embed.add_field(name="Topic", value=f"{self.topic_info['emoji']} {self.topic_info['short']}", inline=True)
         embed.add_field(name="Source", value=f"`{label}`", inline=True)
         embed.add_field(name="Time Limit", value=f"`{timer}s`", inline=True)
         embed.add_field(name="Progress", value=progress_bar(overall_question, total_questions), inline=False)
@@ -614,16 +659,69 @@ class AvaLobbyView(discord.ui.View):
 
         game.state = "active"
         await game.update_lobby()
-        await interaction.response.send_message("Starting ASOIAF trivia!")
+        await interaction.response.send_message(f"Starting {game.topic_info['name']} trivia!")
         game.task = asyncio.create_task(game.run_game())
 
-# =========================
-# SLASH COMMANDS
-# =========================
+
+def build_topics_embed():
+    lines = []
+    for key, info in TOPIC_DETAILS.items():
+        status = "Live now" if topic_has_questions(key) else "Coming soon"
+        lines.append(
+            f"**{info['emoji']} {info['name']}**\n"
+            f"{info['description']}\n"
+            f"`topic: {key}` • {status}"
+        )
+
+    embed = ava_embed(
+        "Ava Trivia Topics",
+        "Ava can host different trivia sets. Use `/avatrivia` and pick a topic.",
+        AVA_DEEP_PURPLE,
+    )
+    embed.add_field(name="Available Topics", value="\n\n".join(lines), inline=False)
+    embed.set_footer(text="More categories can be added to questions.json at any time.")
+    return embed
 
 
-@bot.tree.command(name="avaasoiaf", description="Create an ASOIAF trivia lobby")
-async def avaasoiaf(interaction: discord.Interaction):
+def build_help_embed():
+    embed = ava_embed(
+        "Ava Help Sheet",
+        "Ava runs themed trivia lobbies with buttons, slash commands, typo-friendly answers, and persistent leaderboard scores.",
+        AVA_DEEP_PURPLE,
+    )
+    embed.add_field(
+        name="Start A Lobby",
+        value=(
+            "`/avatrivia` - create a trivia lobby for a chosen topic\n"
+            "`/avatopics` - see every topic Ava can host"
+        ),
+        inline=False,
+    )
+    embed.add_field(
+        name="During A Lobby",
+        value=(
+            "`/join` - join the current lobby\n"
+            "`/leave` - leave the current lobby or game\n"
+            "`/start` - start the current lobby\n"
+            "`/avaforceend` - force end the current Ava game"
+        ),
+        inline=False,
+    )
+    embed.add_field(
+        name="Stats",
+        value="`/leaderboard` - show the server leaderboard",
+        inline=False,
+    )
+    embed.add_field(
+        name="Answer Matching",
+        value="Ava accepts small spelling mistakes, punctuation differences, and bracketed answer alternatives.",
+        inline=False,
+    )
+    embed.set_footer(text="Buttons and slash commands can both be used in the lobby.")
+    return embed
+
+
+async def create_trivia_lobby(interaction: discord.Interaction, topic: str):
     guild_id = interaction.guild.id
 
     if guild_id in active_games:
@@ -632,14 +730,53 @@ async def avaasoiaf(interaction: discord.Interaction):
             ephemeral=True,
         )
 
-    game = AvaGame(guild_id, interaction.channel)
+    if topic not in QUESTIONS:
+        return await interaction.response.send_message(
+            "That topic is not loaded in Ava yet. Use `/avatopics` to see what's available.",
+            ephemeral=True,
+        )
+    if not topic_has_questions(topic):
+        topic_info = get_topic_info(topic)
+        return await interaction.response.send_message(
+            f"{topic_info['name']} is listed, but it does not have questions loaded yet.",
+            ephemeral=True,
+        )
+
+    game = AvaGame(guild_id, interaction.channel, topic)
     game.join(interaction.user)
     active_games[guild_id] = game
 
+    topic_info = get_topic_info(topic)
     await interaction.response.send_message(
-        "ASOIAF trivia lobby created. I added you as the first player."
+        f"{topic_info['emoji']} {topic_info['name']} trivia lobby created. I added you as the first player."
     )
     await game.update_lobby()
+
+# =========================
+# SLASH COMMANDS
+# =========================
+
+
+@bot.tree.command(name="avahelp", description="Show Ava's help sheet")
+async def avahelp(interaction: discord.Interaction):
+    await interaction.response.send_message(embed=build_help_embed(), ephemeral=True)
+
+
+@bot.tree.command(name="avatopics", description="Show Ava's trivia topics")
+async def avatopics(interaction: discord.Interaction):
+    await interaction.response.send_message(embed=build_topics_embed(), ephemeral=True)
+
+
+@bot.tree.command(name="avatrivia", description="Create an Ava trivia lobby for a topic")
+@app_commands.describe(topic="Choose which trivia topic Ava should host")
+@app_commands.choices(topic=available_topic_choices())
+async def avatrivia(interaction: discord.Interaction, topic: str):
+    await create_trivia_lobby(interaction, topic)
+
+
+@bot.tree.command(name="avaasoiaf", description="Create an ASOIAF trivia lobby")
+async def avaasoiaf(interaction: discord.Interaction):
+    await create_trivia_lobby(interaction, "asoiaf")
 
 
 @bot.tree.command(name="join", description="Join the current Ava trivia lobby")
@@ -684,7 +821,7 @@ async def start(interaction: discord.Interaction):
 
     game.state = "active"
     await game.update_lobby()
-    await interaction.response.send_message("Starting ASOIAF trivia!")
+    await interaction.response.send_message(f"Starting {game.topic_info['name']} trivia!")
     game.task = asyncio.create_task(game.run_game())
 
 
