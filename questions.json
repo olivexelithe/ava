@@ -2932,5 +2932,1007 @@
       "question": "[BOOK] In what year AC is A Dance with Dragons primarily set?",
       "answer": "300 AC"
     }
+  ],
+  "animals": [
+    {
+      "question": "What is the largest land animal in the world?",
+      "answer": "Elephant"
+    },
+    {
+      "question": "Which animal is known as man's best friend?",
+      "answer": "Dog"
+    },
+    {
+      "question": "What do pandas mainly eat?",
+      "answer": "Bamboo"
+    },
+    {
+      "question": "Which bird is famous for mimicking human speech?",
+      "answer": "Parrot"
+    },
+    {
+      "question": "What is a baby cat called?",
+      "answer": "Kitten"
+    },
+    {
+      "question": "Which animal says \"moo\"?",
+      "answer": "Cow"
+    },
+    {
+      "question": "What is the fastest land animal?",
+      "answer": "Cheetah"
+    },
+    {
+      "question": "Which sea creature has eight arms?",
+      "answer": "Octopus"
+    },
+    {
+      "question": "What is the tallest animal in the world?",
+      "answer": "Giraffe"
+    },
+    {
+      "question": "Which animal is famous for having black and white stripes?",
+      "answer": "Zebra"
+    },
+    {
+      "question": "What type of animal is Nemo in Finding Nemo?",
+      "answer": "Clownfish"
+    },
+    {
+      "question": "Which animal carries its baby in a pouch?",
+      "answer": "Kangaroo"
+    },
+    {
+      "question": "What is the largest species of bear?",
+      "answer": "Polar bear"
+    },
+    {
+      "question": "Which bird cannot fly and lives in Antarctica?",
+      "answer": "Penguin"
+    },
+    {
+      "question": "What do bees make?",
+      "answer": "Honey"
+    },
+    {
+      "question": "Which animal is known for building dams?",
+      "answer": "Beaver"
+    },
+    {
+      "question": "What is a group of lions called?",
+      "answer": "Pride"
+    },
+    {
+      "question": "Which reptile changes color to blend into its surroundings?",
+      "answer": "Chameleon"
+    },
+    {
+      "question": "Which farm animal gives us wool?",
+      "answer": "Sheep"
+    },
+    {
+      "question": "What is the only mammal capable of true flight?",
+      "answer": "Bat"
+    },
+    {
+      "question": "Which animal is famous for its long trunk?",
+      "answer": "Elephant"
+    },
+    {
+      "question": "What do you call a baby dog?",
+      "answer": "Puppy"
+    },
+    {
+      "question": "Which bird is the symbol of peace?",
+      "answer": "Dove"
+    },
+    {
+      "question": "What is the slowest animal in the world?",
+      "answer": "Sloth"
+    },
+    {
+      "question": "Which animal is known for laughing-like sounds?",
+      "answer": "Hyena"
+    },
+    {
+      "question": "Which marine animal is considered the largest animal ever known?",
+      "answer": "Blue whale"
+    },
+    {
+      "question": "What kind of animal is a frog?",
+      "answer": "Amphibian"
+    },
+    {
+      "question": "Which animal has a shell and moves very slowly?",
+      "answer": "Turtle"
+    },
+    {
+      "question": "What color is a flamingo naturally born?",
+      "answer": "Grey/white"
+    },
+    {
+      "question": "Which animal is famous for playing dead as a defense mechanism?",
+      "answer": "Opossum"
+    },
+    {
+      "question": "Which bird is associated with delivering babies in folklore?",
+      "answer": "Stork"
+    },
+    {
+      "question": "What is a male chicken called?",
+      "answer": "Rooster"
+    },
+    {
+      "question": "Which animal is known for swinging through trees using long arms?",
+      "answer": "Monkey"
+    },
+    {
+      "question": "Which fish is famous for its sharp teeth and fearsome reputation?",
+      "answer": "Shark"
+    },
+    {
+      "question": "Which insect undergoes metamorphosis from caterpillar to adult?",
+      "answer": "Butterfly"
+    },
+    {
+      "question": "What is the scientific name for humans?",
+      "answer": "Homo sapiens"
+    },
+    {
+      "question": "Which mammal lays eggs?",
+      "answer": "Platypus"
+    },
+    {
+      "question": "What is a group of crows called?",
+      "answer": "Murder"
+    },
+    {
+      "question": "Which animal has the strongest bite force of any living animal?",
+      "answer": "Saltwater crocodile"
+    },
+    {
+      "question": "Which animal can sleep for up to 22 hours a day?",
+      "answer": "Koala"
+    },
+    {
+      "question": "Which bird has the largest wingspan?",
+      "answer": "Wandering albatross"
+    },
+    {
+      "question": "What is the only continent where giraffes live in the wild?",
+      "answer": "Africa"
+    },
+    {
+      "question": "Which animal can regenerate lost limbs?",
+      "answer": "Starfish"
+    },
+    {
+      "question": "Which snake is the longest in the world?",
+      "answer": "Reticulated python"
+    },
+    {
+      "question": "What is the largest species of penguin?",
+      "answer": "Emperor penguin"
+    },
+    {
+      "question": "Which mammal has the longest lifespan?",
+      "answer": "Bowhead whale"
+    },
+    {
+      "question": "Which animal's fingerprints are nearly identical to humans'?",
+      "answer": "Koala"
+    },
+    {
+      "question": "Which bird is known for its impressive courtship dances and colorful feathers?",
+      "answer": "Bird-of-paradise"
+    },
+    {
+      "question": "What is a baby goat called?",
+      "answer": "Kid"
+    },
+    {
+      "question": "Which animal has three hearts?",
+      "answer": "Octopus"
+    },
+    {
+      "question": "Which insect is capable of lifting many times its own body weight?",
+      "answer": "Ant"
+    },
+    {
+      "question": "What is the national animal of Australia?",
+      "answer": "Kangaroo"
+    },
+    {
+      "question": "Which animal is capable of producing electric shocks?",
+      "answer": "Electric eel"
+    },
+    {
+      "question": "What is the largest species of cat in the world?",
+      "answer": "Tiger"
+    },
+    {
+      "question": "Which mammal has no vocal cords?",
+      "answer": "Giraffe"
+    },
+    {
+      "question": "Which sea animal is known for changing sex during its lifetime?",
+      "answer": "Clownfish"
+    },
+    {
+      "question": "What is the world's smallest bird?",
+      "answer": "Bee hummingbird"
+    },
+    {
+      "question": "Which animal has the longest migration route?",
+      "answer": "Arctic tern"
+    },
+    {
+      "question": "Which reptile has a \"third eye\" on top of its head?",
+      "answer": "Tuatara"
+    },
+    {
+      "question": "What is the study of birds called?",
+      "answer": "Ornithology"
+    },
+    {
+      "question": "Which mammal can hold its breath the longest underwater?",
+      "answer": "Cuvier's beaked whale"
+    },
+    {
+      "question": "Which animal is known as the \"ship of the desert\"?",
+      "answer": "Camel"
+    },
+    {
+      "question": "Which animal has blue blood?",
+      "answer": "Horseshoe crab"
+    },
+    {
+      "question": "Which amphibian is capable of freezing solid and surviving?",
+      "answer": "Wood frog"
+    },
+    {
+      "question": "Which fish can inflate itself as a defense mechanism?",
+      "answer": "Pufferfish"
+    },
+    {
+      "question": "What is a group of owls called?",
+      "answer": "Parliament"
+    },
+    {
+      "question": "Which animal has the most powerful kick?",
+      "answer": "Zebra"
+    },
+    {
+      "question": "Which creature has the largest eyes of any animal?",
+      "answer": "Colossal squid"
+    },
+    {
+      "question": "Which bird can fly backwards?",
+      "answer": "Hummingbird"
+    },
+    {
+      "question": "Which mammal has the densest fur?",
+      "answer": "Sea otter"
+    },
+    {
+      "question": "What is the only known venomous primate?",
+      "answer": "Slow loris"
+    },
+    {
+      "question": "Which shark species can survive in freshwater for extended periods?",
+      "answer": "Bull shark"
+    },
+    {
+      "question": "What is the fastest bird in the world during a dive?",
+      "answer": "Peregrine falcon"
+    },
+    {
+      "question": "Which animal has the largest brain relative to body size?",
+      "answer": "Ant"
+    },
+    {
+      "question": "Which marine creature is biologically immortal under ideal conditions?",
+      "answer": "Turritopsis dohrnii jellyfish"
+    },
+    {
+      "question": "What is the name of the deepest-living fish ever discovered?",
+      "answer": "Mariana snailfish"
+    },
+    {
+      "question": "Which mammal has the highest blood pressure?",
+      "answer": "Giraffe"
+    },
+    {
+      "question": "Which animal can survive in the vacuum of space?",
+      "answer": "Tardigrade"
+    },
+    {
+      "question": "Which bird has the most extensive vocabulary mimicry?",
+      "answer": "African grey parrot"
+    },
+    {
+      "question": "Which insect has existed largely unchanged for over 300 million years?",
+      "answer": "Cockroach"
+    },
+    {
+      "question": "What is the only feline species that lives and hunts in groups?",
+      "answer": "Lion"
+    },
+    {
+      "question": "Which animal's tongue can be longer than its body?",
+      "answer": "Chameleon"
+    },
+    {
+      "question": "Which octopus species is considered the most venomous?",
+      "answer": "Blue-ringed octopus"
+    },
+    {
+      "question": "Which animal has the highest number of teeth?",
+      "answer": "Snail"
+    },
+    {
+      "question": "Which species of bear is considered the most carnivorous?",
+      "answer": "Polar bear"
+    },
+    {
+      "question": "Which mammal has the slowest heartbeat?",
+      "answer": "Blue whale"
+    },
+    {
+      "question": "Which bird can stay airborne for months without landing?",
+      "answer": "Common swift"
+    },
+    {
+      "question": "What is the largest living reptile?",
+      "answer": "Saltwater crocodile"
+    },
+    {
+      "question": "Which animal can rotate its head nearly 270 degrees?",
+      "answer": "Owl"
+    },
+    {
+      "question": "Which fish is capable of walking on land using its fins?",
+      "answer": "Mudskipper"
+    },
+    {
+      "question": "Which mammal has armored scales made of keratin?",
+      "answer": "Pangolin"
+    },
+    {
+      "question": "Which animal has the most powerful punch relative to size?",
+      "answer": "Mantis shrimp"
+    },
+    {
+      "question": "What is the rarest big cat in the world?",
+      "answer": "Amur leopard"
+    },
+    {
+      "question": "Which sea creature has the largest known bioluminescent organs?",
+      "answer": "Firefly squid"
+    },
+    {
+      "question": "Which snake has the most potent venom by toxicity?",
+      "answer": "Inland taipan"
+    },
+    {
+      "question": "Which animal communicates using complex songs that can travel for miles underwater?",
+      "answer": "Humpback whale"
+    },
+    {
+      "question": "Which animal has cube-shaped poop?",
+      "answer": "Wombat"
+    },
+    {
+      "question": "Which bird is capable of recognizing itself in a mirror?",
+      "answer": "Magpie"
+    },
+    {
+      "question": "Which mammal has the shortest pregnancy?",
+      "answer": "Virginia opossum"
+    },
+    {
+      "question": "Which animal can survive being frozen and thawed multiple times?",
+      "answer": "Arctic woolly bear caterpillar"
+    },
+    {
+      "question": "Which animal is known for hopping and has powerful back legs?",
+      "answer": "Kangaroo"
+    },
+    {
+      "question": "What do you call a baby sheep?",
+      "answer": "Lamb"
+    },
+    {
+      "question": "Which bird is famous for saying \"hoot\"?",
+      "answer": "Owl"
+    },
+    {
+      "question": "Which animal is known for having a very long neck?",
+      "answer": "Giraffe"
+    },
+    {
+      "question": "What is the biggest type of big cat?",
+      "answer": "Tiger"
+    },
+    {
+      "question": "Which sea animal is known for squirting ink?",
+      "answer": "Squid"
+    },
+    {
+      "question": "Which animal is often associated with peanuts and circuses?",
+      "answer": "Elephant"
+    },
+    {
+      "question": "What color is a polar bear's fur usually seen as?",
+      "answer": "White"
+    },
+    {
+      "question": "Which farm animal says \"oink\"?",
+      "answer": "Pig"
+    },
+    {
+      "question": "Which insect makes a loud buzzing sound and can sting?",
+      "answer": "Bee"
+    },
+    {
+      "question": "Which animal is famous for carrying a heavy shell on its back?",
+      "answer": "Snail"
+    },
+    {
+      "question": "Which bird is unable to fly but can run very fast?",
+      "answer": "Ostrich"
+    },
+    {
+      "question": "What do dolphins breathe through?",
+      "answer": "Blowhole"
+    },
+    {
+      "question": "Which animal is known for hanging upside down in caves?",
+      "answer": "Bat"
+    },
+    {
+      "question": "What type of animal is a salmon?",
+      "answer": "Fish"
+    },
+    {
+      "question": "Which animal is often called the king of the jungle?",
+      "answer": "Lion"
+    },
+    {
+      "question": "Which animal has black spots and is known for speed?",
+      "answer": "Cheetah"
+    },
+    {
+      "question": "Which creature spins webs?",
+      "answer": "Spider"
+    },
+    {
+      "question": "Which ocean animal has a hard shell and claws?",
+      "answer": "Crab"
+    },
+    {
+      "question": "What is a baby horse called?",
+      "answer": "Foal"
+    },
+    {
+      "question": "Which bird is famous for colorful tail feathers?",
+      "answer": "Peacock"
+    },
+    {
+      "question": "Which animal is known for storing nuts for winter?",
+      "answer": "Squirrel"
+    },
+    {
+      "question": "Which animal is pink and loves mud?",
+      "answer": "Pig"
+    },
+    {
+      "question": "What kind of animal is a cobra?",
+      "answer": "Snake"
+    },
+    {
+      "question": "Which animal is famous for its hump?",
+      "answer": "Camel"
+    },
+    {
+      "question": "Which bird is often associated with pirates?",
+      "answer": "Parrot"
+    },
+    {
+      "question": "Which animal can curl into a ball for protection?",
+      "answer": "Hedgehog"
+    },
+    {
+      "question": "Which sea creature is shaped like a star?",
+      "answer": "Starfish"
+    },
+    {
+      "question": "Which insect glows at night?",
+      "answer": "Firefly"
+    },
+    {
+      "question": "What is a group of fish called?",
+      "answer": "School"
+    },
+    {
+      "question": "Which animal is famous for its black-and-white coloring and bamboo diet?",
+      "answer": "Panda"
+    },
+    {
+      "question": "Which reptile is known for snapping its jaws shut quickly?",
+      "answer": "Crocodile"
+    },
+    {
+      "question": "Which animal is known for howling at the moon?",
+      "answer": "Wolf"
+    },
+    {
+      "question": "Which bird is a universal symbol of wisdom?",
+      "answer": "Owl"
+    },
+    {
+      "question": "Which mammal lives almost entirely underground?",
+      "answer": "Mole"
+    },
+    {
+      "question": "Which animal has the largest ears relative to body size?",
+      "answer": "Fennec fox"
+    },
+    {
+      "question": "Which bird is the fastest runner?",
+      "answer": "Ostrich"
+    },
+    {
+      "question": "What is the collective name for a group of flamingos?",
+      "answer": "Flamboyance"
+    },
+    {
+      "question": "Which mammal can glide through the air but cannot truly fly?",
+      "answer": "Flying squirrel"
+    },
+    {
+      "question": "Which sea animal is known for having tusks?",
+      "answer": "Walrus"
+    },
+    {
+      "question": "Which reptile can detach its tail to escape predators?",
+      "answer": "Lizard"
+    },
+    {
+      "question": "Which animal has the longest teeth of any living animal?",
+      "answer": "Narwhal"
+    },
+    {
+      "question": "Which species of shark is the largest?",
+      "answer": "Whale shark"
+    },
+    {
+      "question": "Which mammal has the thickest fur in the animal kingdom?",
+      "answer": "Sea otter"
+    },
+    {
+      "question": "Which bird lays the largest eggs?",
+      "answer": "Ostrich"
+    },
+    {
+      "question": "What is the world's heaviest snake?",
+      "answer": "Green anaconda"
+    },
+    {
+      "question": "Which animal uses echolocation to navigate?",
+      "answer": "Bat"
+    },
+    {
+      "question": "Which fish is known for climbing waterfalls?",
+      "answer": "Salmon"
+    },
+    {
+      "question": "Which primate is the largest in the world?",
+      "answer": "Gorilla"
+    },
+    {
+      "question": "Which animal can rotate its ears nearly 180 degrees?",
+      "answer": "Rabbit"
+    },
+    {
+      "question": "What is the only marsupial native to North America?",
+      "answer": "Opossum"
+    },
+    {
+      "question": "Which bird has the largest beak relative to body size?",
+      "answer": "Toucan"
+    },
+    {
+      "question": "Which animal is famous for \"playing dead\" when threatened?",
+      "answer": "Opossum"
+    },
+    {
+      "question": "Which mammal spends most of its life in water but must surface to breathe?",
+      "answer": "Whale"
+    },
+    {
+      "question": "Which insect can survive for weeks without its head?",
+      "answer": "Cockroach"
+    },
+    {
+      "question": "Which animal has a tongue long enough to clean its own ears?",
+      "answer": "Giraffe"
+    },
+    {
+      "question": "Which bird migrates from the Arctic to Antarctica each year?",
+      "answer": "Arctic tern"
+    },
+    {
+      "question": "Which animal is capable of changing texture as well as color?",
+      "answer": "Octopus"
+    },
+    {
+      "question": "Which reptile is known for its frill around the neck?",
+      "answer": "Frilled lizard"
+    },
+    {
+      "question": "Which animal can survive the longest without water?",
+      "answer": "Kangaroo rat"
+    },
+    {
+      "question": "Which mammal has backward-facing pouches?",
+      "answer": "Wombat"
+    },
+    {
+      "question": "Which fish can generate electricity strong enough to stun prey?",
+      "answer": "Electric eel"
+    },
+    {
+      "question": "Which animal is the largest rodent in the world?",
+      "answer": "Capybara"
+    },
+    {
+      "question": "Which bird can mimic chainsaws, alarms, and camera shutters?",
+      "answer": "Lyrebird"
+    },
+    {
+      "question": "Which sea creature has five hearts?",
+      "answer": "Earthworm"
+    },
+    {
+      "question": "Which mammal has the largest antlers?",
+      "answer": "Moose"
+    },
+    {
+      "question": "Which animal is known for its armor-like shell and long sticky tongue?",
+      "answer": "Armadillo"
+    },
+    {
+      "question": "Which insect is famous for forming highly organized colonies?",
+      "answer": "Ant"
+    },
+    {
+      "question": "Which cat species is known for not being able to roar?",
+      "answer": "Cheetah"
+    },
+    {
+      "question": "Which amphibian never fully develops lungs and breathes through its skin?",
+      "answer": "Axolotl"
+    },
+    {
+      "question": "Which animal has the most legs of any known creature?",
+      "answer": "Millipede"
+    },
+    {
+      "question": "Which bird can imitate human speech with the greatest accuracy?",
+      "answer": "African grey parrot"
+    },
+    {
+      "question": "Which mammal is capable of delayed implantation during pregnancy?",
+      "answer": "Badger"
+    },
+    {
+      "question": "Which shark species glows in the dark?",
+      "answer": "Lantern shark"
+    },
+    {
+      "question": "Which animal has transparent blood?",
+      "answer": "Icefish"
+    },
+    {
+      "question": "Which bird has feathers specially adapted for silent flight?",
+      "answer": "Owl"
+    },
+    {
+      "question": "Which animal can survive losing up to 95% of its body water?",
+      "answer": "Tardigrade"
+    },
+    {
+      "question": "Which snake species gives birth to live young instead of laying eggs?",
+      "answer": "Boa constrictor"
+    },
+    {
+      "question": "Which marine animal has the highest known lifespan?",
+      "answer": "Greenland shark"
+    },
+    {
+      "question": "Which insect has the fastest wingbeat?",
+      "answer": "Midge"
+    },
+    {
+      "question": "Which mammal produces pink milk?",
+      "answer": "Hippopotamus"
+    },
+    {
+      "question": "Which animal has the largest claws relative to body size?",
+      "answer": "Coconut crab"
+    },
+    {
+      "question": "Which fish can survive buried in mud during droughts?",
+      "answer": "Lungfish"
+    },
+    {
+      "question": "Which bird is capable of sleeping while flying?",
+      "answer": "Alpine swift"
+    },
+    {
+      "question": "Which animal has the strongest natural armor?",
+      "answer": "Ironclad beetle"
+    },
+    {
+      "question": "Which octopus species can mimic other sea creatures?",
+      "answer": "Mimic octopus"
+    },
+    {
+      "question": "Which mammal has the most powerful sense of smell?",
+      "answer": "African elephant"
+    },
+    {
+      "question": "Which reptile can run across water?",
+      "answer": "Basilisk lizard"
+    },
+    {
+      "question": "Which animal's teeth never stop growing?",
+      "answer": "Beaver"
+    },
+    {
+      "question": "Which bird can dive deeper than any other bird species?",
+      "answer": "Emperor penguin"
+    },
+    {
+      "question": "Which animal has the highest number of vertebrae in its neck?",
+      "answer": "Swan"
+    },
+    {
+      "question": "Which mammal is the fastest swimmer?",
+      "answer": "Orca"
+    },
+    {
+      "question": "Which insect can survive being frozen solid?",
+      "answer": "Woolly bear caterpillar"
+    },
+    {
+      "question": "Which animal has eyes larger than its brain?",
+      "answer": "Ostrich"
+    },
+    {
+      "question": "Which deep-sea creature can produce red bioluminescence?",
+      "answer": "Dragonfish"
+    },
+    {
+      "question": "Which fish species is known to inflate into a spiky ball?",
+      "answer": "Porcupinefish"
+    },
+    {
+      "question": "Which animal can detect electrical fields in water?",
+      "answer": "Shark"
+    },
+    {
+      "question": "Which bird has the largest population in the world?",
+      "answer": "Chicken"
+    },
+    {
+      "question": "Which animal can survive without oxygen for several hours?",
+      "answer": "Goldfish"
+    },
+    {
+      "question": "Which mammal has the most powerful kick force ever recorded?",
+      "answer": "Zebra"
+    },
+    {
+      "question": "Which animal is known for having a bushy tail and climbing trees?",
+      "answer": "Squirrel"
+    },
+    {
+      "question": "What do ducks use to help them swim?",
+      "answer": "Webbed feet"
+    },
+    {
+      "question": "Which animal is famous for barking?",
+      "answer": "Dog"
+    },
+    {
+      "question": "Which bird is known for building nests out of mud?",
+      "answer": "Swallow"
+    },
+    {
+      "question": "Which sea animal is known for its pinchers?",
+      "answer": "Lobster"
+    },
+    {
+      "question": "What do you call a baby cow?",
+      "answer": "Calf"
+    },
+    {
+      "question": "Which animal is black and white and lives in Antarctica?",
+      "answer": "Penguin"
+    },
+    {
+      "question": "Which insect is famous for making silk?",
+      "answer": "Silkworm"
+    },
+    {
+      "question": "Which animal is often associated with bananas?",
+      "answer": "Monkey"
+    },
+    {
+      "question": "Which farm bird lays eggs?",
+      "answer": "Chicken"
+    },
+    {
+      "question": "Which animal is known for its sharp quills?",
+      "answer": "Porcupine"
+    },
+    {
+      "question": "Which reptile is known for moving sideways in the desert?",
+      "answer": "Sidewinder snake"
+    },
+    {
+      "question": "Which animal can carry heavy loads in mountainous regions?",
+      "answer": "Donkey"
+    },
+    {
+      "question": "Which bird is famous for stealing shiny objects in stories?",
+      "answer": "Magpie"
+    },
+    {
+      "question": "Which animal has antlers and is associated with Christmas?",
+      "answer": "Reindeer"
+    },
+    {
+      "question": "Which sea creature is known for having a spiral shell?",
+      "answer": "Nautilus"
+    },
+    {
+      "question": "Which animal is famous for sleeping through winter?",
+      "answer": "Bear"
+    },
+    {
+      "question": "Which bird is often seen standing on one leg?",
+      "answer": "Flamingo"
+    },
+    {
+      "question": "Which mammal lives in rivers and builds lodges?",
+      "answer": "Beaver"
+    },
+    {
+      "question": "Which animal is known for its loud roar?",
+      "answer": "Lion"
+    },
+    {
+      "question": "Which animal has the largest eyes of any land mammal?",
+      "answer": "Horse"
+    },
+    {
+      "question": "Which bird is considered the smartest?",
+      "answer": "Crow"
+    },
+    {
+      "question": "Which mammal can slow its heartbeat dramatically underwater?",
+      "answer": "Seal"
+    },
+    {
+      "question": "Which reptile has the longest lifespan?",
+      "answer": "Giant tortoise"
+    },
+    {
+      "question": "Which animal can leap the highest relative to its body size?",
+      "answer": "Flea"
+    },
+    {
+      "question": "Which fish is known for cleaning parasites off larger fish?",
+      "answer": "Cleaner wrasse"
+    },
+    {
+      "question": "Which animal can survive being cut in half and regenerate?",
+      "answer": "Planarian flatworm"
+    },
+    {
+      "question": "Which bird has the largest wingspan ever recorded in history?",
+      "answer": "Argentavis"
+    },
+    {
+      "question": "Which mammal has striped skin underneath its fur?",
+      "answer": "Zebra"
+    },
+    {
+      "question": "Which amphibian is famous for its bright warning colors?",
+      "answer": "Poison dart frog"
+    },
+    {
+      "question": "Which animal uses ultrasonic sounds humans cannot hear?",
+      "answer": "Bat"
+    },
+    {
+      "question": "Which mammal has the largest canine teeth?",
+      "answer": "Walrus"
+    },
+    {
+      "question": "Which bird migrates the farthest distance annually?",
+      "answer": "Arctic tern"
+    },
+    {
+      "question": "Which sea creature can regrow an entire body from one arm in some species?",
+      "answer": "Starfish"
+    },
+    {
+      "question": "Which reptile is known for changing color with mood and temperature?",
+      "answer": "Chameleon"
+    },
+    {
+      "question": "Which animal has the fastest strike in the animal kingdom?",
+      "answer": "Mantis shrimp"
+    },
+    {
+      "question": "Which mammal has the largest brain of any animal?",
+      "answer": "Sperm whale"
+    },
+    {
+      "question": "Which insect species farms fungus for food?",
+      "answer": "Leafcutter ant"
+    },
+    {
+      "question": "Which animal can survive exposure to outer space?",
+      "answer": "Tardigrade"
+    },
+    {
+      "question": "Which bird has the densest feathers of any bird species?",
+      "answer": "Emperor penguin"
+    },
+    {
+      "question": "Which animal is capable of photosynthesis due to algae living in its body?",
+      "answer": "Emerald green sea slug"
+    },
+    {
+      "question": "Which shark species can live for centuries?",
+      "answer": "Greenland shark"
+    },
+    {
+      "question": "Which fish has antifreeze proteins in its blood?",
+      "answer": "Antarctic icefish"
+    },
+    {
+      "question": "Which reptile can remain underwater for up to two hours without breathing?",
+      "answer": "Sea turtle"
+    },
+    {
+      "question": "Which mammal is capable of true powered flight besides bats?",
+      "answer": "None"
+    },
+    {
+      "question": "Which animal has the most complex eyes in the animal kingdom?",
+      "answer": "Mantis shrimp"
+    },
+    {
+      "question": "Which bird can recognize and remember human faces for years?",
+      "answer": "Crow"
+    },
+    {
+      "question": "Which animal can withstand the highest levels of radiation?",
+      "answer": "Tardigrade"
+    },
+    {
+      "question": "Which octopus species is famous for carrying coconut shells as tools?",
+      "answer": "Coconut octopus"
+    },
+    {
+      "question": "Which mammal has the highest jump relative to body size?",
+      "answer": "Klipspringer antelope"
+    }
   ]
 }
