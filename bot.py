@@ -693,7 +693,12 @@ def build_topics_embed():
         AVA_DEEP_PURPLE,
     )
     embed.add_field(name="Available Topics", value="\n\n".join(lines), inline=False)
-    embed.set_footer(text="More categories can be added to questions.json at any time.")
+    embed.add_field(
+        name="Want Another Topic?",
+        value='If you have a trivia idea, please message anywhere in server saying "Olive can you make [insert topic here] for Ava".',
+        inline=False,
+    )
+    embed.set_footer(text="More categories can be added any time.")
     return embed
 
 
@@ -773,12 +778,12 @@ async def create_trivia_lobby(interaction: discord.Interaction, topic: str):
 
 @bot.tree.command(name="avahelp", description="Show Ava's help sheet")
 async def avahelp(interaction: discord.Interaction):
-    await interaction.response.send_message(embed=build_help_embed(), ephemeral=True)
+    await interaction.response.send_message(embed=build_help_embed())
 
 
 @bot.tree.command(name="avatopics", description="Show Ava's trivia topics")
 async def avatopics(interaction: discord.Interaction):
-    await interaction.response.send_message(embed=build_topics_embed(), ephemeral=True)
+    await interaction.response.send_message(embed=build_topics_embed())
 
 
 @bot.tree.command(name="avatrivia", description="Create an Ava trivia lobby for a topic")
@@ -788,18 +793,13 @@ async def avatrivia(interaction: discord.Interaction, topic: str):
     await create_trivia_lobby(interaction, topic)
 
 
-@bot.tree.command(name="avaasoiaf", description="Create an ASOIAF trivia lobby")
-async def avaasoiaf(interaction: discord.Interaction):
-    await create_trivia_lobby(interaction, "asoiaf")
-
-
 @bot.tree.command(name="join", description="Join the current Ava trivia lobby")
 async def join(interaction: discord.Interaction):
     game = active_games.get(interaction.guild.id)
 
     if not game:
         return await interaction.response.send_message(
-            "There is no active lobby. Use `/avaasoiaf` to create one.",
+            "There is no active lobby. Use `/avatrivia` to create one.",
             ephemeral=True,
         )
     if game.state != "lobby":
@@ -819,7 +819,7 @@ async def start(interaction: discord.Interaction):
 
     if not game:
         return await interaction.response.send_message(
-            "There is no active lobby. Use `/avaasoiaf` to create one.",
+            "There is no active lobby. Use `/avatrivia` to create one.",
             ephemeral=True,
         )
     if game.state != "lobby":
