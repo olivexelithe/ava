@@ -75,8 +75,22 @@ TOPIC_DETAILS = {
         "name": "Animals",
         "short": "Animals",
         "description": "Wildlife, pets, habitats, nature facts, animal behaviour, and species identification.",
-        "status": "coming_soon",
+        "status": "live",
         "emoji": "🦊",
+    },
+    "marvel": {
+        "name": "Marvel",
+        "short": "Marvel",
+        "description": "Marvel films, heroes, villains, powers, teams, famous quotes, and comic-inspired trivia.",
+        "status": "coming_soon",
+        "emoji": "🦸",
+    },
+    "disney": {
+        "name": "Disney",
+        "short": "Disney",
+        "description": "Disney movies, characters, songs, sidekicks, parks-era classics, and animated trivia.",
+        "status": "coming_soon",
+        "emoji": "✨",
     },
 }
 
