@@ -82,63 +82,63 @@ TOPIC_DETAILS = {
         "name": "Marvel",
         "short": "Marvel",
         "description": "Marvel films, heroes, villains, powers, teams, famous quotes, and comic-inspired trivia.",
-        "status": "coming_soon",
+        "status": "live",
         "emoji": "🦸",
     },
     "disney": {
         "name": "Disney",
         "short": "Disney",
         "description": "Disney movies, characters, songs, sidekicks, parks-era classics, and animated trivia.",
-        "status": "coming_soon",
+        "status": "live",
         "emoji": "✨",
     },
     "movies": {
         "name": "Movies",
         "short": "Movies",
         "description": "Films, actors, iconic lines, franchises, directors, awards, and cinema trivia.",
-        "status": "coming_soon",
+        "status": "live",
         "emoji": "🎬",
     },
     "tv": {
         "name": "TV",
         "short": "TV",
         "description": "Television shows, sitcoms, drama, reality TV, characters, and streaming-era trivia.",
-        "status": "coming_soon",
+        "status": "live",
         "emoji": "📺",
     },
     "general_knowledge": {
         "name": "General Knowledge",
         "short": "General Knowledge",
         "description": "A broad mix of facts, culture, geography, language, everyday knowledge, and quickfire trivia.",
-        "status": "coming_soon",
+        "status": "live",
         "emoji": "🧠",
     },
     "history": {
         "name": "History",
         "short": "History",
         "description": "Ancient to modern history, famous figures, wars, empires, dates, and world events.",
-        "status": "coming_soon",
+        "status": "live",
         "emoji": "🏛️",
     },
     "science_nature": {
         "name": "Science and Nature",
         "short": "Science and Nature",
         "description": "Biology, chemistry, physics, space, Earth, ecosystems, inventions, and natural wonders.",
-        "status": "coming_soon",
+        "status": "live",
         "emoji": "🔬",
     },
     "sports": {
         "name": "Sports",
         "short": "Sports",
         "description": "Teams, athletes, rules, tournaments, records, championships, and sporting moments.",
-        "status": "coming_soon",
+        "status": "live",
         "emoji": "🏅",
     },
     "music": {
         "name": "Music",
         "short": "Music",
         "description": "Songs, artists, lyrics, albums, genres, instruments, and chart history.",
-        "status": "coming_soon",
+        "status": "live",
         "emoji": "🎵",
     },
 }
@@ -755,29 +755,68 @@ class AvaLobbyView(discord.ui.View):
         game.task = asyncio.create_task(game.run_game())
 
 
-def build_topics_embed():
-    lines = []
+def build_topic_cards():
+    cards = []
     for key, info in TOPIC_DETAILS.items():
         status = "Live now" if topic_has_questions(key) else "Coming soon"
-        lines.append(
+        cards.append(
             f"**{info['emoji']} {info['name']}**\n"
             f"{info['description']}\n"
             f"`topic: {key}` • {status}"
         )
+    return cards
+
+
+def chunk_topic_cards(cards, page_size=4):
+    return [cards[index : index + page_size] for index in range(0, len(cards), page_size)]
+
+
+def build_topics_embed(page=0):
+    pages = chunk_topic_cards(build_topic_cards())
+    if not pages:
+        pages = [["No topics are loaded yet."]]
+    page = max(0, min(page, len(pages) - 1))
 
     embed = ava_embed(
         "Ava Trivia Topics",
         "Ava can host different trivia sets. Use `/avatrivia` and pick a topic.",
         AVA_DEEP_PURPLE,
     )
-    embed.add_field(name="Available Topics", value="\n\n".join(lines), inline=False)
+    embed.add_field(name="Available Topics", value="\n\n".join(pages[page]), inline=False)
+
     embed.add_field(
         name="Want Another Topic?",
         value='If you have a trivia idea, please message anywhere in server saying "Olive can you make [insert topic here] for Ava".',
         inline=False,
     )
-    embed.set_footer(text="More categories can be added any time.")
+    embed.set_footer(text=f"Page {page + 1}/{len(pages)} • More categories can be added any time.")
     return embed
+
+
+class AvaTopicsView(discord.ui.View):
+    def __init__(self):
+        super().__init__(timeout=300)
+        self.pages = chunk_topic_cards(build_topic_cards()) or [["No topics are loaded yet."]]
+        self.page = 0
+        self._sync_buttons()
+
+    def _sync_buttons(self):
+        self.previous_button.disabled = self.page == 0
+        self.next_button.disabled = self.page >= len(self.pages) - 1
+
+    @discord.ui.button(label="◀", style=discord.ButtonStyle.secondary)
+    async def previous_button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        if self.page > 0:
+            self.page -= 1
+        self._sync_buttons()
+        await interaction.response.edit_message(embed=build_topics_embed(self.page), view=self)
+
+    @discord.ui.button(label="▶", style=discord.ButtonStyle.secondary)
+    async def next_button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        if self.page < len(self.pages) - 1:
+            self.page += 1
+        self._sync_buttons()
+        await interaction.response.edit_message(embed=build_topics_embed(self.page), view=self)
 
 
 def build_help_embed():
@@ -861,7 +900,7 @@ async def avahelp(interaction: discord.Interaction):
 
 @bot.tree.command(name="avatopics", description="Show Ava's trivia topics")
 async def avatopics(interaction: discord.Interaction):
-    await interaction.response.send_message(embed=build_topics_embed())
+    await interaction.response.send_message(embed=build_topics_embed(), view=AvaTopicsView())
 
 
 @bot.tree.command(name="avatrivia", description="Create an Ava trivia lobby for a topic")
