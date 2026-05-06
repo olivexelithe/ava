@@ -92,6 +92,55 @@ TOPIC_DETAILS = {
         "status": "coming_soon",
         "emoji": "✨",
     },
+    "movies": {
+        "name": "Movies",
+        "short": "Movies",
+        "description": "Films, actors, iconic lines, franchises, directors, awards, and cinema trivia.",
+        "status": "coming_soon",
+        "emoji": "🎬",
+    },
+    "tv": {
+        "name": "TV",
+        "short": "TV",
+        "description": "Television shows, sitcoms, drama, reality TV, characters, and streaming-era trivia.",
+        "status": "coming_soon",
+        "emoji": "📺",
+    },
+    "general_knowledge": {
+        "name": "General Knowledge",
+        "short": "General Knowledge",
+        "description": "A broad mix of facts, culture, geography, language, everyday knowledge, and quickfire trivia.",
+        "status": "coming_soon",
+        "emoji": "🧠",
+    },
+    "history": {
+        "name": "History",
+        "short": "History",
+        "description": "Ancient to modern history, famous figures, wars, empires, dates, and world events.",
+        "status": "coming_soon",
+        "emoji": "🏛️",
+    },
+    "science_nature": {
+        "name": "Science and Nature",
+        "short": "Science and Nature",
+        "description": "Biology, chemistry, physics, space, Earth, ecosystems, inventions, and natural wonders.",
+        "status": "coming_soon",
+        "emoji": "🔬",
+    },
+    "sports": {
+        "name": "Sports",
+        "short": "Sports",
+        "description": "Teams, athletes, rules, tournaments, records, championships, and sporting moments.",
+        "status": "coming_soon",
+        "emoji": "🏅",
+    },
+    "music": {
+        "name": "Music",
+        "short": "Music",
+        "description": "Songs, artists, lyrics, albums, genres, instruments, and chart history.",
+        "status": "coming_soon",
+        "emoji": "🎵",
+    },
 }
 
 
@@ -265,6 +314,29 @@ def split_alternatives(value):
     return variants
 
 
+def token_match(guess, variant):
+    guess_tokens = [token for token in guess.split() if len(token) >= 3]
+    variant_tokens = [token for token in variant.split() if len(token) >= 3]
+    if not guess_tokens or not variant_tokens:
+        return False
+
+    guess_set = set(guess_tokens)
+    variant_set = set(variant_tokens)
+
+    # Accept meaningful partial-name style answers like "sandor" for "sandor clegane"
+    if guess_set.issubset(variant_set):
+        guess_chars = sum(len(token) for token in guess_set)
+        if len(guess_set) >= 2 or guess_chars >= 6:
+            return True
+
+    if variant_set.issubset(guess_set):
+        variant_chars = sum(len(token) for token in variant_set)
+        if len(variant_set) >= 2 or variant_chars >= 6:
+            return True
+
+    return False
+
+
 def answer_matches(guess, answer):
     normalized_guess = normalize_text(guess)
     if not normalized_guess:
@@ -273,6 +345,8 @@ def answer_matches(guess, answer):
     for variant in split_alternatives(answer):
         if normalized_guess == variant:
             return True
+        if token_match(normalized_guess, variant):
+            return True
 
         # Short answers such as "Ice" or "Dog" should not be too fuzzy.
         if len(variant) <= 4:
@@ -280,6 +354,10 @@ def answer_matches(guess, answer):
                 return True
             continue
 
+        if normalized_guess in variant and len(normalized_guess) >= 6:
+            return True
+        if variant in normalized_guess and len(variant) >= 6:
+            return True
         if fuzz.ratio(normalized_guess, variant) >= 82:
             return True
         if fuzz.token_set_ratio(normalized_guess, variant) >= 86:
